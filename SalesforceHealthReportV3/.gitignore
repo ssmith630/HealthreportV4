@@ -1,0 +1,11 @@
+.env
+.venv/
+.browser_profile/
+reports/
+__pycache__/
+*.pyc
+*.log
+.isc_session.json
+.gs_cookies.txt
+settings.json
+*.err

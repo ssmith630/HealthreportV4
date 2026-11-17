@@ -1,0 +1,6000 @@
+{
+  "metadata": {
+    "market": "IBM US Industry Market",
+    "domain": "Software Deployment & Management Reporting",
+    "source_file": "Industry Coverage Compass Master.xlsx",
+    "total_accounts": 75,
+    "note": "Single source of truth for account identifiers. Built by build_master.py."
+  },
+  "accounts": [
+    {
+      "account_name": "AT&T",
+      "coverage_id": "I0000004",
+      "coverage_type": "I-Tier (Major Enterprise)",
+      "gainsight_coverage_name": "AT&T",
+      "isc": {
+        "live_id": "0013h000019FqikAAC",
+        "live_name": "AT&T-US",
+        "account_number": "DB001T93-US",
+        "db2_id": "0010500000KNvozAAD",
+        "db2_name": "AT&T-US",
+        "db2_enterprise_id": "0010500000FrGziAAF",
+        "db2_enterprise_name": "AT&T-WW",
+        "db2_coverage_children": [
+          {
+            "id": "0010500000BTXbbAAH",
+            "name": "DIRECTV INC-US",
+            "market": "4A"
+          }
+        ],
+        "enterprise_match_status": "matched"
+      },
+      "gainsight": {
+        "company_gsid": "1P02WPZ71GR8TFJ55WRQMKCYQ6FKF5C49005",
+        "company_name": "AT&T Inc.",
+        "relationships": 112,
+        "confidence": "high",
+        "match_basis": "isc_enterprise_name",
+        "largest_in_group": {
+          "name": "AT&T Inc.",
+          "gsid": "1P02WPZ71GR8TFJ55WRQMKCYQ6FKF5C49005",
+          "relationships": 112
+        },
+        "companies_in_group": [
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WXP2RRIHRR02ORHM63W",
+            "name": "Warner Bros. Entertainment Inc.",
+            "cov_id": "I0000004",
+            "cov_name": "AT&T",
+            "status": "Active",
+            "relationships": 2
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WRQMKCYQ6FKF5C49005",
+            "name": "AT&T Inc.",
+            "cov_id": "I0000004",
+            "cov_name": "AT&T",
+            "status": "Active",
+            "relationships": 112
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WVCCIS0DMHY9Q8UARED",
+            "name": "Directv LLC",
+            "cov_id": "I0000004",
+            "cov_name": "AT&T",
+            "status": "Active",
+            "relationships": 1
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WKUENNRV95YJTIUPSYB",
+            "name": "DISCOVERY, INC.",
+            "cov_id": "I0000004",
+            "cov_name": "AT&T",
+            "status": "Active",
+            "relationships": 2
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WGTUV23WXNX9NFBIW14",
+            "name": "DIRECTV INC",
+            "cov_id": "I0000004",
+            "cov_name": "AT&T",
+            "status": "Active",
+            "relationships": 4
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WEDHX3Q1Y6BQPX00Z5T",
+            "name": "Home Box Office Inc.",
+            "cov_id": "I0000004",
+            "cov_name": "AT&T",
+            "status": "Active",
+            "relationships": 1
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55W27H0UZDWLA7JCTL9SZ",
+            "name": "WARNER MEDIA",
+            "cov_id": "I0000004",
+            "cov_name": "AT&T",
+            "status": "Active",
+            "relationships": 13
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WQ9O3G5RN7JB65JV05A",
+            "name": "AT&T",
+            "cov_id": "I0000004",
+            "cov_name": "AT&T",
+            "status": "Active",
+            "relationships": 50
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55W4QYFUHYZJ60D8YQ3HT",
+            "name": "Warner Bros. 1986 Production Partners Co. A California Limited Partnership",
+            "cov_id": "I0000004",
+            "cov_name": "AT&T",
+            "status": "Active",
+            "relationships": 8
+          }
+        ]
+      },
+      "smartcare": {
+        "gbg_id": "43635",
+        "gbg_name": "AT&T",
+        "source": "select-gbg",
+        "selection_status": "matched"
+      },
+      "review_flags": []
+    },
+    {
+      "account_name": "CENCORA/AMERISOURCEBERGEN",
+      "coverage_id": "I0000387",
+      "coverage_type": "I-Tier (Major Enterprise)",
+      "gainsight_coverage_name": "CENCORA/AMERISOURCEBERGEN",
+      "isc": {
+        "live_id": "0013h00000w1bN1AAI",
+        "live_name": "CENCORA, INC-US",
+        "account_number": "DB00005Q-US",
+        "db2_id": "0010500000BTZ4cAAH",
+        "db2_name": "CENCORA, INC-US",
+        "db2_enterprise_id": "0010500000FrJf7AAF",
+        "db2_enterprise_name": "CENCORA, INC-WW",
+        "db2_coverage_children": [
+          {
+            "id": "0010500000BTZ4cAAH",
+            "name": "CENCORA, INC-US",
+            "market": "4A"
+          }
+        ],
+        "enterprise_match_status": "matched"
+      },
+      "gainsight": {
+        "company_gsid": "1P02WPZ71GR8TFJ55WWCKGFP939BK5TSVEFE",
+        "company_name": "Cencora Inc.",
+        "relationships": 32,
+        "confidence": "high",
+        "match_basis": "isc_enterprise_name",
+        "largest_in_group": {
+          "name": "Cencora Inc.",
+          "gsid": "1P02WPZ71GR8TFJ55WWCKGFP939BK5TSVEFE",
+          "relationships": 32
+        },
+        "companies_in_group": [
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WWCKGFP939BK5TSVEFE",
+            "name": "Cencora Inc.",
+            "cov_id": "I0000387",
+            "cov_name": "CENCORA/AMERISOURCEBERGEN",
+            "status": "Active",
+            "relationships": 32
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WUT9WINVB9HMP1Q07ST",
+            "name": "Bellco Drug Corp.",
+            "cov_id": "I0000387",
+            "cov_name": "CENCORA/AMERISOURCEBERGEN",
+            "status": "Active",
+            "relationships": 2
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WXDNFEZ9CURZ05PY9MN",
+            "name": "CENCORA, INC",
+            "cov_id": "I0000387",
+            "cov_name": "CENCORA/AMERISOURCEBERGEN",
+            "status": "Active",
+            "relationships": 9
+          }
+        ]
+      },
+      "smartcare": {
+        "gbg_id": "42372",
+        "gbg_name": "CENCORA, INC",
+        "source": "select-gbg",
+        "selection_status": "matched"
+      },
+      "review_flags": []
+    },
+    {
+      "account_name": "DELTA AIRLINES",
+      "coverage_id": "I0000388",
+      "coverage_type": "I-Tier (Major Enterprise)",
+      "gainsight_coverage_name": "DELTA AIRLINES",
+      "isc": {
+        "live_id": "0013h00000w1cpxAAA",
+        "live_name": "DELTA AIR LINES INC-US",
+        "account_number": "DB0003E6-US",
+        "db2_id": "0010500000BTRG0AAP",
+        "db2_name": "DELTA AIR LINES INC-US",
+        "db2_enterprise_id": "0010500000FrHIwAAN",
+        "db2_enterprise_name": "DELTA AIRLINES-WW",
+        "db2_coverage_children": [
+          {
+            "id": "0010500000BTRG0AAP",
+            "name": "DELTA AIR LINES INC-US",
+            "market": "4A"
+          }
+        ],
+        "enterprise_match_status": "matched"
+      },
+      "gainsight": {
+        "company_gsid": "1P02WPZ71GR8TFJ55WS2WDQNJPJ41MXHJET7",
+        "company_name": "Delta Air Lines Inc.",
+        "relationships": 33,
+        "confidence": "high",
+        "match_basis": "plan_count_review",
+        "override_reason": "Second Delta record (3 plans) is the same client",
+        "largest_in_group": {
+          "name": "Delta Air Lines Inc.",
+          "gsid": "1P02WPZ71GR8TFJ55WS2WDQNJPJ41MXHJET7",
+          "relationships": 33
+        },
+        "companies_in_group": [
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WUVJJRX16S7T9EF9RZM",
+            "name": "DELTA AIR LINES INC",
+            "cov_id": "I0000388",
+            "cov_name": "DELTA AIRLINES",
+            "status": "Active",
+            "relationships": 19
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WFQC53UJR4P35QJ0961",
+            "name": "Monroe Energy LLC",
+            "cov_id": "I0000388",
+            "cov_name": "DELTA AIRLINES",
+            "status": "Active",
+            "relationships": 1
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WS2WDQNJPJ41MXHJET7",
+            "name": "Delta Air Lines Inc.",
+            "cov_id": "I0000388",
+            "cov_name": "DELTA AIRLINES",
+            "status": "Active",
+            "relationships": 33
+          }
+        ],
+        "additional_companies": [
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WUVJJRX16S7T9EF9RZM",
+            "name": "DELTA AIR LINES INC"
+          }
+        ]
+      },
+      "smartcare": {
+        "gbg_id": "42487",
+        "gbg_name": "DELTA AIRLINES",
+        "source": "select-gbg",
+        "selection_status": "matched"
+      },
+      "review_flags": []
+    },
+    {
+      "account_name": "ERNST & YOUNG",
+      "coverage_id": "I0008523",
+      "coverage_type": "I-Tier (Major Enterprise)",
+      "gainsight_coverage_name": "ERNST & YOUNG",
+      "isc": {
+        "live_id": "0013h00000w1dQNAAY",
+        "live_name": "ERNST & YOUNG LLP-US",
+        "account_number": "DB0003PX-US",
+        "db2_id": "0010500000BTUg0AAH",
+        "db2_name": "ERNST & YOUNG LLP-US",
+        "db2_enterprise_id": "0010500000FrPNQAA3",
+        "db2_enterprise_name": "ERNST & YOUNG LLP-WW",
+        "db2_coverage_children": [
+          {
+            "id": "0010500000BTUg0AAH",
+            "name": "ERNST & YOUNG LLP-US",
+            "market": "4A"
+          }
+        ],
+        "enterprise_match_status": "matched"
+      },
+      "gainsight": {
+        "company_gsid": "1P02WPZ71GR8TFJ55W95MRW4QO1FNL4ZF1P1",
+        "company_name": "ERNST & YOUNG LLP",
+        "relationships": 36,
+        "confidence": "high",
+        "match_basis": "isc_enterprise_name",
+        "largest_in_group": {
+          "name": "ERNST & YOUNG LLP",
+          "gsid": "1P02WPZ71GR8TFJ55W95MRW4QO1FNL4ZF1P1",
+          "relationships": 36
+        },
+        "companies_in_group": [
+          {
+            "gsid": "1P02WPZ71GR8TFJ55W95MRW4QO1FNL4ZF1P1",
+            "name": "ERNST & YOUNG LLP",
+            "cov_id": "I0008523",
+            "cov_name": "ERNST & YOUNG",
+            "status": "Active",
+            "relationships": 36
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WM2FPML7G742SKXWRNZ",
+            "name": "EYGS LLP",
+            "cov_id": "I0008523",
+            "cov_name": "ERNST & YOUNG",
+            "status": "Active",
+            "relationships": 19
+          }
+        ]
+      },
+      "smartcare": {
+        "gbg_id": "21208",
+        "gbg_name": "ERNST & YOUNG LLP",
+        "source": "select-gbg",
+        "selection_status": "matched"
+      },
+      "review_flags": []
+    },
+    {
+      "account_name": "FEDERAL EXPRESS",
+      "coverage_id": "I0008518",
+      "coverage_type": "I-Tier (Major Enterprise)",
+      "gainsight_coverage_name": "FEDERAL EXPRESS",
+      "isc": {
+        "live_id": "0013h00000w1eCJAAY",
+        "live_name": "FEDEX CORP-US",
+        "account_number": "DB000ARK-US",
+        "db2_id": "0010500000BTVuhAAH",
+        "db2_name": "FEDEX CORP-US",
+        "db2_enterprise_id": "0010500000FrGcyAAF",
+        "db2_enterprise_name": "FEDERAL EXPRESS-WW",
+        "db2_coverage_children": [
+          {
+            "id": "0010500000BTVuhAAH",
+            "name": "FEDEX CORP-US",
+            "market": "4A"
+          }
+        ],
+        "enterprise_match_status": "matched"
+      },
+      "gainsight": {
+        "company_gsid": "1P02WPZ71GR8TFJ55WXITWORZP1VK8NBW8N3",
+        "company_name": "FEDEX CORP",
+        "relationships": 71,
+        "confidence": "high",
+        "match_basis": "isc_child_name",
+        "largest_in_group": {
+          "name": "FEDEX CORP",
+          "gsid": "1P02WPZ71GR8TFJ55WXITWORZP1VK8NBW8N3",
+          "relationships": 71
+        },
+        "companies_in_group": [
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WXITWORZP1VK8NBW8N3",
+            "name": "FEDEX CORP",
+            "cov_id": "I0008518",
+            "cov_name": "FEDERAL EXPRESS",
+            "status": "Active",
+            "relationships": 71
+          }
+        ]
+      },
+      "smartcare": {
+        "gbg_id": "42761",
+        "gbg_name": "FEDERAL EXPRESS",
+        "source": "select-gbg",
+        "selection_status": "matched"
+      },
+      "review_flags": []
+    },
+    {
+      "account_name": "GENERAL MOTORS",
+      "coverage_id": "I0000062",
+      "coverage_type": "I-Tier (Major Enterprise)",
+      "gainsight_coverage_name": "GENERAL MOTORS",
+      "isc": {
+        "live_id": "0013h00000w1cuYAAQ",
+        "live_name": "GENERAL MOTORS CORP-US",
+        "account_number": "DB000C7G-US",
+        "db2_id": "0010500000BTRP9AAP",
+        "db2_name": "GENERAL MOTORS CORP-US",
+        "db2_enterprise_id": "0010500000FrOEsAAN",
+        "db2_enterprise_name": "GENERAL MOTORS-WW",
+        "db2_coverage_children": [
+          {
+            "id": "0010500000BTRP9AAP",
+            "name": "GENERAL MOTORS CORP-US",
+            "market": "4A"
+          }
+        ],
+        "enterprise_match_status": "matched"
+      },
+      "gainsight": {
+        "company_gsid": "1P02WPZ71GR8TFJ55WA8YD58YXAZ8OIV4S8R",
+        "company_name": "General Motors Company",
+        "relationships": 98,
+        "confidence": "high",
+        "match_basis": "isc_enterprise_name",
+        "largest_in_group": {
+          "name": "General Motors Company",
+          "gsid": "1P02WPZ71GR8TFJ55WA8YD58YXAZ8OIV4S8R",
+          "relationships": 98
+        },
+        "companies_in_group": [
+          {
+            "gsid": "1P02WPZ71GR8TFJ55W7X4MFYAA65IEZLYEGZ",
+            "name": "Performance Equity Management LLC",
+            "cov_id": "I0000062",
+            "cov_name": "GENERAL MOTORS",
+            "status": "Active",
+            "relationships": 0
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WQXINZI4S9XW8XBC1ES",
+            "name": "GENERAL MOTORS CORP",
+            "cov_id": "I0000062",
+            "cov_name": "GENERAL MOTORS",
+            "status": "Active",
+            "relationships": 12
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55W0B13ITIZYNJGZUXSVK",
+            "name": "Dmax Ltd.",
+            "cov_id": "I0000062",
+            "cov_name": "GENERAL MOTORS",
+            "status": "Active",
+            "relationships": 2
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WA8YD58YXAZ8OIV4S8R",
+            "name": "General Motors Company",
+            "cov_id": "I0000062",
+            "cov_name": "GENERAL MOTORS",
+            "status": "Active",
+            "relationships": 98
+          }
+        ]
+      },
+      "smartcare": {
+        "gbg_id": "32115",
+        "gbg_name": "GENERAL MOTORS",
+        "source": "select-gbg",
+        "selection_status": "matched"
+      },
+      "review_flags": []
+    },
+    {
+      "account_name": "KROGER",
+      "coverage_id": "I0000385",
+      "coverage_type": "I-Tier (Major Enterprise)",
+      "gainsight_coverage_name": "KROGER",
+      "isc": {
+        "live_id": "0013h00000w1bvgAAA",
+        "live_name": "KROGER-US",
+        "account_number": "DB000H99-US",
+        "db2_id": "0010500000BTQSPAA5",
+        "db2_name": "KROGER-US",
+        "db2_enterprise_id": "0010500000FrFpOAAV",
+        "db2_enterprise_name": "KROGER / FRED MEYER-WW",
+        "db2_coverage_children": [
+          {
+            "id": "0010500000BTQSPAA5",
+            "name": "KROGER-US",
+            "market": "4A"
+          }
+        ],
+        "enterprise_match_status": "manual"
+      },
+      "gainsight": {
+        "company_gsid": "1P02WPZ71GR8TFJ55W0TIV6O1RH8F0VLZJFF",
+        "company_name": "The Kroger Co",
+        "relationships": 257,
+        "confidence": "high",
+        "match_basis": "account_name",
+        "largest_in_group": {
+          "name": "The Kroger Co",
+          "gsid": "1P02WPZ71GR8TFJ55W0TIV6O1RH8F0VLZJFF",
+          "relationships": 257
+        },
+        "companies_in_group": [
+          {
+            "gsid": "1P02WPZ71GR8TFJ55W39WMQX44QG35W5HU4N",
+            "name": "84.51 LLC",
+            "cov_id": "I0000385",
+            "cov_name": "KROGER",
+            "status": "Active",
+            "relationships": 3
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55W0TIV6O1RH8F0VLZJFF",
+            "name": "The Kroger Co",
+            "cov_id": "I0000385",
+            "cov_name": "KROGER",
+            "status": "Active",
+            "relationships": 257
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55W696EM7GLD88SF0QYLD",
+            "name": "KROGER",
+            "cov_id": "I0000385",
+            "cov_name": "KROGER",
+            "status": "Active",
+            "relationships": 16
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55W3SUX56AA4FUKCTYZQM",
+            "name": "Paq Inc.",
+            "cov_id": "I0000385",
+            "cov_name": "KROGER",
+            "status": "Active",
+            "relationships": 1
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55W50FUG53STEZZRVJGOT",
+            "name": "Harris Teeter LLC",
+            "cov_id": "I0000385",
+            "cov_name": "KROGER",
+            "status": "Active",
+            "relationships": 9
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WCC1PM79410OZHJM8U0",
+            "name": "Turkey Hill LLC",
+            "cov_id": "I0000385",
+            "cov_name": "KROGER",
+            "status": "Active",
+            "relationships": 1
+          }
+        ]
+      },
+      "smartcare": {
+        "gbg_id": "42973",
+        "gbg_name": null,
+        "source": "manual",
+        "selection_status": "review"
+      },
+      "review_flags": [
+        "isc_enterprise_manual"
+      ]
+    },
+    {
+      "account_name": "LUMEN TECHNOLOGIES",
+      "coverage_id": "I0008504",
+      "coverage_type": "I-Tier (Major Enterprise)",
+      "gainsight_coverage_name": "LUMEN TECHNOLOGIES",
+      "isc": {
+        "live_id": "0013h00000w1dibAAA",
+        "live_name": "CENTURYTEL INC-US",
+        "account_number": "DB00027T-US",
+        "db2_id": "0010500000BTSA8AAP",
+        "db2_name": "CENTURYTEL INC-US",
+        "db2_enterprise_id": "0010500000FrOfUAAV",
+        "db2_enterprise_name": "LUMEN TECHNOLOGIES-WW",
+        "db2_coverage_children": [
+          {
+            "id": "0010500000BTSA8AAP",
+            "name": "CENTURYTEL INC-US",
+            "market": "4A"
+          }
+        ],
+        "enterprise_match_status": "matched"
+      },
+      "gainsight": {
+        "company_gsid": "1P02WPZ71GR8TFJ55W8S24WFAM9UFMRTJNDV",
+        "company_name": "CENTURYTEL INC",
+        "relationships": 32,
+        "confidence": "high",
+        "match_basis": "isc_us_name+plans",
+        "largest_in_group": {
+          "name": "CENTURYTEL INC",
+          "gsid": "1P02WPZ71GR8TFJ55W8S24WFAM9UFMRTJNDV",
+          "relationships": 32
+        },
+        "previous_pick": {
+          "gsid": "1P02WPZ71GR8TFJ55WRQT0OV4X6G6HKZJ5Y9",
+          "name": "Lumen LLC",
+          "plans": 0
+        },
+        "companies_in_group": [
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WRQT0OV4X6G6HKZJ5Y9",
+            "name": "Lumen LLC",
+            "cov_id": "I0008504",
+            "cov_name": "LUMEN TECHNOLOGIES",
+            "status": "Active",
+            "relationships": 2
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55W1XPJ835EAY8DLS4BUZ",
+            "name": "My Pillow Inc.",
+            "cov_id": "I0008504",
+            "cov_name": "LUMEN TECHNOLOGIES",
+            "status": "Active",
+            "relationships": 1
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55W8S24WFAM9UFMRTJNDV",
+            "name": "CENTURYTEL INC",
+            "cov_id": "I0008504",
+            "cov_name": "LUMEN TECHNOLOGIES",
+            "status": "Active",
+            "relationships": 32
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WAG2HQMAVKJU4FNEMXL",
+            "name": "Egnyte Inc.",
+            "cov_id": "I0008504",
+            "cov_name": "LUMEN TECHNOLOGIES",
+            "status": "Active",
+            "relationships": 1
+          }
+        ]
+      },
+      "smartcare": {
+        "gbg_id": "42443",
+        "gbg_name": "LUMEN TECHNOLOGIES",
+        "source": "select-gbg",
+        "selection_status": "matched"
+      },
+      "review_flags": []
+    },
+    {
+      "account_name": "NATIONAL GRID",
+      "coverage_id": "I0008503",
+      "coverage_type": "I-Tier (Major Enterprise)",
+      "gainsight_coverage_name": "NATIONAL GRID",
+      "isc": {
+        "live_id": "0013h00000w1gTwAAI",
+        "live_name": "NATIONAL GRID-US",
+        "account_number": "DB000J3F-US",
+        "db2_id": "0010500000BTYhtAAH",
+        "db2_name": "NATIONAL GRID-US",
+        "db2_enterprise_id": "0010500000FrOYGAA3",
+        "db2_enterprise_name": "NATIONAL GRID-WW",
+        "db2_coverage_children": [
+          {
+            "id": "0010500000BTYhtAAH",
+            "name": "NATIONAL GRID-US",
+            "market": "4A"
+          }
+        ],
+        "enterprise_match_status": "matched"
+      },
+      "gainsight": {
+        "company_gsid": "1P02WPZ71GR8TFJ55W933XNP3CGTFPNQ0ZFD",
+        "company_name": "NATIONAL GRID USA INC",
+        "relationships": 37,
+        "confidence": "high",
+        "match_basis": "isc_enterprise_name",
+        "largest_in_group": {
+          "name": "NATIONAL GRID USA INC",
+          "gsid": "1P02WPZ71GR8TFJ55W933XNP3CGTFPNQ0ZFD",
+          "relationships": 37
+        },
+        "companies_in_group": [
+          {
+            "gsid": "1P02WPZ71GR8TFJ55W933XNP3CGTFPNQ0ZFD",
+            "name": "NATIONAL GRID USA INC",
+            "cov_id": "I0008503",
+            "cov_name": "NATIONAL GRID",
+            "status": "Active",
+            "relationships": 37
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WN6Q4CD6IAKPOS7828V",
+            "name": "National Grid USA Service Company Inc.",
+            "cov_id": "I0008503",
+            "cov_name": "NATIONAL GRID",
+            "status": "Active",
+            "relationships": 10
+          }
+        ]
+      },
+      "smartcare": {
+        "gbg_id": null,
+        "gbg_name": null,
+        "source": null,
+        "selection_status": "ambiguous"
+      },
+      "review_flags": [
+        "smartcare_gbg_unresolved:ambiguous"
+      ]
+    },
+    {
+      "account_name": "NEXTERA ENERGY",
+      "coverage_id": "I0000384",
+      "coverage_type": "I-Tier (Major Enterprise)",
+      "gainsight_coverage_name": "NEXTERA ENERGY",
+      "aliases": [
+        "Florida Power & Light"
+      ],
+      "isc": {
+        "live_id": "0013h00000w1f8nAAA",
+        "live_name": "NEXTERA ENERGY INC-US",
+        "account_number": "DB000DQG-US",
+        "db2_id": "0010500000BTSqQAAX",
+        "db2_name": "NEXTERA ENERGY INC-US",
+        "db2_enterprise_id": "0010500000FrN8MAAV",
+        "db2_enterprise_name": "NEXTERA ENERGY INC-WW",
+        "db2_coverage_children": [
+          {
+            "id": "0010500000BTSqQAAX",
+            "name": "NEXTERA ENERGY INC-US",
+            "market": "4A"
+          }
+        ],
+        "enterprise_match_status": "matched"
+      },
+      "gainsight": {
+        "company_gsid": "1P02WPZ71GR8TFJ55WIY9ZIB60DC51ATUM15",
+        "company_name": "NEXTERA ENERGY INC",
+        "relationships": 89,
+        "confidence": "high",
+        "match_basis": "isc_enterprise_name",
+        "largest_in_group": {
+          "name": "NEXTERA ENERGY INC",
+          "gsid": "1P02WPZ71GR8TFJ55WIY9ZIB60DC51ATUM15",
+          "relationships": 89
+        },
+        "companies_in_group": [
+          {
+            "gsid": "1P02WPZ71GR8TFJ55W4W1XWBHE7NVGPLQCJI",
+            "name": "Nextera Energy Inc.",
+            "cov_id": "I0000384",
+            "cov_name": "NEXTERA ENERGY",
+            "status": "Active",
+            "relationships": 5
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WIY9ZIB60DC51ATUM15",
+            "name": "NEXTERA ENERGY INC",
+            "cov_id": "I0000384",
+            "cov_name": "NEXTERA ENERGY",
+            "status": "Active",
+            "relationships": 89
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55W2HG9RBJNYHAQRRWTCN",
+            "name": "FPL Readi-Power LLC",
+            "cov_id": "I0000384",
+            "cov_name": "NEXTERA ENERGY",
+            "status": "Active",
+            "relationships": 5
+          }
+        ]
+      },
+      "smartcare": {
+        "gbg_id": "42857",
+        "gbg_name": "NEXTERA ENERGY INC",
+        "source": "select-gbg",
+        "selection_status": "matched"
+      },
+      "review_flags": []
+    },
+    {
+      "account_name": "PEPSICO",
+      "coverage_id": "I0000110",
+      "coverage_type": "I-Tier (Major Enterprise)",
+      "gainsight_coverage_name": "PEPSICO",
+      "isc": {
+        "live_id": "0013h000019FqiZAAS",
+        "live_name": "PEPSICO FOOD SERVICES-US",
+        "account_number": "DB001PVP-US",
+        "db2_id": "0010500000KNvo3AAD",
+        "db2_name": "PEPSICO FOOD SERVICES-US",
+        "db2_enterprise_id": "0010500000FrPjyAAF",
+        "db2_enterprise_name": "PEPSICO (PEPSI-COLA INTL)-WW",
+        "db2_coverage_children": [],
+        "enterprise_match_status": "manual",
+        "previous_isc": {
+          "isc_account_id": "0010500000BT3xGAAT",
+          "isc_account_name": "PEPSICO, INC.-US"
+        }
+      },
+      "gainsight": {
+        "company_gsid": "1P02WPZ71GR8TFJ55WDD6BOFF8FPHCOF653J",
+        "company_name": "PEPSICO FOOD SERVICES",
+        "relationships": 41,
+        "confidence": "high",
+        "match_basis": "isc_us_name+plans",
+        "largest_in_group": {
+          "name": "PEPSICO FOOD SERVICES",
+          "gsid": "1P02WPZ71GR8TFJ55WDD6BOFF8FPHCOF653J",
+          "relationships": 41
+        },
+        "previous_pick": {
+          "gsid": "1P02WPZ71GR8TFJ55WWVCH7771BKH5C2CCBY",
+          "name": "Pepsico Inc.",
+          "plans": 5
+        },
+        "companies_in_group": [
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WDD6BOFF8FPHCOF653J",
+            "name": "PEPSICO FOOD SERVICES",
+            "cov_id": "I0000110",
+            "cov_name": "PEPSICO",
+            "status": "Active",
+            "relationships": 41
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WB94YJZQXYLR71DCAU8",
+            "name": "Springfield Pepsi-Cola Bottling Co.",
+            "cov_id": "I0000110",
+            "cov_name": "PEPSICO",
+            "status": "Active",
+            "relationships": 1
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55W1FPA2OKOGJ2CAZ18D8",
+            "name": "Pepsi-Cola Bottling Co. of Corbin Kentucky Inc.",
+            "cov_id": "I0000110",
+            "cov_name": "PEPSICO",
+            "status": "Active",
+            "relationships": 1
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WPLF8C7UHHQBOH0MGCB",
+            "name": "Tropicana Products Inc.",
+            "cov_id": "I0000110",
+            "cov_name": "PEPSICO",
+            "status": "Active",
+            "relationships": 1
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WH15FPUQ4Z4JJLCOGHU",
+            "name": "Gillette Pepsi Companies Inc.",
+            "cov_id": "I0000110",
+            "cov_name": "PEPSICO",
+            "status": "Active",
+            "relationships": 1
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WWXLWL8RG5N4CZOQ059",
+            "name": "Pepsi-Cola Bottling Co of Central Virginia",
+            "cov_id": "I0000110",
+            "cov_name": "PEPSICO",
+            "status": "Active",
+            "relationships": 1
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WWVCH7771BKH5C2CCBY",
+            "name": "Pepsico Inc.",
+            "cov_id": "I0000110",
+            "cov_name": "PEPSICO",
+            "status": "Active",
+            "relationships": 35
+          }
+        ]
+      },
+      "smartcare": {
+        "gbg_id": null,
+        "gbg_name": null,
+        "source": null,
+        "selection_status": "review"
+      },
+      "review_flags": [
+        "smartcare_gbg_unresolved:review",
+        "isc_enterprise_manual"
+      ]
+    },
+    {
+      "account_name": "SEMPRA ENERGY",
+      "coverage_id": "I0008524",
+      "coverage_type": "I-Tier (Major Enterprise)",
+      "gainsight_coverage_name": "SEMPRA ENERGY",
+      "isc": {
+        "live_id": "0013h00000w1c68AAA",
+        "live_name": "SEMPRA ENERGY-US",
+        "account_number": "DB000QWM-US",
+        "db2_id": "0010500000KNvjjAAD",
+        "db2_name": "SEMPRA ENERGY-US",
+        "db2_enterprise_id": "0010500000FrFD8AAN",
+        "db2_enterprise_name": "SEMPRA ENERGY-WW",
+        "db2_coverage_children": [
+          {
+            "id": "0010500000KNvjjAAD",
+            "name": "SEMPRA ENERGY-US",
+            "market": "4A"
+          }
+        ],
+        "enterprise_match_status": "matched"
+      },
+      "gainsight": {
+        "company_gsid": "1P02WPZ71GR8TFJ55WOM12DSTWWKQ80LY0QV",
+        "company_name": "SEMPRA ENERGY",
+        "relationships": 41,
+        "confidence": "high",
+        "match_basis": "isc_enterprise_name",
+        "largest_in_group": {
+          "name": "SEMPRA ENERGY",
+          "gsid": "1P02WPZ71GR8TFJ55WOM12DSTWWKQ80LY0QV",
+          "relationships": 41
+        },
+        "companies_in_group": [
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WZT2RX11N01GI95RTVU",
+            "name": "So Cal Gas Co",
+            "cov_id": "I0008524",
+            "cov_name": "SEMPRA ENERGY",
+            "status": "Active",
+            "relationships": 11
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55W7BR3ONQBEKHVYCBB6I",
+            "name": "Vistra Communications LLC",
+            "cov_id": "I0008524",
+            "cov_name": "SEMPRA ENERGY",
+            "status": "Active",
+            "relationships": 2
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WB6TOWX7YCV8WCTXEJX",
+            "name": "Vistra Corp.",
+            "cov_id": "I0008524",
+            "cov_name": "SEMPRA ENERGY",
+            "status": "Active",
+            "relationships": 8
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WOM12DSTWWKQ80LY0QV",
+            "name": "SEMPRA ENERGY",
+            "cov_id": "I0008524",
+            "cov_name": "SEMPRA ENERGY",
+            "status": "Active",
+            "relationships": 41
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WWNCOP0U7ZG4X7XL3F5",
+            "name": "Sempra",
+            "cov_id": "I0008524",
+            "cov_name": "SEMPRA ENERGY",
+            "status": "Active",
+            "relationships": 4
+          }
+        ]
+      },
+      "smartcare": {
+        "gbg_id": "21833",
+        "gbg_name": "SEMPRA ENERGY",
+        "source": "select-gbg",
+        "selection_status": "matched"
+      },
+      "review_flags": []
+    },
+    {
+      "account_name": "T-MOBILE",
+      "coverage_id": "I0000168",
+      "coverage_type": "I-Tier (Major Enterprise)",
+      "gainsight_coverage_name": "T-MOBILE",
+      "isc": {
+        "live_id": "0013h00000w1d4SAAQ",
+        "live_name": "T-MOBILE US-US",
+        "account_number": "DB000SUF-US",
+        "db2_id": "0010500000BTVwqAAH",
+        "db2_name": "T-MOBILE US-US",
+        "db2_enterprise_id": "0010500000FrMvFAAV",
+        "db2_enterprise_name": "DEUTSCHE TELEKOM AG-WW",
+        "db2_coverage_children": [
+          {
+            "id": "0010500000BTVwqAAH",
+            "name": "T-MOBILE US-US",
+            "market": "4A"
+          },
+          {
+            "id": "0010500000BTX9nAAH",
+            "name": "DEUTSCHE TELEKOM-US",
+            "market": "4A"
+          },
+          {
+            "id": "0010500000IqanaAAB",
+            "name": "T-MOBILE US-IN",
+            "market": "4A"
+          }
+        ],
+        "enterprise_match_status": "matched"
+      },
+      "gainsight": {
+        "company_gsid": "1P02WPZ71GR8TFJ55WC458MJAZM0PSBCREV6",
+        "company_name": "T-Mobile Us Inc.",
+        "relationships": 14,
+        "confidence": "high",
+        "match_basis": "isc_us_name+plans",
+        "largest_in_group": {
+          "name": "T-MOBILE US",
+          "gsid": "1P02WPZ71GR8TFJ55W1V2AFXNOLULCF3GL20",
+          "relationships": 20
+        },
+        "previous_pick": {
+          "gsid": "1P02WPZ71GR8TFJ55W9JPH6V5DUJKBG07RD3",
+          "name": "DEUTSCHE TELEKOM",
+          "plans": 0
+        },
+        "companies_in_group": [
+          {
+            "gsid": "1P02WPZ71GR8TFJ55W1V2AFXNOLULCF3GL20",
+            "name": "T-MOBILE US",
+            "cov_id": "I0000168",
+            "cov_name": "T-MOBILE",
+            "status": "Active",
+            "relationships": 20
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55W1O12SLPUQT8HXGYQGN",
+            "name": "T-Systems Inc",
+            "cov_id": "I0000168",
+            "cov_name": "T-MOBILE",
+            "status": "Active",
+            "relationships": 2
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WC458MJAZM0PSBCREV6",
+            "name": "T-Mobile Us Inc.",
+            "cov_id": "I0000168",
+            "cov_name": "T-MOBILE",
+            "status": "Active",
+            "relationships": 14
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55W9JPH6V5DUJKBG07RD3",
+            "name": "DEUTSCHE TELEKOM",
+            "cov_id": "I0000168",
+            "cov_name": "T-MOBILE",
+            "status": "Active",
+            "relationships": 5
+          }
+        ]
+      },
+      "smartcare": {
+        "gbg_id": null,
+        "gbg_name": null,
+        "source": null,
+        "selection_status": "review"
+      },
+      "review_flags": [
+        "smartcare_gbg_unresolved:review"
+      ]
+    },
+    {
+      "account_name": "UPS",
+      "coverage_id": "I0000386",
+      "coverage_type": "I-Tier (Major Enterprise)",
+      "gainsight_coverage_name": "UPS",
+      "isc": {
+        "live_id": "0013h000019FqjpAAC",
+        "live_name": "UNITED PARCEL SERVICE-US",
+        "account_number": "DB002HJJ-US",
+        "db2_id": "0010500000KNvqKAAT",
+        "db2_name": "UNITED PARCEL SERVICE-US",
+        "db2_enterprise_id": "0010500000FrOlhAAF",
+        "db2_enterprise_name": "UPS-WW",
+        "db2_coverage_children": [
+          {
+            "id": "0010500000KNvqKAAT",
+            "name": "UNITED PARCEL SERVICE-US",
+            "market": "4A"
+          }
+        ],
+        "enterprise_match_status": "matched"
+      },
+      "gainsight": {
+        "company_gsid": "1P02WPZ71GR8TFJ55WTSV67I5DSN6KYBIYHO",
+        "company_name": "United Parcel Service Inc.",
+        "relationships": 273,
+        "confidence": "high",
+        "match_basis": "plan_count_review",
+        "override_reason": "Second UPS record (27 plans) is the same client",
+        "largest_in_group": {
+          "name": "United Parcel Service Inc.",
+          "gsid": "1P02WPZ71GR8TFJ55WTSV67I5DSN6KYBIYHO",
+          "relationships": 273
+        },
+        "companies_in_group": [
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WTSV67I5DSN6KYBIYHO",
+            "name": "United Parcel Service Inc.",
+            "cov_id": "I0000386",
+            "cov_name": "UPS",
+            "status": "Active",
+            "relationships": 273
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WHQ7BV1IU19EM95BHVX",
+            "name": "UNITED PARCEL SERVICE",
+            "cov_id": "I0000386",
+            "cov_name": "UPS",
+            "status": "Active",
+            "relationships": 198
+          }
+        ],
+        "additional_companies": [
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WHQ7BV1IU19EM95BHVX",
+            "name": "UNITED PARCEL SERVICE"
+          }
+        ]
+      },
+      "smartcare": {
+        "gbg_id": "22060",
+        "gbg_name": "UPS",
+        "source": "select-gbg",
+        "selection_status": "matched"
+      },
+      "review_flags": []
+    },
+    {
+      "account_name": "ACCENTURE",
+      "coverage_id": "A0009563",
+      "coverage_type": "A-Tier (Select / Territory)",
+      "gainsight_coverage_name": "US - ACCENTURE",
+      "isc": {
+        "live_id": "0013h00000w1ayIAAQ",
+        "live_name": "ACCENTURE-US",
+        "account_number": "DB0029JM-US",
+        "db2_id": "0010500000BTV2NAAX",
+        "db2_name": "ACCENTURE-US",
+        "db2_enterprise_id": "0010500000FrEouAAF",
+        "db2_enterprise_name": "ACCENTURE-WW",
+        "db2_coverage_children": [
+          {
+            "id": "0010500000BTQu2AAH",
+            "name": "ASM RESEARCH INC-US",
+            "market": "4A"
+          },
+          {
+            "id": "0010500000BTUHNAA5",
+            "name": "P3 INGENIEURGES. MBH-US",
+            "market": "4A"
+          },
+          {
+            "id": "0010500000BTV2NAAX",
+            "name": "ACCENTURE-US",
+            "market": "4A"
+          },
+          {
+            "id": "0010500000BTVdUAAX",
+            "name": "WORKFORCE INSIGHT INC.-US",
+            "market": "4A"
+          },
+          {
+            "id": "0010500000BTXiLAAX",
+            "name": "VELOCITY TECHNOLOGY SOLUTIONS-US",
+            "market": "4A"
+          }
+        ],
+        "enterprise_match_status": "matched"
+      },
+      "gainsight": {
+        "company_gsid": "1P02WPZ71GR8TFJ55W2VX393073TAKRJQNA6",
+        "company_name": "ACCENTURE",
+        "relationships": 25,
+        "confidence": "high",
+        "match_basis": "isc_enterprise_name",
+        "largest_in_group": {
+          "name": "ACCENTURE",
+          "gsid": "1P02WPZ71GR8TFJ55W2VX393073TAKRJQNA6",
+          "relationships": 25
+        },
+        "companies_in_group": [
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WI1N0O2O176XK9PLG4Y",
+            "name": "ACCENTURE",
+            "cov_id": "A0009563",
+            "cov_name": "US - ACCENTURE",
+            "status": "Active",
+            "relationships": 1
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55W2VX393073TAKRJQNA6",
+            "name": "ACCENTURE",
+            "cov_id": "A0009563",
+            "cov_name": "US - ACCENTURE",
+            "status": "Active",
+            "relationships": 25
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WJCGHCGO47FK78OFGZ4",
+            "name": "Navisite LLC",
+            "cov_id": "A0009563",
+            "cov_name": "US - ACCENTURE",
+            "status": "Active",
+            "relationships": 2
+          }
+        ]
+      },
+      "smartcare": {
+        "gbg_id": "21768",
+        "gbg_name": "ACCENTURE",
+        "source": "select-gbg",
+        "selection_status": "matched"
+      },
+      "review_flags": []
+    },
+    {
+      "account_name": "ADOBE SYSTEMS",
+      "coverage_id": "A0009422",
+      "coverage_type": "A-Tier (Select / Territory)",
+      "gainsight_coverage_name": "US - ADOBE SYSTEMS",
+      "isc": {
+        "live_id": "0013h00000w1dGXAAY",
+        "live_name": "ADOBE SYSTEMS INC-US",
+        "account_number": "DB000034-US",
+        "db2_id": "0010500000BTTgjAAH",
+        "db2_name": "ADOBE SYSTEMS INC-US",
+        "db2_enterprise_id": "0010500000FrElsAAF",
+        "db2_enterprise_name": "ADOBE SYSTEMS INCORPORATED-WW",
+        "db2_coverage_children": [
+          {
+            "id": "0010500000BTTgjAAH",
+            "name": "ADOBE SYSTEMS INC-US",
+            "market": "4A"
+          }
+        ],
+        "enterprise_match_status": "matched"
+      },
+      "gainsight": {
+        "company_gsid": "1P02WPZ71GR8TFJ55WPOAV4U1XPY91YNG3DC",
+        "company_name": "ADOBE SYSTEMS INC",
+        "relationships": 34,
+        "confidence": "high",
+        "match_basis": "isc_enterprise_name",
+        "largest_in_group": {
+          "name": "ADOBE SYSTEMS INC",
+          "gsid": "1P02WPZ71GR8TFJ55WPOAV4U1XPY91YNG3DC",
+          "relationships": 34
+        },
+        "companies_in_group": [
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WPOAV4U1XPY91YNG3DC",
+            "name": "ADOBE SYSTEMS INC",
+            "cov_id": "A0009422",
+            "cov_name": "US - ADOBE SYSTEMS",
+            "status": "Active",
+            "relationships": 34
+          }
+        ]
+      },
+      "smartcare": {
+        "gbg_id": "42371",
+        "gbg_name": "ADOBE SYSTEMS INCORPORATED",
+        "source": "select-gbg",
+        "selection_status": "matched"
+      },
+      "review_flags": []
+    },
+    {
+      "account_name": "ALBERTSONS COMPANIES",
+      "coverage_id": "A0009555",
+      "coverage_type": "A-Tier (Select / Territory)",
+      "gainsight_coverage_name": "US - ALBERTSONS COMPANIES",
+      "isc": {
+        "live_id": "0013h00000w1e0cAAA",
+        "live_name": "ALBERTSONS COMPANIES INC-US",
+        "account_number": "DB5020KT-US",
+        "db2_id": "0010500000KNvxEAAT",
+        "db2_name": "ALBERTSONS COMPANIES INC-US",
+        "db2_enterprise_id": "0010500000FrNk7AAF",
+        "db2_enterprise_name": "ALBERTSONS COMPANIES INC-WW",
+        "db2_coverage_children": [
+          {
+            "id": "0010500000KNvxEAAT",
+            "name": "ALBERTSONS COMPANIES INC-US",
+            "market": "4A"
+          }
+        ],
+        "enterprise_match_status": "matched"
+      },
+      "gainsight": {
+        "company_gsid": "1P02WPZ71GR8TFJ55W692FR1LQHLGFYXIY54",
+        "company_name": "ALBERTSONS COMPANIES INC",
+        "relationships": 25,
+        "confidence": "high",
+        "match_basis": "isc_enterprise_name",
+        "largest_in_group": {
+          "name": "ALBERTSONS COMPANIES INC",
+          "gsid": "1P02WPZ71GR8TFJ55W692FR1LQHLGFYXIY54",
+          "relationships": 25
+        },
+        "companies_in_group": [
+          {
+            "gsid": "1P02WPZ71GR8TFJ55W692FR1LQHLGFYXIY54",
+            "name": "ALBERTSONS COMPANIES INC",
+            "cov_id": "A0009555",
+            "cov_name": "US - ALBERTSONS COMPANIES",
+            "status": "Active",
+            "relationships": 25
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55W52R3E2ILEYUMBJQ0MT",
+            "name": "The Albertsons Companies Foundation",
+            "cov_id": "A0009555",
+            "cov_name": "US - ALBERTSONS COMPANIES",
+            "status": "Active",
+            "relationships": 14
+          }
+        ]
+      },
+      "smartcare": {
+        "gbg_id": "19841",
+        "gbg_name": "ALBERTSONS COMPANIES INC",
+        "source": "select-gbg",
+        "selection_status": "matched"
+      },
+      "review_flags": []
+    },
+    {
+      "account_name": "AMAZON",
+      "coverage_id": "A0009428",
+      "coverage_type": "A-Tier (Select / Territory)",
+      "gainsight_coverage_name": "US - AMAZON",
+      "isc": {
+        "live_id": "0013h000019FqegAAC",
+        "live_name": "AMAZON.COM INC-US",
+        "account_number": "DB00007D-US",
+        "db2_id": "0010500000KNvfYAAT",
+        "db2_name": "AMAZON.COM INC-US",
+        "db2_enterprise_id": "0010500000FrGEgAAN",
+        "db2_enterprise_name": "AMAZON COM INC.-WW",
+        "db2_coverage_children": [
+          {
+            "id": "0010500000KNvfYAAT",
+            "name": "AMAZON.COM INC-US",
+            "market": "4A"
+          }
+        ],
+        "enterprise_match_status": "matched"
+      },
+      "gainsight": {
+        "company_gsid": "1P02WPZ71GR8TFJ55WN3WS6KMMFYHMSNM6N3",
+        "company_name": "Amazon.com Inc.",
+        "relationships": 24,
+        "confidence": "high",
+        "match_basis": "plan_count_review",
+        "override_reason": "AMAZON.COM INC (12 plans) is the same client; the .ca record is non-US and skipped",
+        "largest_in_group": {
+          "name": "Amazon.com Inc.",
+          "gsid": "1P02WPZ71GR8TFJ55WN3WS6KMMFYHMSNM6N3",
+          "relationships": 24
+        },
+        "companies_in_group": [
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WN3WS6KMMFYHMSNM6N3",
+            "name": "Amazon.com Inc.",
+            "cov_id": "A0009428",
+            "cov_name": "US - AMAZON",
+            "status": "Active",
+            "relationships": 24
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55W75J9EJD9LAJS7WBHZA",
+            "name": "Amazon.com, Inc.",
+            "cov_id": "A0009428",
+            "cov_name": "US - AMAZON",
+            "status": "Active",
+            "relationships": 2
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WR6THB69YW1CKY1TQ5H",
+            "name": "AMAZON FLEX",
+            "cov_id": "A0009428",
+            "cov_name": "US - AMAZON",
+            "status": "Active",
+            "relationships": 1
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55W7M0711PD9YGDYQE05T",
+            "name": "Zoox Inc.",
+            "cov_id": "A0009428",
+            "cov_name": "US - AMAZON",
+            "status": "Active",
+            "relationships": 3
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WXJEQW3H6LKLQYAGN49",
+            "name": "Amazon Adventures LLC",
+            "cov_id": "A0009428",
+            "cov_name": "US - AMAZON",
+            "status": "Active",
+            "relationships": 1
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55W8W6JTIJJUYKDZHG1V9",
+            "name": "AMAZON.COM INC",
+            "cov_id": "A0009428",
+            "cov_name": "US - AMAZON",
+            "status": "Active",
+            "relationships": 21
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55W80GK14JAMJ853V05JY",
+            "name": "Amazon.com.ca Inc.",
+            "cov_id": "A0009428",
+            "cov_name": "US - AMAZON",
+            "status": "Active",
+            "relationships": 1
+          }
+        ],
+        "additional_companies": [
+          {
+            "gsid": "1P02WPZ71GR8TFJ55W8W6JTIJJUYKDZHG1V9",
+            "name": "AMAZON.COM INC"
+          }
+        ]
+      },
+      "smartcare": {
+        "gbg_id": "21077",
+        "gbg_name": "AMAZON COM INC.",
+        "source": "select-gbg",
+        "selection_status": "matched"
+      },
+      "review_flags": []
+    },
+    {
+      "account_name": "AMERICAN AIRLINES",
+      "coverage_id": "A0001824",
+      "coverage_type": "A-Tier (Select / Territory)",
+      "gainsight_coverage_name": "US - AMERICAN AIRLINES",
+      "isc": {
+        "live_id": "0013h00000w1UniAAE",
+        "live_name": "AMERICAN AIRLINES INC-US",
+        "account_number": "DB003WD8-US",
+        "db2_id": "0010500000BTQHKAA5",
+        "db2_name": "AMERICAN AIRLINES INC-US",
+        "db2_enterprise_id": "0010500000FrI3sAAF",
+        "db2_enterprise_name": "AMERICAN AIRLINES INC.-WW",
+        "db2_coverage_children": [
+          {
+            "id": "0010500000BTQHKAA5",
+            "name": "AMERICAN AIRLINES INC-US",
+            "market": "4A"
+          }
+        ],
+        "enterprise_match_status": "matched"
+      },
+      "gainsight": {
+        "company_gsid": "1P02WPZ71GR8TFJ55WR1RHGJ2B5N59OPTPOZ",
+        "company_name": "American Airlines Group Inc.",
+        "relationships": 17,
+        "confidence": "high",
+        "match_basis": "plan_count_review",
+        "override_reason": "AMERICAN AIRLINES INC (1 plan) is the same client",
+        "largest_in_group": {
+          "name": "American Airlines Group Inc.",
+          "gsid": "1P02WPZ71GR8TFJ55WR1RHGJ2B5N59OPTPOZ",
+          "relationships": 17
+        },
+        "companies_in_group": [
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WP1G5N1N2JRXB9AEFKB",
+            "name": "AMERICAN AIRLINES INC",
+            "cov_id": "A0001824",
+            "cov_name": "US - AMERICAN AIRLINES",
+            "status": "Active",
+            "relationships": 9
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WR1RHGJ2B5N59OPTPOZ",
+            "name": "American Airlines Group Inc.",
+            "cov_id": "A0001824",
+            "cov_name": "US - AMERICAN AIRLINES",
+            "status": "Active",
+            "relationships": 17
+          }
+        ],
+        "additional_companies": [
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WP1G5N1N2JRXB9AEFKB",
+            "name": "AMERICAN AIRLINES INC"
+          }
+        ]
+      },
+      "smartcare": {
+        "gbg_id": "33855",
+        "gbg_name": "AMERICAN AIRLINES INC.",
+        "source": "select-gbg",
+        "selection_status": "matched"
+      },
+      "review_flags": []
+    },
+    {
+      "account_name": "AMERICAN ELECTRIC POWER",
+      "coverage_id": "A0003900",
+      "coverage_type": "A-Tier (Select / Territory)",
+      "gainsight_coverage_name": "US - AMERICAN ELECTRIC POWER",
+      "isc": {
+        "live_id": "0013h00000w1cnSAAQ",
+        "live_name": "AEP-US",
+        "account_number": "DB000436-US",
+        "db2_id": "0010500000BTRK1AAP",
+        "db2_name": "AEP-US",
+        "db2_enterprise_id": "0010500000FrIMcAAN",
+        "db2_enterprise_name": "AMERICAN ELECTRIC POWER-WW",
+        "db2_coverage_children": [
+          {
+            "id": "0010500000BTRK1AAP",
+            "name": "AEP-US",
+            "market": "4A"
+          }
+        ],
+        "enterprise_match_status": "matched"
+      },
+      "gainsight": {
+        "company_gsid": "1P02WPZ71GR8TFJ55WRXNZ6I3UOI9LD4SEIC",
+        "company_name": "American Electric Power Company Inc.",
+        "relationships": 56,
+        "confidence": "high",
+        "match_basis": "isc_enterprise_name",
+        "largest_in_group": {
+          "name": "American Electric Power Company Inc.",
+          "gsid": "1P02WPZ71GR8TFJ55WRXNZ6I3UOI9LD4SEIC",
+          "relationships": 56
+        },
+        "companies_in_group": [
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WRXNZ6I3UOI9LD4SEIC",
+            "name": "American Electric Power Company Inc.",
+            "cov_id": "A0003900",
+            "cov_name": "US - AMERICAN ELECTRIC POWER",
+            "status": "Active",
+            "relationships": 56
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55W4NG9MLNPP52D8NH3LW",
+            "name": "AEP",
+            "cov_id": "A0003900",
+            "cov_name": "US - AMERICAN ELECTRIC POWER",
+            "status": "Active",
+            "relationships": 29
+          }
+        ]
+      },
+      "smartcare": {
+        "gbg_id": "31807",
+        "gbg_name": "AMERICAN ELECTRIC POWER",
+        "source": "select-gbg",
+        "selection_status": "matched"
+      },
+      "review_flags": []
+    },
+    {
+      "account_name": "APPLE",
+      "coverage_id": "A0009075",
+      "coverage_type": "A-Tier (Select / Territory)",
+      "gainsight_coverage_name": "US - APPLE",
+      "isc": {
+        "live_id": "0013h00000w1c01AAA",
+        "live_name": "APPLE INC-US",
+        "account_number": "DB00064H-US",
+        "db2_id": "0010500000BTVflAAH",
+        "db2_name": "APPLE INC-US",
+        "db2_enterprise_id": "0010500000FrMPtAAN",
+        "db2_enterprise_name": "APPLE-WW",
+        "db2_coverage_children": [
+          {
+            "id": "0010500000BTVflAAH",
+            "name": "APPLE INC-US",
+            "market": "4A"
+          }
+        ],
+        "enterprise_match_status": "matched"
+      },
+      "gainsight": {
+        "company_gsid": "1P02WPZ71GR8TFJ55W0BHVHTRA6AJ0WRHNAX",
+        "company_name": "Apple Inc.",
+        "relationships": 5,
+        "confidence": "high",
+        "match_basis": "isc_us_name+plans",
+        "largest_in_group": {
+          "name": "Apple Inc.",
+          "gsid": "1P02WPZ71GR8TFJ55W0BHVHTRA6AJ0WRHNAX",
+          "relationships": 5
+        },
+        "previous_pick": {
+          "gsid": "1P02WPZ71GR8TFJ55W4S01KSBP9MA7CZNR05",
+          "name": "APPLE INC",
+          "plans": 0
+        },
+        "companies_in_group": [
+          {
+            "gsid": "1P02WPZ71GR8TFJ55W4S01KSBP9MA7CZNR05",
+            "name": "APPLE INC",
+            "cov_id": "A0009075",
+            "cov_name": "US - APPLE",
+            "status": "Active",
+            "relationships": 3
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55W0BHVHTRA6AJ0WRHNAX",
+            "name": "Apple Inc.",
+            "cov_id": "T0015711",
+            "cov_name": null,
+            "status": "Active",
+            "relationships": 5,
+            "added_manually": true
+          }
+        ]
+      },
+      "smartcare": {
+        "gbg_id": "10710",
+        "gbg_name": "APPLE",
+        "source": "select-gbg",
+        "selection_status": "matched"
+      },
+      "review_flags": []
+    },
+    {
+      "account_name": "ATOS",
+      "coverage_id": "A0009076",
+      "coverage_type": "A-Tier (Select / Territory)",
+      "gainsight_coverage_name": "US - ATOS",
+      "isc": {
+        "live_id": "0013h00000w1foQAAQ",
+        "live_name": "ATOS-US",
+        "account_number": "DB002SJB-US",
+        "db2_id": "0010500000BTZ6MAAX",
+        "db2_name": "ATOS-US",
+        "db2_enterprise_id": "0010500000FrPjbAAF",
+        "db2_enterprise_name": "ATOS-WW",
+        "db2_coverage_children": [
+          {
+            "id": "0010500000BTS2GAAX",
+            "name": "BULL LTDA-US",
+            "market": "4A"
+          },
+          {
+            "id": "0010500000BTZ6MAAX",
+            "name": "ATOS-US",
+            "market": "4A"
+          }
+        ],
+        "enterprise_match_status": "matched"
+      },
+      "gainsight": {
+        "company_gsid": "1P02WPZ71GR8TFJ55WD66W788EACWJCB3HZI",
+        "company_name": "ATOS",
+        "relationships": 241,
+        "confidence": "high",
+        "match_basis": "isc_enterprise_name",
+        "largest_in_group": {
+          "name": "ATOS",
+          "gsid": "1P02WPZ71GR8TFJ55WD66W788EACWJCB3HZI",
+          "relationships": 241
+        },
+        "companies_in_group": [
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WD66W788EACWJCB3HZI",
+            "name": "ATOS",
+            "cov_id": "A0009076",
+            "cov_name": "US - ATOS",
+            "status": "Active",
+            "relationships": 241
+          }
+        ]
+      },
+      "smartcare": {
+        "gbg_id": "33526",
+        "gbg_name": "ATOS",
+        "source": "select-gbg",
+        "selection_status": "matched"
+      },
+      "review_flags": []
+    },
+    {
+      "account_name": "BETANXT",
+      "coverage_id": "A0009088",
+      "coverage_type": "A-Tier (Select / Territory)",
+      "gainsight_coverage_name": "US - BETANXT",
+      "isc": {
+        "live_id": "0013h000026BT8dAAG",
+        "live_name": "BETANXT-US",
+        "account_number": "DB5034SH-US",
+        "db2_id": "0010500000BSvMIAA1",
+        "db2_name": "BETANXT-US",
+        "db2_enterprise_id": "0010500000j4DwKAAU",
+        "db2_enterprise_name": "BETANXT-WW",
+        "db2_coverage_children": [
+          {
+            "id": "0010500000BSvMIAA1",
+            "name": "BETANXT-US",
+            "market": "4A"
+          }
+        ],
+        "enterprise_match_status": "matched"
+      },
+      "gainsight": {
+        "company_gsid": "1P02WPZ71GR8TFJ55WRIXK6VQDOBRWUFI61N",
+        "company_name": "Betanxt Inc.",
+        "relationships": 89,
+        "confidence": "high",
+        "match_basis": "isc_enterprise_name",
+        "largest_in_group": {
+          "name": "Betanxt Inc.",
+          "gsid": "1P02WPZ71GR8TFJ55WRIXK6VQDOBRWUFI61N",
+          "relationships": 89
+        },
+        "companies_in_group": [
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WRIXK6VQDOBRWUFI61N",
+            "name": "Betanxt Inc.",
+            "cov_id": "A0009088",
+            "cov_name": "US - BETANXT",
+            "status": "Active",
+            "relationships": 89
+          }
+        ]
+      },
+      "smartcare": {
+        "gbg_id": "145887",
+        "gbg_name": "BETANXT",
+        "source": "select-gbg",
+        "selection_status": "matched"
+      },
+      "review_flags": []
+    },
+    {
+      "account_name": "BOEING",
+      "coverage_id": "A0001871",
+      "coverage_type": "A-Tier (Select / Territory)",
+      "gainsight_coverage_name": "US - BOEING",
+      "isc": {
+        "live_id": "0013h00000w1di4AAA",
+        "live_name": "THE BOEING CO-US",
+        "account_number": "DB0006HE-US",
+        "db2_id": "0010500000BTQMdAAP",
+        "db2_name": "THE BOEING CO-US",
+        "db2_enterprise_id": "0010500000FrF7LAAV",
+        "db2_enterprise_name": "THE BOEING COMPANY-WW",
+        "db2_coverage_children": [
+          {
+            "id": "0010500000BTQMdAAP",
+            "name": "THE BOEING CO-US",
+            "market": "4A"
+          }
+        ],
+        "enterprise_match_status": "matched"
+      },
+      "gainsight": {
+        "company_gsid": "1P02WPZ71GR8TFJ55WA9M8JMW4TH80VYDA89",
+        "company_name": "The Boeing Company",
+        "relationships": null,
+        "confidence": "high",
+        "match_basis": "plan_count_review",
+        "override_reason": "Distribution subsidiary (2 plans) was the only company in the coverage group; The Boeing Company has 6 plans",
+        "previous_pick_auto": {
+          "gsid": "1P02WPZ71GR8TFJ55WE9ZLTTK7N1S27A4S1A",
+          "name": "Boeing Distribution Services Inc."
+        },
+        "largest_in_group": {
+          "name": "Boeing Distribution Services Inc.",
+          "gsid": "1P02WPZ71GR8TFJ55WE9ZLTTK7N1S27A4S1A",
+          "relationships": 3
+        },
+        "companies_in_group": [
+          {
+            "gsid": "1P02WPZ71GR8TFJ55W453QTUQUGJXOM3XRWL",
+            "name": "Aviall Inc.",
+            "cov_id": "A0001871",
+            "cov_name": "US - BOEING",
+            "status": "Active",
+            "relationships": 1
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WE9ZLTTK7N1S27A4S1A",
+            "name": "Boeing Distribution Services Inc.",
+            "cov_id": "A0001871",
+            "cov_name": "US - BOEING",
+            "status": "Active",
+            "relationships": 3
+          }
+        ],
+        "additional_companies": [
+          {
+            "gsid": "1P02WPZ71GR8TFJ55W0KX5IZKD9PQWQ11TUO",
+            "name": "THE BOEING CO"
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WUWIL7768OK5I5R8EZ4",
+            "name": "THE BOEING CO"
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WE9ZLTTK7N1S27A4S1A",
+            "name": "Boeing Distribution Services Inc."
+          }
+        ]
+      },
+      "smartcare": {
+        "gbg_id": "31900",
+        "gbg_name": "THE BOEING COMPANY",
+        "source": "select-gbg",
+        "selection_status": "matched"
+      },
+      "review_flags": []
+    },
+    {
+      "account_name": "CARDINAL HEALTH",
+      "coverage_id": "A0004434",
+      "coverage_type": "A-Tier (Select / Territory)",
+      "gainsight_coverage_name": "US - CARDINAL HEALTH",
+      "isc": {
+        "live_id": "0013h00000w1csEAAQ",
+        "live_name": "CARDINAL HEALTH INC-US",
+        "account_number": "DB00054N-US",
+        "db2_id": "0010500000BTQTjAAP",
+        "db2_name": "CARDINAL HEALTH INC-US",
+        "db2_enterprise_id": "0010500000FrK0fAAF",
+        "db2_enterprise_name": "CARDINAL HEALTH CORPORATION-WW",
+        "db2_coverage_children": [
+          {
+            "id": "0010500000BTQTjAAP",
+            "name": "CARDINAL HEALTH INC-US",
+            "market": "4A"
+          }
+        ],
+        "enterprise_match_status": "matched"
+      },
+      "gainsight": {
+        "company_gsid": "1P02WPZ71GR8TFJ55WML8RFV2JKKSRYKIJZZ",
+        "company_name": "Cardinal Health Inc.",
+        "relationships": 6,
+        "confidence": "high",
+        "match_basis": "isc_us_name+plans",
+        "largest_in_group": {
+          "name": "Cardinal Health Inc.",
+          "gsid": "1P02WPZ71GR8TFJ55WML8RFV2JKKSRYKIJZZ",
+          "relationships": 6
+        },
+        "previous_pick": {
+          "gsid": "1P02WPZ71GR8TFJ55WCZLT4202HX1XJMF8HU",
+          "name": "The F Dohmen Co",
+          "plans": 0
+        },
+        "companies_in_group": [
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WCZLT4202HX1XJMF8HU",
+            "name": "The F Dohmen Co",
+            "cov_id": "A0004434",
+            "cov_name": "US - CARDINAL HEALTH",
+            "status": "Active",
+            "relationships": 2
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WML8RFV2JKKSRYKIJZZ",
+            "name": "Cardinal Health Inc.",
+            "cov_id": "T0016896",
+            "cov_name": null,
+            "status": "Active",
+            "relationships": 6,
+            "added_manually": true
+          }
+        ]
+      },
+      "smartcare": {
+        "gbg_id": "10677",
+        "gbg_name": "CARDINAL HEALTH CORPORATION",
+        "source": "select-gbg",
+        "selection_status": "matched"
+      },
+      "review_flags": []
+    },
+    {
+      "account_name": "CATERPILLAR",
+      "coverage_id": "A0001865",
+      "coverage_type": "A-Tier (Select / Territory)",
+      "gainsight_coverage_name": "US - CATERPILLAR",
+      "isc": {
+        "live_id": "0013h00000w1dmlAAA",
+        "live_name": "CATERPILLAR INC-US",
+        "account_number": "DB000100-US",
+        "db2_id": "0010500000BTQWHAA5",
+        "db2_name": "CATERPILLAR INC-US",
+        "db2_enterprise_id": "0010500000FrGqlAAF",
+        "db2_enterprise_name": "CATERPILLAR INC.-WW",
+        "db2_coverage_children": [
+          {
+            "id": "0010500000BTZGFAA5",
+            "name": "OHIO MACHINERY CO-US",
+            "market": "4A"
+          },
+          {
+            "id": "0010500000BTQTgAAP",
+            "name": "CAROLINA TRACTOR & EQUIP-US",
+            "market": "4A"
+          },
+          {
+            "id": "0010500000BTQmWAAX",
+            "name": "JOHN FABICK TRACTRO CO-US",
+            "market": "4A"
+          },
+          {
+            "id": "0010500000BTR16AAH",
+            "name": "ALBAN TRACTOR CO INC-US",
+            "market": "4A"
+          },
+          {
+            "id": "0010500000BTRPoAAP",
+            "name": "DEAN OPERATIONS INC-US",
+            "market": "4A"
+          },
+          {
+            "id": "0010500000BTRXGAA5",
+            "name": "THE HALTON CO-US",
+            "market": "4A"
+          },
+          {
+            "id": "0010500000BTRawAAH",
+            "name": "BECKWITH MACHINERY CO-US",
+            "market": "4A"
+          },
+          {
+            "id": "0010500000BTRd6AAH",
+            "name": "YANCEY BROS CO-US",
+            "market": "4A"
+          },
+          {
+            "id": "0010500000BTReTAAX",
+            "name": "HOLT COMPANY OF TEXAS-US",
+            "market": "4A"
+          },
+          {
+            "id": "0010500000BTRiOAAX",
+            "name": "CLAAS OMAHA LLC-US",
+            "market": "4A"
+          },
+          {
+            "id": "0010500000BTRqIAAX",
+            "name": "GILES & RANSOME INC-US",
+            "market": "4A"
+          },
+          {
+            "id": "0010500000BTS2RAAX",
+            "name": "EMPIRE SOUTHWEST LLC-US",
+            "market": "4A"
+          },
+          {
+            "id": "0010500000BTS51AAH",
+            "name": "GREGORY POOLE EQUIPMENT CO-US",
+            "market": "4A"
+          },
+          {
+            "id": "0010500000BTSDUAA5",
+            "name": "STOWERS MACHINERY CORP-US",
+            "market": "4A"
+          },
+          {
+            "id": "0010500000BTSkJAAX",
+            "name": "HARNISH GROUP-US",
+            "market": "4A"
+          },
+          {
+            "id": "0010500000BTSrTAAX",
+            "name": "RING POWER CORP-US",
+            "market": "4A"
+          },
+          {
+            "id": "0010500000BTSzuAAH",
+            "name": "CLEVELAND BROS CAT-US",
+            "market": "4A"
+          },
+          {
+            "id": "0010500000BTT3bAAH",
+            "name": "QUINN CO-US",
+            "market": "4A"
+          },
+          {
+            "id": "0010500000BTTWUAA5",
+            "name": "WAGNER EQUIPMENT CO-US",
+            "market": "4A"
+          },
+          {
+            "id": "0010500000BTTp7AAH",
+            "name": "THOMPSON MACHINERY COMMERCE-US",
+            "market": "4A"
+          },
+          {
+            "id": "0010500000BTTvWAAX",
+            "name": "DARR EQUIPMENT CO-US",
+            "market": "4A"
+          },
+          {
+            "id": "0010500000BTUSDAA5",
+            "name": "H O PENN MACHINERY CO-US",
+            "market": "4A"
+          },
+          {
+            "id": "0010500000BTUd6AAH",
+            "name": "TRACTOR & EQUIPMENT CO-US",
+            "market": "4A"
+          },
+          {
+            "id": "0010500000BTVIaAAP",
+            "name": "SOUTHWORTH-MILTON INC-US",
+            "market": "4A"
+          },
+          {
+            "id": "0010500000BTVScAAP",
+            "name": "ZIEGLER CAT-US",
+            "market": "4A"
+          },
+          {
+            "id": "0010500000BTWJUAA5",
+            "name": "WARREN POWER & MACHINERY-US",
+            "market": "4A"
+          },
+          {
+            "id": "0010500000BTWWFAA5",
+            "name": "BUTLER MACHINERY CO-US",
+            "market": "4A"
+          },
+          {
+            "id": "0010500000BTWctAAH",
+            "name": "FOLEY INC-US",
+            "market": "4A"
+          },
+          {
+            "id": "0010500000BTXojAAH",
+            "name": "PUCKETT MACHINERY CO-US",
+            "market": "4A"
+          },
+          {
+            "id": "0010500000BTYD3AAP",
+            "name": "WESTERN STATES EQUIPMENT-US",
+            "market": "4A"
+          },
+          {
+            "id": "0010500000BTXdjAAH",
+            "name": "CASHMAN EQUIPMENT-US",
+            "market": "4A"
+          },
+          {
+            "id": "0010500000BTS0vAAH",
+            "name": "HOLT OF CALIFORNIA-US",
+            "market": "4A"
+          },
+          {
+            "id": "0010500000BTYk4AAH",
+            "name": "WYOMING MACHINERY CO-US",
+            "market": "4A"
+          },
+          {
+            "id": "0010500000BTQWHAA5",
+            "name": "CATERPILLAR INC-US",
+            "market": "4A"
+          },
+          {
+            "id": "0010500000BTS2oAAH",
+            "name": "LOUISIANA MACHINERY CO-US",
+            "market": "4A"
+          },
+          {
+            "id": "0010500000BTQYKAA5",
+            "name": "BLANCHARD MACHINERY CO-US",
+            "market": "4A"
+          },
+          {
+            "id": "0010500000BTVQqAAP",
+            "name": "HAWTHORNE MACHINERY CO-US",
+            "market": "4A"
+          },
+          {
+            "id": "0010500000BTaSJAA1",
+            "name": "THOMPSON TRACTOR CO INC-US",
+            "market": "4A"
+          },
+          {
+            "id": "0010500000BTTMFAA5",
+            "name": "MARTIN TRACTOR CO INC-US",
+            "market": "4A"
+          },
+          {
+            "id": "0010500000BTQORAA5",
+            "name": "WHEELER MACHINERY CO-US",
+            "market": "4A"
+          },
+          {
+            "id": "0010500000BTYVbAAP",
+            "name": "JA RIGGS TRACTOR CO-US",
+            "market": "4A"
+          },
+          {
+            "id": "0010500000BTTzgAAH",
+            "name": "JOHNSON MACHINERY CO-US",
+            "market": "4A"
+          },
+          {
+            "id": "0010500000BTSBMAA5",
+            "name": "PATTEN INDUSTRIES INC-US",
+            "market": "4A"
+          },
+          {
+            "id": "0010500000BTQtaAAH",
+            "name": "MACALLISTER MACHINERY CO-US",
+            "market": "4A"
+          },
+          {
+            "id": "0010500000BTSY6AAP",
+            "name": "BOYD COMPANY, LLC-US",
+            "market": "4A"
+          }
+        ],
+        "enterprise_match_status": "matched"
+      },
+      "gainsight": {
+        "company_gsid": "1P02WPZ71GR8TFJ55WXUYTT16FRJTNVCEAL3",
+        "company_name": "Caterpillar Inc.",
+        "relationships": 60,
+        "confidence": "high",
+        "match_basis": "isc_enterprise_name",
+        "largest_in_group": {
+          "name": "Caterpillar Inc.",
+          "gsid": "1P02WPZ71GR8TFJ55WXUYTT16FRJTNVCEAL3",
+          "relationships": 60
+        },
+        "companies_in_group": [
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WCNT2AT0Y08UH26ME0Z",
+            "name": "Warren Power & Machinery Inc.",
+            "cov_id": "A0001865",
+            "cov_name": "US - CATERPILLAR",
+            "status": "Active",
+            "relationships": 1
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55W8XGPZZ2BKVHGCOSU77",
+            "name": "Peterson Holding Company",
+            "cov_id": "A0001865",
+            "cov_name": "US - CATERPILLAR",
+            "status": "Active",
+            "relationships": 1
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WPXQ1C0TL8UL6TOSVR7",
+            "name": "Yancey Bros. Co.",
+            "cov_id": "A0001865",
+            "cov_name": "US - CATERPILLAR",
+            "status": "Active",
+            "relationships": 1
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WDC6NO674TRM8BEDJ0L",
+            "name": "N C Machinery Co",
+            "cov_id": "A0001865",
+            "cov_name": "US - CATERPILLAR",
+            "status": "Active",
+            "relationships": 1
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WK9LSUXVFO73UVO88HC",
+            "name": "JOHN FABICK TRACTRO CO",
+            "cov_id": "A0001865",
+            "cov_name": "US - CATERPILLAR",
+            "status": "Active",
+            "relationships": 3
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WPUEKC6E20R76DQ7G4P",
+            "name": "Macallister Machinery Co Inc",
+            "cov_id": "A0001865",
+            "cov_name": "US - CATERPILLAR",
+            "status": "Active",
+            "relationships": 1
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WPKW3HE8EXOP0O2834W",
+            "name": "Wheeler Machinery Co.",
+            "cov_id": "A0001865",
+            "cov_name": "US - CATERPILLAR",
+            "status": "Active",
+            "relationships": 1
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55W97NNSYYFWFD5P658GQ",
+            "name": "RING POWER CORP",
+            "cov_id": "A0001865",
+            "cov_name": "US - CATERPILLAR",
+            "status": "Active",
+            "relationships": 1
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WJIVJS5014LUQPCLZVS",
+            "name": "CATERPILLAR INC",
+            "cov_id": "A0001865",
+            "cov_name": "US - CATERPILLAR",
+            "status": "Active",
+            "relationships": 7
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WD8V8RBLC17XA13HNP2",
+            "name": "John Fabick Tractor Company",
+            "cov_id": "A0001865",
+            "cov_name": "US - CATERPILLAR",
+            "status": "Active",
+            "relationships": 1
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WF7CU1P8WK9SLSG8G4N",
+            "name": "Louisiana Machinery Company LLC",
+            "cov_id": "A0001865",
+            "cov_name": "US - CATERPILLAR",
+            "status": "Active",
+            "relationships": 1
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WT4YZ3JCLHY0TH1RM3S",
+            "name": "Puckett Machinery Company",
+            "cov_id": "A0001865",
+            "cov_name": "US - CATERPILLAR",
+            "status": "Active",
+            "relationships": 1
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WCZ2EYATKASS2DUSNBN",
+            "name": "Progress Rail Services Corporation",
+            "cov_id": "A0001865",
+            "cov_name": "US - CATERPILLAR",
+            "status": "Active",
+            "relationships": 1
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WB4OH1ZKTT7CFIY37YD",
+            "name": "Ohio Machinery Co.",
+            "cov_id": "A0001865",
+            "cov_name": "US - CATERPILLAR",
+            "status": "Active",
+            "relationships": 1
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55W8NYFXRNA2LCG2AITR9",
+            "name": "Wagner Equipment Co.",
+            "cov_id": "A0001865",
+            "cov_name": "US - CATERPILLAR",
+            "status": "Active",
+            "relationships": 1
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55W99P78EHMTBLO56F06U",
+            "name": "Holt of California",
+            "cov_id": "A0001865",
+            "cov_name": "US - CATERPILLAR",
+            "status": "Active",
+            "relationships": 4
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WXUYTT16FRJTNVCEAL3",
+            "name": "Caterpillar Inc.",
+            "cov_id": "A0001865",
+            "cov_name": "US - CATERPILLAR",
+            "status": "Active",
+            "relationships": 60
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55W0JM40UYT6KJ5VTYDZO",
+            "name": "Tangent Energy Solutions Inc.",
+            "cov_id": "A0001865",
+            "cov_name": "US - CATERPILLAR",
+            "status": "Active",
+            "relationships": 1
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WF1C51WJ1ZFTGTSA395",
+            "name": "Carolina 1926 LLC",
+            "cov_id": "A0001865",
+            "cov_name": "US - CATERPILLAR",
+            "status": "Active",
+            "relationships": 1
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55W7AWHQI2KS1JIAKK6FH",
+            "name": "Butler Machinery Company",
+            "cov_id": "A0001865",
+            "cov_name": "US - CATERPILLAR",
+            "status": "Active",
+            "relationships": 1
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WKWAO122DTJDGPB5V57",
+            "name": "Thompson Machinery Commerce Corporation",
+            "cov_id": "A0001865",
+            "cov_name": "US - CATERPILLAR",
+            "status": "Active",
+            "relationships": 4
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55W4BR05GA6XFZRHXV5ZW",
+            "name": "Wyoming Machinery Company",
+            "cov_id": "A0001865",
+            "cov_name": "US - CATERPILLAR",
+            "status": "Active",
+            "relationships": 2
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WT6TFDGLL16SHYKRYFH",
+            "name": "Stowers Machinery Corporation",
+            "cov_id": "A0001865",
+            "cov_name": "US - CATERPILLAR",
+            "status": "Active",
+            "relationships": 1
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55W0JWHHNGUXQZLQMKXJZ",
+            "name": "Empire Southwest LLC",
+            "cov_id": "A0001865",
+            "cov_name": "US - CATERPILLAR",
+            "status": "Active",
+            "relationships": 1
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WVDT67XV39C559Z821R",
+            "name": "Darr Equipment LP",
+            "cov_id": "A0001865",
+            "cov_name": "US - CATERPILLAR",
+            "status": "Active",
+            "relationships": 1
+          }
+        ]
+      },
+      "smartcare": {
+        "gbg_id": "10540",
+        "gbg_name": "CATERPILLAR INC.",
+        "source": "select-gbg",
+        "selection_status": "matched"
+      },
+      "review_flags": []
+    },
+    {
+      "account_name": "CDW LOGISTICS",
+      "coverage_id": "A0009426",
+      "coverage_type": "A-Tier (Select / Territory)",
+      "gainsight_coverage_name": "US - CDW LOGISTICS",
+      "isc": {
+        "live_id": "0013h00000w1cQ8AAI",
+        "live_name": "CDW LOGISTICS INC-US",
+        "account_number": "DB0004WP-US",
+        "db2_id": "0010500000BTQZXAA5",
+        "db2_name": "CDW LOGISTICS INC-US",
+        "db2_enterprise_id": "0010500000FrGwQAAV",
+        "db2_enterprise_name": "CDW LOGISTICS INC-WW",
+        "db2_coverage_children": [
+          {
+            "id": "0010500000Iqgy9AAB",
+            "name": "CDW LOGISTICS INC-RO",
+            "market": "4A"
+          },
+          {
+            "id": "0010500000BTQZXAA5",
+            "name": "CDW LOGISTICS INC-US",
+            "market": "4A"
+          }
+        ],
+        "enterprise_match_status": "matched"
+      },
+      "gainsight": {
+        "company_gsid": "1P02WPZ71GR8TFJ55WMZJZJ14THS5FJLJVGR",
+        "company_name": "CDW LOGISTICS INC",
+        "relationships": 67,
+        "confidence": "high",
+        "match_basis": "isc_enterprise_name",
+        "largest_in_group": {
+          "name": "CDW LOGISTICS INC",
+          "gsid": "1P02WPZ71GR8TFJ55WMZJZJ14THS5FJLJVGR",
+          "relationships": 67
+        },
+        "companies_in_group": [
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WSQ21J3MEYE5YGMD0Y1",
+            "name": "Nugrowth Solutions LLC",
+            "cov_id": "A0009426",
+            "cov_name": "US - CDW LOGISTICS",
+            "status": "Active",
+            "relationships": 1
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WXTOELI9K4F4VAX3WVH",
+            "name": "Cdw Corporation",
+            "cov_id": "A0009426",
+            "cov_name": "US - CDW LOGISTICS",
+            "status": "Active",
+            "relationships": 13
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WMZJZJ14THS5FJLJVGR",
+            "name": "CDW LOGISTICS INC",
+            "cov_id": "A0009426",
+            "cov_name": "US - CDW LOGISTICS",
+            "status": "Active",
+            "relationships": 67
+          }
+        ]
+      },
+      "smartcare": {
+        "gbg_id": "31842",
+        "gbg_name": "CDW LOGISTICS INC",
+        "source": "select-gbg",
+        "selection_status": "matched"
+      },
+      "review_flags": []
+    },
+    {
+      "account_name": "CENTERPOINT ENERGY",
+      "coverage_id": "A0009077",
+      "coverage_type": "A-Tier (Select / Territory)",
+      "gainsight_coverage_name": "US - CENTERPOINT ENERGY",
+      "isc": {
+        "live_id": "0013h00000w1cUiAAI",
+        "live_name": "CENTERPOINT ENERGY INC-US",
+        "account_number": "DB003T6M-US",
+        "db2_id": "0010500000BTR4VAAX",
+        "db2_name": "CENTERPOINT ENERGY INC-US",
+        "db2_enterprise_id": "0010500000FrKozAAF",
+        "db2_enterprise_name": "CENTERPOINT ENERGY INC-WW",
+        "db2_coverage_children": [
+          {
+            "id": "0010500000BTR4VAAX",
+            "name": "CENTERPOINT ENERGY INC-US",
+            "market": "4A"
+          }
+        ],
+        "enterprise_match_status": "matched"
+      },
+      "gainsight": {
+        "company_gsid": "1P02WPZ71GR8TFJ55WA7SFE3P29EDQ4IBNQV",
+        "company_name": "CENTERPOINT ENERGY INC",
+        "relationships": 33,
+        "confidence": "high",
+        "match_basis": "plan_count_review",
+        "override_reason": "Kept: CENTERPOINT ENERGY INC has 26 plans; the other record has 0",
+        "largest_in_group": {
+          "name": "CENTERPOINT ENERGY INC",
+          "gsid": "1P02WPZ71GR8TFJ55WA7SFE3P29EDQ4IBNQV",
+          "relationships": 33
+        },
+        "companies_in_group": [
+          {
+            "gsid": "1P02WPZ71GR8TFJ55W99RHA4XLEA2TILRUGP",
+            "name": "Centerpoint Energy Inc.",
+            "cov_id": "A0009077",
+            "cov_name": "US - CENTERPOINT ENERGY",
+            "status": "Active",
+            "relationships": 20
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WA7SFE3P29EDQ4IBNQV",
+            "name": "CENTERPOINT ENERGY INC",
+            "cov_id": "A0009077",
+            "cov_name": "US - CENTERPOINT ENERGY",
+            "status": "Active",
+            "relationships": 33
+          }
+        ]
+      },
+      "smartcare": {
+        "gbg_id": "2111",
+        "gbg_name": "CENTERPOINT ENERGY INC",
+        "source": "select-gbg",
+        "selection_status": "matched"
+      },
+      "review_flags": []
+    },
+    {
+      "account_name": "CHARTER COMMUNICATIONS",
+      "coverage_id": "A0009078",
+      "coverage_type": "A-Tier (Select / Territory)",
+      "gainsight_coverage_name": "US - CHARTER COMMUNICATIONS",
+      "isc": {
+        "live_id": "0013h00000w1gJEAAY",
+        "live_name": "CHARTER COMMUNICATIONS INC-US",
+        "account_number": "DB001L6W-US",
+        "db2_id": "0010500000BTXTnAAP",
+        "db2_name": "CHARTER COMMUNICATIONS INC-US",
+        "db2_enterprise_id": "0010500000FrGbaAAF",
+        "db2_enterprise_name": "CHARTER COMMUNICATIONS INC-WW",
+        "db2_coverage_children": [
+          {
+            "id": "0010500000BTXTnAAP",
+            "name": "CHARTER COMMUNICATIONS INC-US",
+            "market": "4A"
+          }
+        ],
+        "enterprise_match_status": "matched"
+      },
+      "gainsight": {
+        "company_gsid": "1P02WPZ71GR8TFJ55WU8STWKJPBUHUD4XNPX",
+        "company_name": "CHARTER COMMUNICATIONS INC",
+        "relationships": 12,
+        "confidence": "high",
+        "match_basis": "isc_enterprise_name",
+        "largest_in_group": {
+          "name": "CHARTER COMMUNICATIONS INC",
+          "gsid": "1P02WPZ71GR8TFJ55WU8STWKJPBUHUD4XNPX",
+          "relationships": 12
+        },
+        "companies_in_group": [
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WU8STWKJPBUHUD4XNPX",
+            "name": "CHARTER COMMUNICATIONS INC",
+            "cov_id": "A0009078",
+            "cov_name": "US - CHARTER COMMUNICATIONS",
+            "status": "Active",
+            "relationships": 12
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WXNMMBOWMI8B1B2PH5W",
+            "name": "Charter Communications Inc.",
+            "cov_id": "A0009078",
+            "cov_name": "US - CHARTER COMMUNICATIONS",
+            "status": "Active",
+            "relationships": 1
+          }
+        ]
+      },
+      "smartcare": {
+        "gbg_id": "33149",
+        "gbg_name": "CHARTER COMMUNICATIONS INC",
+        "source": "select-gbg",
+        "selection_status": "matched"
+      },
+      "review_flags": []
+    },
+    {
+      "account_name": "COMCAST",
+      "coverage_id": "A0009079",
+      "coverage_type": "A-Tier (Select / Territory)",
+      "gainsight_coverage_name": "US - COMCAST",
+      "isc": {
+        "live_id": "0013h00000w1dnYAAQ",
+        "live_name": "COMCAST CORPORATION-US",
+        "account_number": "DB003KCE-US",
+        "db2_id": "0010500000BTSJRAA5",
+        "db2_name": "COMCAST CORPORATION-US",
+        "db2_enterprise_id": "0010500000FrGZOAA3",
+        "db2_enterprise_name": "COMCAST CORP-WW",
+        "db2_coverage_children": [
+          {
+            "id": "0010500000BTSJRAA5",
+            "name": "COMCAST CORPORATION-US",
+            "market": "4A"
+          },
+          {
+            "id": "0010500000BTZIbAAP",
+            "name": "UNIVERSAL STUDIO-US",
+            "market": "4A"
+          }
+        ],
+        "enterprise_match_status": "matched"
+      },
+      "gainsight": {
+        "company_gsid": "1P02WPZ71GR8TFJ55WMG6AUTIV18NPC468G1",
+        "company_name": "COMCAST CORPORATION",
+        "relationships": 10,
+        "confidence": "high",
+        "match_basis": "isc_enterprise_name",
+        "largest_in_group": {
+          "name": "COMCAST CORPORATION",
+          "gsid": "1P02WPZ71GR8TFJ55WMG6AUTIV18NPC468G1",
+          "relationships": 10
+        },
+        "companies_in_group": [
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WDFF9QAZK7C9ZZUQWJC",
+            "name": "Golfnow LLC",
+            "cov_id": "A0009079",
+            "cov_name": "US - COMCAST",
+            "status": "Active",
+            "relationships": 1
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WVLMXMWYIY07R5ITMTK",
+            "name": "Love Productions Usa Inc.",
+            "cov_id": "A0009079",
+            "cov_name": "US - COMCAST",
+            "status": "Active",
+            "relationships": 1
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WY45IOST20O2MIHQD02",
+            "name": "Comcast Cable Communications LLC",
+            "cov_id": "A0009079",
+            "cov_name": "US - COMCAST",
+            "status": "Active",
+            "relationships": 3
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WDYSM493O0KUDUW53DI",
+            "name": "Universal City Development Partners Ltd.",
+            "cov_id": "A0009079",
+            "cov_name": "US - COMCAST",
+            "status": "Active",
+            "relationships": 5
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WDXW8B9EZXFDEFRFNU3",
+            "name": "Freewheel Media Inc.",
+            "cov_id": "A0009079",
+            "cov_name": "US - COMCAST",
+            "status": "Active",
+            "relationships": 2
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WMG6AUTIV18NPC468G1",
+            "name": "COMCAST CORPORATION",
+            "cov_id": "A0009079",
+            "cov_name": "US - COMCAST",
+            "status": "Active",
+            "relationships": 10
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WOTY7B6TABQBII621BU",
+            "name": "UNIVERSAL STUDIO",
+            "cov_id": "A0009079",
+            "cov_name": "US - COMCAST",
+            "status": "Active",
+            "relationships": 9
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WECM39GJATWLMUCFPMJ",
+            "name": "Dreamworks Animation L.L.C.",
+            "cov_id": "A0009079",
+            "cov_name": "US - COMCAST",
+            "status": "Active",
+            "relationships": 3
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55W43S81PUQZ60J1PC1ZB",
+            "name": "Illumination Entertainment",
+            "cov_id": "A0009079",
+            "cov_name": "US - COMCAST",
+            "status": "Active",
+            "relationships": 1
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WHHDEUD4RFFTOE1DS1G",
+            "name": "Peacock TV LLC",
+            "cov_id": "A0009079",
+            "cov_name": "US - COMCAST",
+            "status": "Active",
+            "relationships": 1
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55W8DJBCJQTU3W26ZKDZN",
+            "name": "Comcast Corporation",
+            "cov_id": "A0009079",
+            "cov_name": "US - COMCAST",
+            "status": "Active",
+            "relationships": 3
+          }
+        ]
+      },
+      "smartcare": {
+        "gbg_id": "23071",
+        "gbg_name": "COMCAST CORP",
+        "source": "select-gbg",
+        "selection_status": "matched"
+      },
+      "review_flags": []
+    },
+    {
+      "account_name": "COSTCO",
+      "coverage_id": "A0004070",
+      "coverage_type": "A-Tier (Select / Territory)",
+      "gainsight_coverage_name": "US - COSTCO",
+      "isc": {
+        "live_id": "0013h00000w1bVIAAY",
+        "live_name": "COSTCO WHOLESALE CORPORATION-US",
+        "account_number": "DB002F6B-US",
+        "db2_id": "0010500000BTYpvAAH",
+        "db2_name": "COSTCO WHOLESALE CORPORATION-US",
+        "db2_enterprise_id": "0010500000FrK3VAAV",
+        "db2_enterprise_name": "COSTCO-WW",
+        "db2_coverage_children": [
+          {
+            "id": "0010500000BTYpvAAH",
+            "name": "COSTCO WHOLESALE CORPORATION-US",
+            "market": "4A"
+          }
+        ],
+        "enterprise_match_status": "matched"
+      },
+      "gainsight": {
+        "company_gsid": "1P02WPZ71GR8TFJ55W1T8XNNI7HIJIRD7M6I",
+        "company_name": "COSTCO WHOLESALE CORPORATION",
+        "relationships": 55,
+        "confidence": "high",
+        "match_basis": "isc_child_name",
+        "largest_in_group": {
+          "name": "COSTCO WHOLESALE CORPORATION",
+          "gsid": "1P02WPZ71GR8TFJ55W1T8XNNI7HIJIRD7M6I",
+          "relationships": 55
+        },
+        "companies_in_group": [
+          {
+            "gsid": "1P02WPZ71GR8TFJ55W1T8XNNI7HIJIRD7M6I",
+            "name": "COSTCO WHOLESALE CORPORATION",
+            "cov_id": "A0004070",
+            "cov_name": "US - COSTCO",
+            "status": "Active",
+            "relationships": 55
+          }
+        ]
+      },
+      "smartcare": {
+        "gbg_id": "44008",
+        "gbg_name": "COSTCO",
+        "source": "select-gbg",
+        "selection_status": "matched"
+      },
+      "review_flags": []
+    },
+    {
+      "account_name": "COX ENTERPRISES",
+      "coverage_id": "A0004426",
+      "coverage_type": "A-Tier (Select / Territory)",
+      "gainsight_coverage_name": "US - COX ENTERPRISES",
+      "isc": {
+        "live_id": "0013h00000w1dYGAAY",
+        "live_name": "COX COMMUNICATIONS-US",
+        "account_number": "DB003KCC-US",
+        "db2_id": "0010500000BTWIEAA5",
+        "db2_name": "COX COMMUNICATIONS-US",
+        "db2_enterprise_id": "0010500000FrMX5AAN",
+        "db2_enterprise_name": "COX ENTERPRISE INC.-WW",
+        "db2_coverage_children": [
+          {
+            "id": "0010500000BTWIEAA5",
+            "name": "COX COMMUNICATIONS-US",
+            "market": "4A"
+          }
+        ],
+        "enterprise_match_status": "single_parent"
+      },
+      "gainsight": {
+        "company_gsid": "1P02WPZ71GR8TFJ55WAYQDQTCKOCRYVF916N",
+        "company_name": "COX COMMUNICATIONS",
+        "relationships": 27,
+        "confidence": "high",
+        "match_basis": "isc_child_name",
+        "largest_in_group": {
+          "name": "COX COMMUNICATIONS",
+          "gsid": "1P02WPZ71GR8TFJ55WAYQDQTCKOCRYVF916N",
+          "relationships": 27
+        },
+        "companies_in_group": [
+          {
+            "gsid": "1P02WPZ71GR8TFJ55W2Y4XWK8V0WLNLE8NWC",
+            "name": "Cmg Media Corporation",
+            "cov_id": "A0004426",
+            "cov_name": "US - COX ENTERPRISES",
+            "status": "Active",
+            "relationships": 1
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WNE1F97F3HHOHYOLG73",
+            "name": "Dealertrack Inc.",
+            "cov_id": "A0004426",
+            "cov_name": "US - COX ENTERPRISES",
+            "status": "Active",
+            "relationships": 3
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55W3JFQDTGCJF077MG3A5",
+            "name": "Vauto Inc.",
+            "cov_id": "A0004426",
+            "cov_name": "US - COX ENTERPRISES",
+            "status": "Active",
+            "relationships": 1
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WAYQDQTCKOCRYVF916N",
+            "name": "COX COMMUNICATIONS",
+            "cov_id": "A0004426",
+            "cov_name": "US - COX ENTERPRISES",
+            "status": "Active",
+            "relationships": 27
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55W3FZYJLFZHBAVYKC39P",
+            "name": "South Carolina Net Inc.",
+            "cov_id": "A0004426",
+            "cov_name": "US - COX ENTERPRISES",
+            "status": "Active",
+            "relationships": 1
+          }
+        ]
+      },
+      "smartcare": {
+        "gbg_id": null,
+        "gbg_name": null,
+        "source": null,
+        "selection_status": "review"
+      },
+      "review_flags": [
+        "smartcare_gbg_unresolved:review",
+        "isc_enterprise_single_parent"
+      ]
+    },
+    {
+      "account_name": "CSX (SEALAND)",
+      "coverage_id": "A0009532",
+      "coverage_type": "A-Tier (Select / Territory)",
+      "gainsight_coverage_name": "US - CSX (SEALAND)",
+      "isc": {
+        "live_id": "0013h00000w1cZHAAY",
+        "live_name": "CSX CORP-US",
+        "account_number": "DB003TV5-US",
+        "db2_id": "0010500000BTRAhAAP",
+        "db2_name": "CSX CORP-US",
+        "db2_enterprise_id": "0010500000FrPZrAAN",
+        "db2_enterprise_name": "CSX (SEALAND)-WW",
+        "db2_coverage_children": [
+          {
+            "id": "0010500000BTRAhAAP",
+            "name": "CSX CORP-US",
+            "market": "4A"
+          }
+        ],
+        "enterprise_match_status": "matched"
+      },
+      "gainsight": {
+        "company_gsid": "1P02WPZ71GR8TFJ55WF3UG4687OQUP4F5GQR",
+        "company_name": "CSX Corporation",
+        "relationships": 224,
+        "confidence": "high",
+        "match_basis": "isc_child_name",
+        "largest_in_group": {
+          "name": "CSX Corporation",
+          "gsid": "1P02WPZ71GR8TFJ55WF3UG4687OQUP4F5GQR",
+          "relationships": 224
+        },
+        "companies_in_group": [
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WARNN033A9LV7VUGCX6",
+            "name": "Quality Carriers Inc.",
+            "cov_id": "A0009532",
+            "cov_name": "US - CSX (SEALAND)",
+            "status": "Active",
+            "relationships": 1
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WWGCW4FKFMC42C7U91U",
+            "name": "CSX CORP",
+            "cov_id": "A0009532",
+            "cov_name": "US - CSX (SEALAND)",
+            "status": "Active",
+            "relationships": 2
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WF3UG4687OQUP4F5GQR",
+            "name": "CSX Corporation",
+            "cov_id": "A0009532",
+            "cov_name": "US - CSX (SEALAND)",
+            "status": "Active",
+            "relationships": 224
+          }
+        ]
+      },
+      "smartcare": {
+        "gbg_id": "12666",
+        "gbg_name": "CSX (SEALAND)",
+        "source": "select-gbg",
+        "selection_status": "matched"
+      },
+      "review_flags": []
+    },
+    {
+      "account_name": "DELL COMPUTER",
+      "coverage_id": "A0009539",
+      "coverage_type": "A-Tier (Select / Territory)",
+      "gainsight_coverage_name": "US - DELL COMPUTER",
+      "isc": {
+        "live_id": "0013h00000w1dRiAAI",
+        "live_name": "DELL INTERNATIONAL-US",
+        "account_number": "DB001UGV-US",
+        "db2_id": "0010500000BTS4XAAX",
+        "db2_name": "DELL INTERNATIONAL-US",
+        "db2_enterprise_id": "0010500000FrPQtAAN",
+        "db2_enterprise_name": "DELL COMPUTER CORP-WW",
+        "db2_coverage_children": [
+          {
+            "id": "0010500000BTS4XAAX",
+            "name": "DELL INTERNATIONAL-US",
+            "market": "4A"
+          },
+          {
+            "id": "0010500000BTT8dAAH",
+            "name": "EMC CORPORATION-US",
+            "market": "4A"
+          },
+          {
+            "id": "0010500000IqclAAAR",
+            "name": "EMC CORPORATION-DE",
+            "market": "4A"
+          }
+        ],
+        "enterprise_match_status": "matched"
+      },
+      "gainsight": {
+        "company_gsid": "1P02WPZ71GR8TFJ55WY9O899449PDMZ0OXCG",
+        "company_name": "DELL INTERNATIONAL",
+        "relationships": 18,
+        "confidence": "high",
+        "match_basis": "isc_us_name+plans",
+        "largest_in_group": {
+          "name": "EMC CORPORATION",
+          "gsid": "1P02WPZ71GR8TFJ55W4IFOR7AOYWF182PINW",
+          "relationships": 22
+        },
+        "previous_pick": {
+          "gsid": "1P02WPZ71GR8TFJ55W4IFOR7AOYWF182PINW",
+          "name": "EMC CORPORATION",
+          "plans": 0
+        },
+        "companies_in_group": [
+          {
+            "gsid": "1P02WPZ71GR8TFJ55W4IFOR7AOYWF182PINW",
+            "name": "EMC CORPORATION",
+            "cov_id": "A0009539",
+            "cov_name": "US - DELL COMPUTER",
+            "status": "Active",
+            "relationships": 22
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WTBS2ZJVT3C0VNHV4FW",
+            "name": "Boomi LP",
+            "cov_id": "A0009539",
+            "cov_name": "US - DELL COMPUTER",
+            "status": "Active",
+            "relationships": 1
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55W58BUA0JD3BZS7BQFT5",
+            "name": "EMC Corporation",
+            "cov_id": "A0009539",
+            "cov_name": "US - DELL COMPUTER",
+            "status": "Active",
+            "relationships": 15
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WY9O899449PDMZ0OXCG",
+            "name": "DELL INTERNATIONAL",
+            "cov_id": "A0009539",
+            "cov_name": "US - DELL COMPUTER",
+            "status": "Active",
+            "relationships": 18
+          }
+        ]
+      },
+      "smartcare": {
+        "gbg_id": "33228",
+        "gbg_name": "DELL COMPUTER CORP",
+        "source": "select-gbg",
+        "selection_status": "matched"
+      },
+      "review_flags": []
+    },
+    {
+      "account_name": "DELOITTE & TOUCHE",
+      "coverage_id": "A0009530",
+      "coverage_type": "A-Tier (Select / Territory)",
+      "gainsight_coverage_name": "US - DELOITTE & TOUCHE",
+      "isc": {
+        "live_id": "0013h00000w1bOCAAY",
+        "live_name": "DELOITTE & TOUCHE USA LLP-US",
+        "account_number": "DB000L4Q-US",
+        "db2_id": "0010500000BTYj1AAH",
+        "db2_name": "DELOITTE & TOUCHE USA LLP-US",
+        "db2_enterprise_id": "0010500000FrJeSAAV",
+        "db2_enterprise_name": "DELOITTE & TOUCHE LLP-WW",
+        "db2_coverage_children": [
+          {
+            "id": "0010500000BTYj1AAH",
+            "name": "DELOITTE & TOUCHE USA LLP-US",
+            "market": "4A"
+          }
+        ],
+        "enterprise_match_status": "matched"
+      },
+      "gainsight": {
+        "company_gsid": "1P02WPZ71GR8TFJ55WNRR0XTZZVUYEDGE1C4",
+        "company_name": "DELOITTE & TOUCHE USA LLP",
+        "relationships": 78,
+        "confidence": "high",
+        "match_basis": "isc_enterprise_name",
+        "largest_in_group": {
+          "name": "DELOITTE & TOUCHE USA LLP",
+          "gsid": "1P02WPZ71GR8TFJ55WNRR0XTZZVUYEDGE1C4",
+          "relationships": 78
+        },
+        "companies_in_group": [
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WNRR0XTZZVUYEDGE1C4",
+            "name": "DELOITTE & TOUCHE USA LLP",
+            "cov_id": "A0009530",
+            "cov_name": "US - DELOITTE & TOUCHE",
+            "status": "Active",
+            "relationships": 78
+          }
+        ]
+      },
+      "smartcare": {
+        "gbg_id": "21718",
+        "gbg_name": "DELOITTE & TOUCHE LLP",
+        "source": "select-gbg",
+        "selection_status": "matched"
+      },
+      "review_flags": []
+    },
+    {
+      "account_name": "DILLARDS",
+      "coverage_id": "A0009535",
+      "coverage_type": "A-Tier (Select / Territory)",
+      "gainsight_coverage_name": "US - DILLARDS",
+      "isc": {
+        "live_id": "0013h00000w1c09AAA",
+        "live_name": "DILLARDS INC-US",
+        "account_number": "DB003WWD-US",
+        "db2_id": "0010500000BTRN8AAP",
+        "db2_name": "DILLARDS INC-US",
+        "db2_enterprise_id": "0010500000FrK0jAAF",
+        "db2_enterprise_name": "DILLARDS-WW",
+        "db2_coverage_children": [
+          {
+            "id": "0010500000BTRN8AAP",
+            "name": "DILLARDS INC-US",
+            "market": "4A"
+          }
+        ],
+        "enterprise_match_status": "matched"
+      },
+      "gainsight": {
+        "company_gsid": "1P02WPZ71GR8TFJ55WB7NVTZDMNQQ3XF7QWS",
+        "company_name": "Dillard's Inc.",
+        "relationships": 84,
+        "confidence": "high",
+        "match_basis": "isc_enterprise_name",
+        "largest_in_group": {
+          "name": "Dillard's Inc.",
+          "gsid": "1P02WPZ71GR8TFJ55WB7NVTZDMNQQ3XF7QWS",
+          "relationships": 84
+        },
+        "companies_in_group": [
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WB7NVTZDMNQQ3XF7QWS",
+            "name": "Dillard's Inc.",
+            "cov_id": "A0009535",
+            "cov_name": "US - DILLARDS",
+            "status": "Active",
+            "relationships": 84
+          }
+        ]
+      },
+      "smartcare": {
+        "gbg_id": "2143",
+        "gbg_name": "DILLARDS",
+        "source": "select-gbg",
+        "selection_status": "matched"
+      },
+      "review_flags": []
+    },
+    {
+      "account_name": "DISH NETWORK",
+      "coverage_id": "A0004427",
+      "coverage_type": "A-Tier (Select / Territory)",
+      "gainsight_coverage_name": "US - DISH NETWORK",
+      "isc": {
+        "live_id": "0013h00000w1cpgAAA",
+        "live_name": "ECHOSTAR/DISH NETWORK-US",
+        "account_number": "DB000AG6-US",
+        "db2_id": "0010500000BTWgyAAH",
+        "db2_name": "ECHOSTAR/DISH NETWORK-US",
+        "db2_enterprise_id": "0010500000FrFSkAAN",
+        "db2_enterprise_name": "ECHOSTAR/DISH NETWORK-WW",
+        "db2_coverage_children": [
+          {
+            "id": "0010500000BTWgyAAH",
+            "name": "ECHOSTAR/DISH NETWORK-US",
+            "market": "4A"
+          }
+        ],
+        "enterprise_match_status": "matched"
+      },
+      "gainsight": {
+        "company_gsid": "1P02WPZ71GR8TFJ55W38PB95EQUYWDZXJZ93",
+        "company_name": "Dish Network Corporation",
+        "relationships": null,
+        "confidence": "high",
+        "match_basis": "plan_count_review",
+        "override_reason": "Dish Network Corporation has 5 plans; ECHOSTAR/DISH NETWORK has 1",
+        "previous_pick_auto": {
+          "gsid": "1P02WPZ71GR8TFJ55WVH4PWD16LW5MWN1X89",
+          "name": "ECHOSTAR/DISH NETWORK"
+        },
+        "largest_in_group": {
+          "name": "Dish Network Corporation",
+          "gsid": "1P02WPZ71GR8TFJ55W38PB95EQUYWDZXJZ93",
+          "relationships": 12
+        },
+        "companies_in_group": [
+          {
+            "gsid": "1P02WPZ71GR8TFJ55W47DMXXBPLAOYXXNGAH",
+            "name": "Hughes Network Systems LLC",
+            "cov_id": "A0004427",
+            "cov_name": "US - DISH NETWORK",
+            "status": "Active",
+            "relationships": 5
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WVH4PWD16LW5MWN1X89",
+            "name": "ECHOSTAR/DISH NETWORK",
+            "cov_id": "A0004427",
+            "cov_name": "US - DISH NETWORK",
+            "status": "Active",
+            "relationships": 1
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55W38PB95EQUYWDZXJZ93",
+            "name": "Dish Network Corporation",
+            "cov_id": "A0004427",
+            "cov_name": "US - DISH NETWORK",
+            "status": "Active",
+            "relationships": 12
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WHTLSCX5CN0DA8HB2LR",
+            "name": "Echo Star Communications Corp",
+            "cov_id": "A0004427",
+            "cov_name": "US - DISH NETWORK",
+            "status": "Active",
+            "relationships": 1
+          }
+        ],
+        "additional_companies": [
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WVH4PWD16LW5MWN1X89",
+            "name": "ECHOSTAR/DISH NETWORK"
+          }
+        ]
+      },
+      "smartcare": {
+        "gbg_id": "10861",
+        "gbg_name": "ECHOSTAR/DISH NETWORK",
+        "source": "select-gbg",
+        "selection_status": "matched"
+      },
+      "review_flags": []
+    },
+    {
+      "account_name": "DOW CHEMICAL",
+      "coverage_id": "A0001903",
+      "coverage_type": "A-Tier (Select / Territory)",
+      "gainsight_coverage_name": "US - DOW CHEMICAL",
+      "isc": {
+        "live_id": "0013h000019FqfSAAS",
+        "live_name": "THE DOW CHEMICAL CO-US",
+        "account_number": "DB000KU8-US",
+        "db2_id": "0010500000KNvizAAD",
+        "db2_name": "THE DOW CHEMICAL CO-US",
+        "db2_enterprise_id": "0010500000FrL27AAF",
+        "db2_enterprise_name": "DOW CHEMICAL-WW",
+        "db2_coverage_children": [
+          {
+            "id": "0010500000BTZGHAA5",
+            "name": "THE DOW CHEMICAL CO-CR",
+            "market": "4A"
+          },
+          {
+            "id": "0010500000KNvizAAD",
+            "name": "THE DOW CHEMICAL CO-US",
+            "market": "4A"
+          }
+        ],
+        "enterprise_match_status": "matched"
+      },
+      "gainsight": {
+        "company_gsid": "1P02WPZ71GR8TFJ55WP94E7MSN9YYWUX5U6O",
+        "company_name": "Dow Inc.",
+        "relationships": 2,
+        "confidence": "high",
+        "match_basis": "isc_us_name+plans",
+        "largest_in_group": {
+          "name": "THE DOW CHEMICAL CO",
+          "gsid": "1P02WPZ71GR8TFJ55WXKYQTR573WAHDG0B7Y",
+          "relationships": 4
+        },
+        "previous_pick": {
+          "gsid": "1P02WPZ71GR8TFJ55WXKYQTR573WAHDG0B7Y",
+          "name": "THE DOW CHEMICAL CO",
+          "plans": 0
+        },
+        "companies_in_group": [
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WXKYQTR573WAHDG0B7Y",
+            "name": "THE DOW CHEMICAL CO",
+            "cov_id": "A0001903",
+            "cov_name": "US - DOW CHEMICAL",
+            "status": "Active",
+            "relationships": 4
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55W8M3I9Q4QLN44FIBCGX",
+            "name": "Petersen Plumbing and Heating Co.",
+            "cov_id": "A0001903",
+            "cov_name": "US - DOW CHEMICAL",
+            "status": "Active",
+            "relationships": 1
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WP94E7MSN9YYWUX5U6O",
+            "name": "Dow Inc.",
+            "cov_id": null,
+            "cov_name": null,
+            "status": "Active",
+            "relationships": 2,
+            "added_manually": true
+          }
+        ]
+      },
+      "smartcare": {
+        "gbg_id": "32369",
+        "gbg_name": "DOW CHEMICAL",
+        "source": "select-gbg",
+        "selection_status": "matched"
+      },
+      "review_flags": []
+    },
+    {
+      "account_name": "DUN & BRADSTREET",
+      "coverage_id": "A0009486",
+      "coverage_type": "A-Tier (Select / Territory)",
+      "gainsight_coverage_name": "US - DUN & BRADSTREET",
+      "isc": {
+        "live_id": "0013h00000w1cVSAAY",
+        "live_name": "DUN & BRADSTREET-US",
+        "account_number": "DB22BJ2B-US",
+        "db2_id": "0010500000BTRyGAAX",
+        "db2_name": "DUN & BRADSTREET-US",
+        "db2_enterprise_id": "0010500000FrFtqAAF",
+        "db2_enterprise_name": "DUN & BRADSTREET-WW",
+        "db2_coverage_children": [
+          {
+            "id": "0010500000BTRyGAAX",
+            "name": "DUN & BRADSTREET-US",
+            "market": "4A"
+          }
+        ],
+        "enterprise_match_status": "matched"
+      },
+      "gainsight": {
+        "company_gsid": "1P02WPZ71GR8TFJ55WF2PZ29P3DQ1K2IZW1Z",
+        "company_name": "DUN & BRADSTREET",
+        "relationships": 169,
+        "confidence": "high",
+        "match_basis": "isc_enterprise_name",
+        "largest_in_group": {
+          "name": "DUN & BRADSTREET",
+          "gsid": "1P02WPZ71GR8TFJ55WF2PZ29P3DQ1K2IZW1Z",
+          "relationships": 169
+        },
+        "companies_in_group": [
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WF2PZ29P3DQ1K2IZW1Z",
+            "name": "DUN & BRADSTREET",
+            "cov_id": "A0009486",
+            "cov_name": "US - DUN & BRADSTREET",
+            "status": "Active",
+            "relationships": 169
+          }
+        ]
+      },
+      "smartcare": {
+        "gbg_id": "34049",
+        "gbg_name": "DUN & BRADSTREET",
+        "source": "select-gbg",
+        "selection_status": "matched"
+      },
+      "review_flags": []
+    },
+    {
+      "account_name": "DXC",
+      "coverage_id": "A0009082",
+      "coverage_type": "A-Tier (Select / Territory)",
+      "gainsight_coverage_name": "US - DXC",
+      "isc": {
+        "live_id": "0013h00000w1bGcAAI",
+        "live_name": "DXC TECHNOLOGY-US",
+        "account_number": "DB50265G-US",
+        "db2_id": "0010500000HeYLwAAN",
+        "db2_name": "DXC TECHNOLOGY-US",
+        "db2_enterprise_id": "0010500000FrMvlAAF",
+        "db2_enterprise_name": "DXC-WW",
+        "db2_coverage_children": [
+          {
+            "id": "0010500000BTRqGAAX",
+            "name": "HEWLETT PACKARD-US",
+            "market": "4A"
+          },
+          {
+            "id": "0010500000BTa8EAAT",
+            "name": "COMPUTER SCIENCES CORP-US",
+            "market": "4A"
+          },
+          {
+            "id": "0010500000HeYLwAAN",
+            "name": "DXC TECHNOLOGY-US",
+            "market": "4A"
+          },
+          {
+            "id": "001Nq00001PeibLIAR",
+            "name": "DXC TECHNOLOGY-DK",
+            "market": null
+          }
+        ],
+        "enterprise_match_status": "matched"
+      },
+      "gainsight": {
+        "company_gsid": "1P02WPZ71GR8TFJ55WGZAJKIYE5PSRFMH0SD",
+        "company_name": "DXC TECHNOLOGY",
+        "relationships": 278,
+        "confidence": "high",
+        "match_basis": "isc_enterprise_name",
+        "largest_in_group": {
+          "name": "DXC TECHNOLOGY",
+          "gsid": "1P02WPZ71GR8TFJ55WGZAJKIYE5PSRFMH0SD",
+          "relationships": 278
+        },
+        "companies_in_group": [
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WUW2BGCSMV5G49XF789",
+            "name": "Health Management Systems Inc",
+            "cov_id": "A0009082",
+            "cov_name": "US - DXC",
+            "status": "Active",
+            "relationships": 8
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WCSJG47X65XO4CD97RD",
+            "name": "GAINWELL TECHNOLOGIES",
+            "cov_id": "A0009082",
+            "cov_name": "US - DXC",
+            "status": "Active",
+            "relationships": 116
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55W0AW2S8RFI576SJNZRR",
+            "name": "Gainwell Technologies LLC",
+            "cov_id": "A0009082",
+            "cov_name": "US - DXC",
+            "status": "Active",
+            "relationships": 16
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WVTPIOXZALDE3YDJELO",
+            "name": "COMPUTER SCIENCES CORP",
+            "cov_id": "A0009082",
+            "cov_name": "US - DXC",
+            "status": "Active",
+            "relationships": 72
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WGZAJKIYE5PSRFMH0SD",
+            "name": "DXC TECHNOLOGY",
+            "cov_id": "A0009082",
+            "cov_name": "US - DXC",
+            "status": "Active",
+            "relationships": 278
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55W1DL5SPNDLHT36D1G06",
+            "name": "HEWLETT PACKARD",
+            "cov_id": "A0009082",
+            "cov_name": "US - DXC",
+            "status": "Active",
+            "relationships": 6
+          }
+        ]
+      },
+      "smartcare": {
+        "gbg_id": "30711",
+        "gbg_name": "DXC",
+        "source": "select-gbg",
+        "selection_status": "matched"
+      },
+      "review_flags": []
+    },
+    {
+      "account_name": "ENSONO",
+      "coverage_id": "A0009083",
+      "coverage_type": "A-Tier (Select / Territory)",
+      "gainsight_coverage_name": "US - ENSONO",
+      "isc": {
+        "live_id": "0013h000019FqnyAAC",
+        "live_name": "ENSONO LP-US",
+        "account_number": "DB5020GZ-US",
+        "db2_id": "0010500000KNvxDAAT",
+        "db2_name": "ENSONO LP-US",
+        "db2_enterprise_id": "0010500000FrIveAAF",
+        "db2_enterprise_name": "ENSONO LP-WW",
+        "db2_coverage_children": [
+          {
+            "id": "0010500000KNvxDAAT",
+            "name": "ENSONO LP-US",
+            "market": "4A"
+          }
+        ],
+        "enterprise_match_status": "matched"
+      },
+      "gainsight": {
+        "company_gsid": "1P02WPZ71GR8TFJ55WY2OSUNSPXZ8NF89FVU",
+        "company_name": "Ensono LLC",
+        "relationships": 37,
+        "confidence": "high",
+        "match_basis": "isc_us_name+plans",
+        "largest_in_group": {
+          "name": "Ensono LLC",
+          "gsid": "1P02WPZ71GR8TFJ55WY2OSUNSPXZ8NF89FVU",
+          "relationships": 37
+        },
+        "previous_pick": {
+          "gsid": "1P02WPZ71GR8TFJ55W5SNLHDW1VXMOTD94RA",
+          "name": "ENSONO LP",
+          "plans": 0
+        },
+        "companies_in_group": [
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WEW465DHVFL7GTSN6K7",
+            "name": "ENSONO LLC",
+            "cov_id": "A0009083",
+            "cov_name": "US - ENSONO",
+            "status": "Active",
+            "relationships": 0
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55W5SNLHDW1VXMOTD94RA",
+            "name": "ENSONO LP",
+            "cov_id": "A0009083",
+            "cov_name": "US - ENSONO",
+            "status": "Active",
+            "relationships": 25
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WY2OSUNSPXZ8NF89FVU",
+            "name": "Ensono LLC",
+            "cov_id": null,
+            "cov_name": null,
+            "status": "Active",
+            "relationships": 37,
+            "added_manually": true
+          }
+        ]
+      },
+      "smartcare": {
+        "gbg_id": "41125",
+        "gbg_name": "ENSONO LP",
+        "source": "manual",
+        "selection_status": "matched"
+      },
+      "review_flags": []
+    },
+    {
+      "account_name": "ENTERGY CORPORATION",
+      "coverage_id": "A0009084",
+      "coverage_type": "A-Tier (Select / Territory)",
+      "gainsight_coverage_name": "US - ENTERGY CORPORATION",
+      "isc": {
+        "live_id": "0013h00000w1b1fAAA",
+        "live_name": "ENTERGY CORPORATION-US",
+        "account_number": "DB000B2B-US",
+        "db2_id": "0010500000BTZHmAAP",
+        "db2_name": "ENTERGY CORPORATION-US",
+        "db2_enterprise_id": "0010500000FrKfwAAF",
+        "db2_enterprise_name": "ENTERGY CORPORATION-WW",
+        "db2_coverage_children": [
+          {
+            "id": "0010500000BTZHmAAP",
+            "name": "ENTERGY CORPORATION-US",
+            "market": "4A"
+          }
+        ],
+        "enterprise_match_status": "matched"
+      },
+      "gainsight": {
+        "company_gsid": "1P02WPZ71GR8TFJ55WCA87L5020L4VB3BROH",
+        "company_name": "Entergy Corporation",
+        "relationships": null,
+        "confidence": "high",
+        "match_basis": "plan_count_review",
+        "override_reason": "Entergy Corporation has 6 plans; the Arkansas restoration funding LLC has 1",
+        "previous_pick_auto": {
+          "gsid": "1P02WPZ71GR8TFJ55WOW2YD5MGO5SJT4TJHY",
+          "name": "Entergy Arkansas Restoration Funding LLC"
+        },
+        "largest_in_group": {
+          "name": "Entergy Arkansas Restoration Funding LLC",
+          "gsid": "1P02WPZ71GR8TFJ55WOW2YD5MGO5SJT4TJHY",
+          "relationships": 2
+        },
+        "companies_in_group": [
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WOW2YD5MGO5SJT4TJHY",
+            "name": "Entergy Arkansas Restoration Funding LLC",
+            "cov_id": "A0009084",
+            "cov_name": "US - ENTERGY CORPORATION",
+            "status": "Active",
+            "relationships": 2
+          }
+        ],
+        "additional_companies": [
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WOW2YD5MGO5SJT4TJHY",
+            "name": "Entergy Arkansas Restoration Funding LLC"
+          }
+        ]
+      },
+      "smartcare": {
+        "gbg_id": "42778",
+        "gbg_name": "ENTERGY CORPORATION",
+        "source": "select-gbg",
+        "selection_status": "matched"
+      },
+      "review_flags": []
+    },
+    {
+      "account_name": "ENTERPRISE RENT-A-CAR",
+      "coverage_id": "A0009429",
+      "coverage_type": "A-Tier (Select / Territory)",
+      "gainsight_coverage_name": "US - ENTERPRISE RENT-A-CAR",
+      "isc": {
+        "live_id": "0013h00000w1eNlAAI",
+        "live_name": "ENTERPRISE RENT-A-CAR CO-US",
+        "account_number": "DB001NB0-US",
+        "db2_id": "0010500000BTQpYAAX",
+        "db2_name": "ENTERPRISE RENT-A-CAR CO-US",
+        "db2_enterprise_id": "0010500000FrIbKAAV",
+        "db2_enterprise_name": "ENTERPRISE RENT-A-CAR CO-WW",
+        "db2_coverage_children": [
+          {
+            "id": "0010500000BTQpYAAX",
+            "name": "ENTERPRISE RENT-A-CAR CO-US",
+            "market": "4A"
+          }
+        ],
+        "enterprise_match_status": "matched"
+      },
+      "gainsight": {
+        "company_gsid": "1P02WPZ71GR8TFJ55WEZ6X6D4078OROFBDVB",
+        "company_name": "ENTERPRISE RENT-A-CAR CO",
+        "relationships": 14,
+        "confidence": "high",
+        "match_basis": "isc_enterprise_name",
+        "largest_in_group": {
+          "name": "ENTERPRISE RENT-A-CAR CO",
+          "gsid": "1P02WPZ71GR8TFJ55WEZ6X6D4078OROFBDVB",
+          "relationships": 14
+        },
+        "companies_in_group": [
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WYRE0XIWLWH40QJZY05",
+            "name": "Tkc Holdings Inc.",
+            "cov_id": "A0009429",
+            "cov_name": "US - ENTERPRISE RENT-A-CAR",
+            "status": "Active",
+            "relationships": 1
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WEZ6X6D4078OROFBDVB",
+            "name": "ENTERPRISE RENT-A-CAR CO",
+            "cov_id": "A0009429",
+            "cov_name": "US - ENTERPRISE RENT-A-CAR",
+            "status": "Active",
+            "relationships": 14
+          }
+        ]
+      },
+      "smartcare": {
+        "gbg_id": "11993",
+        "gbg_name": "ENTERPRISE RENT-A-CAR CO",
+        "source": "select-gbg",
+        "selection_status": "matched"
+      },
+      "review_flags": []
+    },
+    {
+      "account_name": "FACEBOOK",
+      "coverage_id": "A0009086",
+      "coverage_type": "A-Tier (Select / Territory)",
+      "gainsight_coverage_name": "US - FACEBOOK",
+      "isc": {
+        "live_id": "0013h00000w1fUyAAI",
+        "live_name": "FACEBOOK INC-US",
+        "account_number": "DB000SPB-US",
+        "db2_id": "0010500000BTZJ3AAP",
+        "db2_name": "FACEBOOK INC-US",
+        "db2_enterprise_id": "0010500000FrHjLAAV",
+        "db2_enterprise_name": "FACEBOOK INC-WW",
+        "db2_coverage_children": [
+          {
+            "id": "0010500000BTZJ3AAP",
+            "name": "FACEBOOK INC-US",
+            "market": "4A"
+          }
+        ],
+        "enterprise_match_status": "matched"
+      },
+      "gainsight": {
+        "company_gsid": "1P02WPZ71GR8TFJ55W16SNUILWJL8N84L43S",
+        "company_name": "Meta Platforms Inc.",
+        "relationships": 10,
+        "confidence": "high",
+        "match_basis": "plan_count_review",
+        "override_reason": "Kept: Meta Platforms Inc. is the only Gainsight company for Facebook/Meta (5 plans)",
+        "largest_in_group": {
+          "name": "Meta Platforms Inc.",
+          "gsid": "1P02WPZ71GR8TFJ55W16SNUILWJL8N84L43S",
+          "relationships": 10
+        },
+        "companies_in_group": [
+          {
+            "gsid": "1P02WPZ71GR8TFJ55W16SNUILWJL8N84L43S",
+            "name": "Meta Platforms Inc.",
+            "cov_id": "A0009086",
+            "cov_name": "US - FACEBOOK",
+            "status": "Active",
+            "relationships": 10
+          }
+        ]
+      },
+      "smartcare": {
+        "gbg_id": "43217",
+        "gbg_name": "FACEBOOK INC",
+        "source": "select-gbg",
+        "selection_status": "matched"
+      },
+      "review_flags": []
+    },
+    {
+      "account_name": "FORD",
+      "coverage_id": "A0003851",
+      "coverage_type": "A-Tier (Select / Territory)",
+      "gainsight_coverage_name": "US - FORD",
+      "isc": {
+        "live_id": "0013h00000YPQlhAAH",
+        "live_name": "FORD-US",
+        "account_number": "DB001R6A-US",
+        "db2_id": "0010500000BTSgGAAX",
+        "db2_name": "FORD-US",
+        "db2_enterprise_id": "0010500000FrNk6AAF",
+        "db2_enterprise_name": "FORD-WW",
+        "db2_coverage_children": [
+          {
+            "id": "0010500000BTSgGAAX",
+            "name": "FORD-US",
+            "market": "4A"
+          }
+        ],
+        "enterprise_match_status": "matched"
+      },
+      "gainsight": {
+        "company_gsid": "1P02WPZ71GR8TFJ55WYST13MTYWNUF3AWCZ2",
+        "company_name": "Ford Motor Company",
+        "relationships": 260,
+        "confidence": "high",
+        "match_basis": "isc_us_name+plans",
+        "largest_in_group": {
+          "name": "Ford Motor Company",
+          "gsid": "1P02WPZ71GR8TFJ55WYST13MTYWNUF3AWCZ2",
+          "relationships": 260
+        },
+        "previous_pick": {
+          "gsid": "1P02WPZ71GR8TFJ55WOZU1ECHC1H1V0EED5M",
+          "name": "FORD",
+          "plans": 0
+        },
+        "companies_in_group": [
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WXNN1XI6EEA2P6J246X",
+            "name": "Latitude Ai LLC",
+            "cov_id": "A0003851",
+            "cov_name": "US - FORD",
+            "status": "Active",
+            "relationships": 1
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WLSC4CFPNGF5Y4JCJIV",
+            "name": "Gabrielli Truck Sales Ltd.",
+            "cov_id": "A0003851",
+            "cov_name": "US - FORD",
+            "status": "Active",
+            "relationships": 1
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WYST13MTYWNUF3AWCZ2",
+            "name": "Ford Motor Company",
+            "cov_id": "A0003851",
+            "cov_name": "US - FORD",
+            "status": "Active",
+            "relationships": 260
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WFD2UZW8LY49ZC8Y2BQ",
+            "name": "Dealerdirect LLC",
+            "cov_id": "A0003851",
+            "cov_name": "US - FORD",
+            "status": "Active",
+            "relationships": 1
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WOZU1ECHC1H1V0EED5M",
+            "name": "FORD",
+            "cov_id": "A0003851",
+            "cov_name": "US - FORD",
+            "status": "Active",
+            "relationships": 3
+          }
+        ]
+      },
+      "smartcare": {
+        "gbg_id": "21793",
+        "gbg_name": "FORD",
+        "source": "select-gbg",
+        "selection_status": "matched"
+      },
+      "review_flags": []
+    },
+    {
+      "account_name": "GOOGLE",
+      "coverage_id": "A0004429",
+      "coverage_type": "A-Tier (Select / Territory)",
+      "gainsight_coverage_name": "US - GOOGLE",
+      "isc": {
+        "live_id": "0013h000019FqevAAC",
+        "live_name": "GOOGLE INC-US",
+        "account_number": "DB000719-US",
+        "db2_id": "0010500000KNvg8AAD",
+        "db2_name": "GOOGLE INC-US",
+        "db2_enterprise_id": "0010500000FrEHkAAN",
+        "db2_enterprise_name": "GOOGLE INC-WW",
+        "db2_coverage_children": [
+          {
+            "id": "0010500000IqqKDAAZ",
+            "name": "GOOGLE INC-CN",
+            "market": "4A"
+          },
+          {
+            "id": "0010500000KNvg8AAD",
+            "name": "GOOGLE INC-US",
+            "market": "4A"
+          },
+          {
+            "id": "0010500000IqlRwAAJ",
+            "name": "GOOGLE INC-PH",
+            "market": "4A"
+          }
+        ],
+        "enterprise_match_status": "matched"
+      },
+      "gainsight": {
+        "company_gsid": "1P02WPZ71GR8TFJ55WYYWYXH3R6NOYUK1KEO",
+        "company_name": "GOOGLE INC",
+        "relationships": 11,
+        "confidence": "high",
+        "match_basis": "plan_count_review",
+        "override_reason": "Google LLC (2 plans) is the same client",
+        "largest_in_group": {
+          "name": "GOOGLE INC",
+          "gsid": "1P02WPZ71GR8TFJ55WYYWYXH3R6NOYUK1KEO",
+          "relationships": 11
+        },
+        "companies_in_group": [
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WZ1S5KCK2H2JSYDZMM6",
+            "name": "Google LLC",
+            "cov_id": "A0004429",
+            "cov_name": "US - GOOGLE",
+            "status": "Active",
+            "relationships": 9
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WYYWYXH3R6NOYUK1KEO",
+            "name": "GOOGLE INC",
+            "cov_id": "A0004429",
+            "cov_name": "US - GOOGLE",
+            "status": "Active",
+            "relationships": 11
+          }
+        ],
+        "additional_companies": [
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WZ1S5KCK2H2JSYDZMM6",
+            "name": "Google LLC"
+          }
+        ]
+      },
+      "smartcare": {
+        "gbg_id": "21305",
+        "gbg_name": "GOOGLE INC",
+        "source": "select-gbg",
+        "selection_status": "matched"
+      },
+      "review_flags": []
+    },
+    {
+      "account_name": "HCL TECHNOLOGIES",
+      "coverage_id": "A0009421",
+      "coverage_type": "A-Tier (Select / Territory)",
+      "gainsight_coverage_name": "US - HCL TECHNOLOGIES",
+      "isc": {
+        "live_id": "0013h00000w1gnHAAQ",
+        "live_name": "HCL TECHNOLOGIES (I) P.LTD-US",
+        "account_number": "DB001BGF-US",
+        "db2_id": "0010500000BTZhDAAX",
+        "db2_name": "HCL TECHNOLOGIES (I) P.LTD-US",
+        "db2_enterprise_id": "0010500000FrEvRAAV",
+        "db2_enterprise_name": "HCL TECHNOLOGIES-WW",
+        "db2_coverage_children": [
+          {
+            "id": "0010500000BTZhDAAX",
+            "name": "HCL TECHNOLOGIES (I) P.LTD-US",
+            "market": "4A"
+          }
+        ],
+        "enterprise_match_status": "matched"
+      },
+      "gainsight": {
+        "company_gsid": "1P02WPZ71GR8TFJ55W8KUW6U4KG1D6WNHLZ5",
+        "company_name": "HCL TECHNOLOGIES (I) P.LTD",
+        "relationships": 216,
+        "confidence": "high",
+        "match_basis": "isc_child_name",
+        "largest_in_group": {
+          "name": "HCL TECHNOLOGIES (I) P.LTD",
+          "gsid": "1P02WPZ71GR8TFJ55W8KUW6U4KG1D6WNHLZ5",
+          "relationships": 216
+        },
+        "companies_in_group": [
+          {
+            "gsid": "1P02WPZ71GR8TFJ55W8KUW6U4KG1D6WNHLZ5",
+            "name": "HCL TECHNOLOGIES (I) P.LTD",
+            "cov_id": "A0009421",
+            "cov_name": "US - HCL TECHNOLOGIES",
+            "status": "Active",
+            "relationships": 216
+          }
+        ]
+      },
+      "smartcare": {
+        "gbg_id": "32942",
+        "gbg_name": "HCL TECHNOLOGIES",
+        "source": "select-gbg",
+        "selection_status": "matched"
+      },
+      "review_flags": []
+    },
+    {
+      "account_name": "HERTZ",
+      "coverage_id": "A0001845",
+      "coverage_type": "A-Tier (Select / Territory)",
+      "gainsight_coverage_name": "US - HERTZ",
+      "isc": {
+        "live_id": "0013h00000w1dIIAAY",
+        "live_name": "THE HERTZ CORP-US",
+        "account_number": "DB000514-US",
+        "db2_id": "0010500000BTRSEAA5",
+        "db2_name": "THE HERTZ CORP-US",
+        "db2_enterprise_id": "0010500000FrE5XAAV",
+        "db2_enterprise_name": "HERTZ CORPORATION-WW",
+        "db2_coverage_children": [
+          {
+            "id": "0010500000BTRSEAA5",
+            "name": "THE HERTZ CORP-US",
+            "market": "4A"
+          }
+        ],
+        "enterprise_match_status": "matched"
+      },
+      "gainsight": {
+        "company_gsid": "1P02WPZ71GR8TFJ55WHM4OUCUYIJA7DV3W00",
+        "company_name": "Rent-Lease Inc.",
+        "relationships": 92,
+        "confidence": "high",
+        "match_basis": "isc_us_name+plans",
+        "largest_in_group": {
+          "name": "Rent-Lease Inc.",
+          "gsid": "1P02WPZ71GR8TFJ55WHM4OUCUYIJA7DV3W00",
+          "relationships": 92
+        },
+        "previous_pick": {
+          "gsid": "1P02WPZ71GR8TFJ55WBO50YH0QU3X3CCF886",
+          "name": "THE HERTZ CORP",
+          "plans": 0
+        },
+        "companies_in_group": [
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WDJN07NYPHTBNRHX97K",
+            "name": "Hertz Global Holdings Inc.",
+            "cov_id": "A0001845",
+            "cov_name": "US - HERTZ",
+            "status": "Active",
+            "relationships": 16
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WHM4OUCUYIJA7DV3W00",
+            "name": "Rent-Lease Inc.",
+            "cov_id": "A0001845",
+            "cov_name": "US - HERTZ",
+            "status": "Active",
+            "relationships": 92
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WBO50YH0QU3X3CCF886",
+            "name": "THE HERTZ CORP",
+            "cov_id": "A0001845",
+            "cov_name": "US - HERTZ",
+            "status": "Active",
+            "relationships": 0
+          }
+        ]
+      },
+      "smartcare": {
+        "gbg_id": "31852",
+        "gbg_name": "HERTZ CORPORATION",
+        "source": "select-gbg",
+        "selection_status": "matched"
+      },
+      "review_flags": []
+    },
+    {
+      "account_name": "HOME DEPOT",
+      "coverage_id": "A0001936",
+      "coverage_type": "A-Tier (Select / Territory)",
+      "gainsight_coverage_name": "US - HOME DEPOT",
+      "isc": {
+        "live_id": "0013h00000w1eAOAAY",
+        "live_name": "HOME DEPOT-US",
+        "account_number": "DB000FRT-US",
+        "db2_id": "0010500000BTQZ9AAP",
+        "db2_name": "HOME DEPOT-US",
+        "db2_enterprise_id": "0010500000FrLgOAAV",
+        "db2_enterprise_name": "HOME DEPOT-WW",
+        "db2_coverage_children": [
+          {
+            "id": "0010500000BTQZ9AAP",
+            "name": "HOME DEPOT-US",
+            "market": "4A"
+          },
+          {
+            "id": "0010500000IqlZIAAZ",
+            "name": "HOME DEPOT-IN",
+            "market": "4A"
+          }
+        ],
+        "enterprise_match_status": "matched"
+      },
+      "gainsight": {
+        "company_gsid": "1P02WPZ71GR8TFJ55WO8SNST7ROXJUWFCYKE",
+        "company_name": "HOME DEPOT",
+        "relationships": 90,
+        "confidence": "high",
+        "match_basis": "isc_enterprise_name",
+        "largest_in_group": {
+          "name": "HOME DEPOT",
+          "gsid": "1P02WPZ71GR8TFJ55WO8SNST7ROXJUWFCYKE",
+          "relationships": 90
+        },
+        "companies_in_group": [
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WP9TUYX0IJG8AGSCACN",
+            "name": "SRS Distribution Inc.",
+            "cov_id": "A0001936",
+            "cov_name": "US - HOME DEPOT",
+            "status": "Active",
+            "relationships": 1
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WN3A3P7S4G13PBVD0MO",
+            "name": "Thd At-Home Services Inc.",
+            "cov_id": "A0001936",
+            "cov_name": "US - HOME DEPOT",
+            "status": "Active",
+            "relationships": 1
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WO8SNST7ROXJUWFCYKE",
+            "name": "HOME DEPOT",
+            "cov_id": "A0001936",
+            "cov_name": "US - HOME DEPOT",
+            "status": "Active",
+            "relationships": 90
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WAGOL1TH0EHN7CIN2UX",
+            "name": "Cr Home LLC",
+            "cov_id": "A0001936",
+            "cov_name": "US - HOME DEPOT",
+            "status": "Active",
+            "relationships": 1
+          }
+        ]
+      },
+      "smartcare": {
+        "gbg_id": "542",
+        "gbg_name": "HOME DEPOT",
+        "source": "select-gbg",
+        "selection_status": "matched"
+      },
+      "review_flags": []
+    },
+    {
+      "account_name": "HONDA MOTOR",
+      "coverage_id": "A0001827",
+      "coverage_type": "A-Tier (Select / Territory)",
+      "gainsight_coverage_name": "US - HONDA MOTOR",
+      "isc": {
+        "live_id": "0013h00000w1gBCAAY",
+        "live_name": "HONDA MOTOR-US",
+        "account_number": "DB001R5D-US",
+        "db2_id": "0010500000BTZEGAA5",
+        "db2_name": "HONDA MOTOR-US",
+        "db2_enterprise_id": "0010500000FrIc9AAF",
+        "db2_enterprise_name": "HONDA MOTOR-WW",
+        "db2_coverage_children": [
+          {
+            "id": "0010500000BTSsgAAH",
+            "name": "MORIROKU-US",
+            "market": "4A"
+          },
+          {
+            "id": "0010500000BTT7oAAH",
+            "name": "MUSASHI SEIMITSU INDUSTRY-US",
+            "market": "4A"
+          },
+          {
+            "id": "0010500000BTZEGAA5",
+            "name": "HONDA MOTOR-US",
+            "market": "4A"
+          },
+          {
+            "id": "0010500000BTScfAAH",
+            "name": "NIHON PLAST-US",
+            "market": "4A"
+          }
+        ],
+        "enterprise_match_status": "matched"
+      },
+      "gainsight": {
+        "company_gsid": "1P02WPZ71GR8TFJ55WLVZ8CRSK6JD5DCN10W",
+        "company_name": "HONDA MOTOR",
+        "relationships": 71,
+        "confidence": "high",
+        "match_basis": "isc_enterprise_name",
+        "largest_in_group": {
+          "name": "HONDA MOTOR",
+          "gsid": "1P02WPZ71GR8TFJ55WLVZ8CRSK6JD5DCN10W",
+          "relationships": 71
+        },
+        "companies_in_group": [
+          {
+            "gsid": "1P02WPZ71GR8TFJ55W60UO3MF203Q2TIWOJT",
+            "name": "TS Tech Americas Inc.",
+            "cov_id": "A0001827",
+            "cov_name": "US - HONDA MOTOR",
+            "status": "Active",
+            "relationships": 1
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55W524733ENT3Y7BHHZK6",
+            "name": "New South Express LLC",
+            "cov_id": "A0001827",
+            "cov_name": "US - HONDA MOTOR",
+            "status": "Active",
+            "relationships": 2
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55W2AV42ST0ZKETEGCI0K",
+            "name": "Neaton Auto Products Manufacturing Inc.",
+            "cov_id": "A0001827",
+            "cov_name": "US - HONDA MOTOR",
+            "status": "Active",
+            "relationships": 1
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WJ32GH800M7ETM8FWXH",
+            "name": "KEIHIN CORPORATION",
+            "cov_id": "A0001827",
+            "cov_name": "US - HONDA MOTOR",
+            "status": "Active",
+            "relationships": 0
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WHC6YJ3CBGODGM1L64I",
+            "name": "MORIROKU",
+            "cov_id": "A0001827",
+            "cov_name": "US - HONDA MOTOR",
+            "status": "Active",
+            "relationships": 1
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55W0VT8MZNNY2F6OCKVIV",
+            "name": "HONDA LOGISTICS INC.",
+            "cov_id": "A0001827",
+            "cov_name": "US - HONDA MOTOR",
+            "status": "Active",
+            "relationships": 2
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WLVZ8CRSK6JD5DCN10W",
+            "name": "HONDA MOTOR",
+            "cov_id": "A0001827",
+            "cov_name": "US - HONDA MOTOR",
+            "status": "Active",
+            "relationships": 71
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55W54ZJN6TF93ZLU1DKR6",
+            "name": "Drivemode Inc.",
+            "cov_id": "A0001827",
+            "cov_name": "US - HONDA MOTOR",
+            "status": "Active",
+            "relationships": 1
+          }
+        ]
+      },
+      "smartcare": {
+        "gbg_id": "727",
+        "gbg_name": "HONDA MOTOR",
+        "source": "select-gbg",
+        "selection_status": "matched"
+      },
+      "review_flags": []
+    },
+    {
+      "account_name": "HPE",
+      "coverage_id": "A0009432",
+      "coverage_type": "A-Tier (Select / Territory)",
+      "gainsight_coverage_name": "US - HPE",
+      "isc": {
+        "live_id": "0013h00000w1gtrAAA",
+        "live_name": "JUNIPER NETWORKS INC-US",
+        "account_number": "DB0007RN-US",
+        "db2_id": "0010500000BTa0UAAT",
+        "db2_name": "JUNIPER NETWORKS INC-US",
+        "db2_enterprise_id": "001Nq00000XGBCsIAP",
+        "db2_enterprise_name": "HEWLETT PACKARD ENTERPRISE-WW",
+        "db2_coverage_children": [
+          {
+            "id": "0010500000BTa0UAAT",
+            "name": "JUNIPER NETWORKS INC-US",
+            "market": "4A"
+          },
+          {
+            "id": "001Nq00000XGNdoIAH",
+            "name": "HEWLETT PACKARD ENTERPRISE-US",
+            "market": "4A"
+          },
+          {
+            "id": "0010500000BTW9GAAX",
+            "name": "HPI-US",
+            "market": "4A"
+          }
+        ],
+        "enterprise_match_status": "manual"
+      },
+      "gainsight": {
+        "company_gsid": "1P02WPZ71GR8TFJ55WHP60ZLK4WZXL4S9NIH",
+        "company_name": "HEWLETT PACKARD ENTERPRISE",
+        "relationships": 4,
+        "confidence": "high",
+        "match_basis": "isc_enterprise_name",
+        "largest_in_group": {
+          "name": "JUNIPER NETWORKS INC",
+          "gsid": "1P02WPZ71GR8TFJ55WUA7241QJXXAZ4RE6AU",
+          "relationships": 10
+        },
+        "companies_in_group": [
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WMX5HB0F0YPO55VXOJL",
+            "name": "HPI",
+            "cov_id": "A0009432",
+            "cov_name": "US - HPE",
+            "status": "Active",
+            "relationships": 1
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WUA7241QJXXAZ4RE6AU",
+            "name": "JUNIPER NETWORKS INC",
+            "cov_id": "A0009432",
+            "cov_name": "US - HPE",
+            "status": "Active",
+            "relationships": 10
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WHP60ZLK4WZXL4S9NIH",
+            "name": "HEWLETT PACKARD ENTERPRISE",
+            "cov_id": "A0009432",
+            "cov_name": "US - HPE",
+            "status": "Active",
+            "relationships": 4
+          }
+        ],
+        "additional_companies": [
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WMX5HB0F0YPO55VXOJL",
+            "name": "HPI"
+          }
+        ]
+      },
+      "smartcare": {
+        "gbg_id": null,
+        "gbg_name": null,
+        "source": null,
+        "selection_status": "review"
+      },
+      "review_flags": [
+        "smartcare_gbg_unresolved:review",
+        "isc_enterprise_manual"
+      ]
+    },
+    {
+      "account_name": "LENOVO",
+      "coverage_id": "A0009087",
+      "coverage_type": "A-Tier (Select / Territory)",
+      "gainsight_coverage_name": "US - LENOVO",
+      "isc": {
+        "live_id": "0013h00000w1fQlAAI",
+        "live_name": "LENOVO GROUP LTD-US",
+        "account_number": "DB000HB7-US",
+        "db2_id": "0010500000BTXZoAAP",
+        "db2_name": "LENOVO GROUP LTD-US",
+        "db2_enterprise_id": "0010500000FrIJ9AAN",
+        "db2_enterprise_name": "LENOVO GROUP LTD-WW",
+        "db2_coverage_children": [
+          {
+            "id": "0010500000BTXZoAAP",
+            "name": "LENOVO GROUP LTD-US",
+            "market": "4A"
+          }
+        ],
+        "enterprise_match_status": "matched"
+      },
+      "gainsight": {
+        "company_gsid": "1P02WPZ71GR8TFJ55WKH4OYS3NSONYKMFFIQ",
+        "company_name": "LENOVO GROUP LTD",
+        "relationships": 9,
+        "confidence": "high",
+        "match_basis": "isc_enterprise_name",
+        "largest_in_group": {
+          "name": "LENOVO GROUP LIMITED",
+          "gsid": "1P02WPZ71GR8TFJ55W6DIYZB6D6EY5X6X1GA",
+          "relationships": 9
+        },
+        "companies_in_group": [
+          {
+            "gsid": "1P02WPZ71GR8TFJ55W6DIYZB6D6EY5X6X1GA",
+            "name": "LENOVO GROUP LIMITED",
+            "cov_id": "A0009087",
+            "cov_name": "US - LENOVO",
+            "status": "Active",
+            "relationships": 9
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WKH4OYS3NSONYKMFFIQ",
+            "name": "LENOVO GROUP LTD",
+            "cov_id": "A0009087",
+            "cov_name": "US - LENOVO",
+            "status": "Active",
+            "relationships": 9
+          }
+        ]
+      },
+      "smartcare": {
+        "gbg_id": "32278",
+        "gbg_name": "LENOVO GROUP LTD",
+        "source": "select-gbg",
+        "selection_status": "matched"
+      },
+      "review_flags": []
+    },
+    {
+      "account_name": "LOWES",
+      "coverage_id": "A0009089",
+      "coverage_type": "A-Tier (Select / Territory)",
+      "gainsight_coverage_name": "US - LOWES",
+      "isc": {
+        "live_id": "0013h00000w1ddbAAA",
+        "live_name": "LOWE'S-US",
+        "account_number": "DB000GEJ-US",
+        "db2_id": "0010500000BTRV1AAP",
+        "db2_name": "LOWE'S-US",
+        "db2_enterprise_id": "0010500000FrKfXAAV",
+        "db2_enterprise_name": "LOWE'S-WW",
+        "db2_coverage_children": [
+          {
+            "id": "0010500000A1tZlAAJ",
+            "name": "LOWE'S-CA",
+            "market": "4A"
+          },
+          {
+            "id": "0010500000BTRV1AAP",
+            "name": "LOWE'S-US",
+            "market": "4A"
+          }
+        ],
+        "enterprise_match_status": "matched"
+      },
+      "gainsight": {
+        "company_gsid": "1P02WPZ71GR8TFJ55W9YAKMA7GNWQF1L3U4M",
+        "company_name": "LOWE'S",
+        "relationships": 56,
+        "confidence": "high",
+        "match_basis": "isc_enterprise_name",
+        "largest_in_group": {
+          "name": "LOWE'S",
+          "gsid": "1P02WPZ71GR8TFJ55W9YAKMA7GNWQF1L3U4M",
+          "relationships": 56
+        },
+        "companies_in_group": [
+          {
+            "gsid": "1P02WPZ71GR8TFJ55W9YAKMA7GNWQF1L3U4M",
+            "name": "LOWE'S",
+            "cov_id": "A0009089",
+            "cov_name": "US - LOWES",
+            "status": "Active",
+            "relationships": 56
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WT09I5QU1QJ9T09RX1I",
+            "name": "Lowe's Companies Inc.",
+            "cov_id": "A0009089",
+            "cov_name": "US - LOWES",
+            "status": "Active",
+            "relationships": 23
+          }
+        ]
+      },
+      "smartcare": {
+        "gbg_id": null,
+        "gbg_name": null,
+        "source": null,
+        "selection_status": "review"
+      },
+      "review_flags": [
+        "smartcare_gbg_unresolved:review"
+      ]
+    },
+    {
+      "account_name": "MARRIOTT",
+      "coverage_id": "A0001940",
+      "coverage_type": "A-Tier (Select / Territory)",
+      "gainsight_coverage_name": "US - MARRIOTT",
+      "isc": {
+        "live_id": "0013h000019FqiSAAS",
+        "live_name": "MARRIOTT INTERNATIONAL INC-US",
+        "account_number": "DB001NEB-US",
+        "db2_id": "0010500000KNvnsAAD",
+        "db2_name": "MARRIOTT INTERNATIONAL INC-US",
+        "db2_enterprise_id": "0010500000FrEJuAAN",
+        "db2_enterprise_name": "MARRIOTT INTERNATIONAL INC.-WW",
+        "db2_coverage_children": [
+          {
+            "id": "0010500000BTTErAAP",
+            "name": "STARWOOD HOTELS & RESORT-US",
+            "market": "4A"
+          }
+        ],
+        "enterprise_match_status": "matched"
+      },
+      "gainsight": {
+        "company_gsid": "1P02WPZ71GR8TFJ55W7853LOB53DS4X0RBEF",
+        "company_name": "Marriott International Inc.",
+        "relationships": 69,
+        "confidence": "high",
+        "match_basis": "isc_enterprise_name",
+        "largest_in_group": {
+          "name": "Marriott International Inc.",
+          "gsid": "1P02WPZ71GR8TFJ55W7853LOB53DS4X0RBEF",
+          "relationships": 69
+        },
+        "companies_in_group": [
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WCTWF3EQ591NN1AFSOL",
+            "name": "True North Hotel Group Inc.",
+            "cov_id": "A0001940",
+            "cov_name": "US - MARRIOTT",
+            "status": "Active",
+            "relationships": 1
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WMW4XDJONJHT590WB5G",
+            "name": "MARRIOTT INTERNATIONAL INC",
+            "cov_id": "A0001940",
+            "cov_name": "US - MARRIOTT",
+            "status": "Active",
+            "relationships": 3
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WHDV2WPN3CMKV13Z57H",
+            "name": "JW Marriott Las Vegas Resort & Spa",
+            "cov_id": "A0001940",
+            "cov_name": "US - MARRIOTT",
+            "status": "Active",
+            "relationships": 1
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55W7853LOB53DS4X0RBEF",
+            "name": "Marriott International Inc.",
+            "cov_id": "A0001940",
+            "cov_name": "US - MARRIOTT",
+            "status": "Active",
+            "relationships": 69
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WEAI56HV0K3P08G72TR",
+            "name": "Host Hotels & Resorts Inc.",
+            "cov_id": "A0001940",
+            "cov_name": "US - MARRIOTT",
+            "status": "Active",
+            "relationships": 3
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WX9QF5EN3RLU8JXPT2D",
+            "name": "Concord Hospitality Enterprises Company LLC",
+            "cov_id": "A0001940",
+            "cov_name": "US - MARRIOTT",
+            "status": "Active",
+            "relationships": 1
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WMUKBK011FQOU1R4XZQ",
+            "name": "STARWOOD HOTELS & RESORT",
+            "cov_id": "A0001940",
+            "cov_name": "US - MARRIOTT",
+            "status": "Active",
+            "relationships": 6
+          }
+        ]
+      },
+      "smartcare": {
+        "gbg_id": "33190",
+        "gbg_name": "MARRIOTT INTERNATIONAL INC.",
+        "source": "select-gbg",
+        "selection_status": "matched"
+      },
+      "review_flags": []
+    },
+    {
+      "account_name": "MCKESSON",
+      "coverage_id": "A0009430",
+      "coverage_type": "A-Tier (Select / Territory)",
+      "gainsight_coverage_name": "US - MCKESSON",
+      "isc": {
+        "live_id": "0013h00000w1av2AAA",
+        "live_name": "MCKESSON CORPORATION-US",
+        "account_number": "DB003N0U-US",
+        "db2_id": "0010500000BTQxbAAH",
+        "db2_name": "MCKESSON CORPORATION-US",
+        "db2_enterprise_id": "0010500000FrIS6AAN",
+        "db2_enterprise_name": "MCKESSON CORPORATION-WW",
+        "db2_coverage_children": [
+          {
+            "id": "0010500000BTQxbAAH",
+            "name": "MCKESSON CORPORATION-US",
+            "market": "4A"
+          }
+        ],
+        "enterprise_match_status": "matched"
+      },
+      "gainsight": {
+        "company_gsid": "1P02WPZ71GR8TFJ55W1RZG8VI7T27U0XMWAH",
+        "company_name": "McKesson Corporation",
+        "relationships": 188,
+        "confidence": "high",
+        "match_basis": "isc_enterprise_name",
+        "largest_in_group": {
+          "name": "McKesson Corporation",
+          "gsid": "1P02WPZ71GR8TFJ55W1RZG8VI7T27U0XMWAH",
+          "relationships": 188
+        },
+        "companies_in_group": [
+          {
+            "gsid": "1P02WPZ71GR8TFJ55W1RZG8VI7T27U0XMWAH",
+            "name": "McKesson Corporation",
+            "cov_id": "A0009430",
+            "cov_name": "US - MCKESSON",
+            "status": "Active",
+            "relationships": 188
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WLCGJ89DOZ796PJQL8O",
+            "name": "MCKESSON CORPORATION",
+            "cov_id": "A0009430",
+            "cov_name": "US - MCKESSON",
+            "status": "Active",
+            "relationships": 19
+          }
+        ]
+      },
+      "smartcare": {
+        "gbg_id": "44450",
+        "gbg_name": "MCKESSON CORPORATION",
+        "source": "select-gbg",
+        "selection_status": "matched"
+      },
+      "review_flags": []
+    },
+    {
+      "account_name": "MEDTRONIC",
+      "coverage_id": "A0009427",
+      "coverage_type": "A-Tier (Select / Territory)",
+      "gainsight_coverage_name": "US - MEDTRONIC",
+      "isc": {
+        "live_id": "0013h00000w1cd0AAA",
+        "live_name": "MEDTRONIC-US",
+        "account_number": "DB0038NZ-US",
+        "db2_id": "0010500000BTVGJAA5",
+        "db2_name": "MEDTRONIC-US",
+        "db2_enterprise_id": "0010500000FrMxoAAF",
+        "db2_enterprise_name": "MEDTRONIC-WW",
+        "db2_coverage_children": [
+          {
+            "id": "0010500000BTVGJAA5",
+            "name": "MEDTRONIC-US",
+            "market": "4A"
+          }
+        ],
+        "enterprise_match_status": "matched"
+      },
+      "gainsight": {
+        "company_gsid": "1P02WPZ71GR8TFJ55W2C1ALF12KD1HK6W260",
+        "company_name": "MEDTRONIC",
+        "relationships": 23,
+        "confidence": "high",
+        "match_basis": "isc_enterprise_name",
+        "largest_in_group": {
+          "name": "MEDTRONIC",
+          "gsid": "1P02WPZ71GR8TFJ55W2C1ALF12KD1HK6W260",
+          "relationships": 23
+        },
+        "companies_in_group": [
+          {
+            "gsid": "1P02WPZ71GR8TFJ55W2C1ALF12KD1HK6W260",
+            "name": "MEDTRONIC",
+            "cov_id": "A0009427",
+            "cov_name": "US - MEDTRONIC",
+            "status": "Active",
+            "relationships": 23
+          }
+        ]
+      },
+      "smartcare": {
+        "gbg_id": "33271",
+        "gbg_name": "MEDTRONIC",
+        "source": "select-gbg",
+        "selection_status": "matched"
+      },
+      "review_flags": []
+    },
+    {
+      "account_name": "MICROSOFT CORPORATION",
+      "coverage_id": "A0009090",
+      "coverage_type": "A-Tier (Select / Territory)",
+      "gainsight_coverage_name": "US - MICROSOFT CORPORATION",
+      "isc": {
+        "live_id": "0013h00000w1bUgAAI",
+        "live_name": "MICROSOFT CORP-US",
+        "account_number": "DB000HPS-US",
+        "db2_id": "0010500000BTaKDAA1",
+        "db2_name": "MICROSOFT CORP-US",
+        "db2_enterprise_id": "0010500000FrFsRAAV",
+        "db2_enterprise_name": "MICROSOFT CORPORATION-WW",
+        "db2_coverage_children": [
+          {
+            "id": "0010500000BTaKDAA1",
+            "name": "MICROSOFT CORP-US",
+            "market": "4A"
+          },
+          {
+            "id": "0010500000BTYXyAAP",
+            "name": "NUANCE COMMUNICATIONS-US",
+            "market": "4A"
+          }
+        ],
+        "enterprise_match_status": "matched"
+      },
+      "gainsight": {
+        "company_gsid": "1P02WPZ71GR8TFJ55WF8FMZ7VK6JJFSZ25QW",
+        "company_name": "MICROSOFT CORP",
+        "relationships": 10,
+        "confidence": "high",
+        "match_basis": "isc_enterprise_name",
+        "largest_in_group": {
+          "name": "MICROSOFT CORP",
+          "gsid": "1P02WPZ71GR8TFJ55WF8FMZ7VK6JJFSZ25QW",
+          "relationships": 10
+        },
+        "companies_in_group": [
+          {
+            "gsid": "1P02WPZ71GR8TFJ55W91LOY1I1XWZCPCKOD5",
+            "name": "Activision Blizzard Inc.",
+            "cov_id": "A0009090",
+            "cov_name": "US - MICROSOFT CORPORATION",
+            "status": "Active",
+            "relationships": 1
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WPYHNKOGZTZ1I2CROFZ",
+            "name": "ZT SYSTEMS",
+            "cov_id": "A0009090",
+            "cov_name": "US - MICROSOFT CORPORATION",
+            "status": "Active",
+            "relationships": 5
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WO0BXR030TPPXMQ9N4F",
+            "name": "Linkedin Corporation",
+            "cov_id": "A0009090",
+            "cov_name": "US - MICROSOFT CORPORATION",
+            "status": "Active",
+            "relationships": 3
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55W6974GCT1FQV6000OYX",
+            "name": "Github Inc.",
+            "cov_id": "A0009090",
+            "cov_name": "US - MICROSOFT CORPORATION",
+            "status": "Active",
+            "relationships": 4
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WF8FMZ7VK6JJFSZ25QW",
+            "name": "MICROSOFT CORP",
+            "cov_id": "A0009090",
+            "cov_name": "US - MICROSOFT CORPORATION",
+            "status": "Active",
+            "relationships": 10
+          }
+        ]
+      },
+      "smartcare": {
+        "gbg_id": "11109",
+        "gbg_name": "MICROSOFT CORPORATION",
+        "source": "select-gbg",
+        "selection_status": "matched"
+      },
+      "review_flags": []
+    },
+    {
+      "account_name": "NIKE",
+      "coverage_id": "A0004437",
+      "coverage_type": "A-Tier (Select / Territory)",
+      "gainsight_coverage_name": "US - NIKE",
+      "isc": {
+        "live_id": "0013h00000w1bu8AAA",
+        "live_name": "NIKE INC-US",
+        "account_number": "DB0000Q2-US",
+        "db2_id": "0010500000BTTFRAA5",
+        "db2_name": "NIKE INC-US",
+        "db2_enterprise_id": "0010500000FrEvfAAF",
+        "db2_enterprise_name": "NIKE-WW",
+        "db2_coverage_children": [
+          {
+            "id": "0010500000BTTFRAA5",
+            "name": "NIKE INC-US",
+            "market": "4A"
+          }
+        ],
+        "enterprise_match_status": "matched"
+      },
+      "gainsight": {
+        "company_gsid": "1P02WPZ71GR8TFJ55W4C8T8UHQO5BBCIGCVZ",
+        "company_name": "Nike Inc.",
+        "relationships": 16,
+        "confidence": "high",
+        "match_basis": "isc_enterprise_name",
+        "largest_in_group": {
+          "name": "Nike Inc.",
+          "gsid": "1P02WPZ71GR8TFJ55W4C8T8UHQO5BBCIGCVZ",
+          "relationships": 16
+        },
+        "companies_in_group": [
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WI8ZPL308ZGU2OJLGN1",
+            "name": "NIKE INC",
+            "cov_id": "A0004437",
+            "cov_name": "US - NIKE",
+            "status": "Active",
+            "relationships": 2
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55W4C8T8UHQO5BBCIGCVZ",
+            "name": "Nike Inc.",
+            "cov_id": "A0004437",
+            "cov_name": "US - NIKE",
+            "status": "Active",
+            "relationships": 16
+          }
+        ]
+      },
+      "smartcare": {
+        "gbg_id": "31690",
+        "gbg_name": "NIKE",
+        "source": "select-gbg",
+        "selection_status": "matched"
+      },
+      "review_flags": []
+    },
+    {
+      "account_name": "NORFOLK SOUTHERN CORPORATION",
+      "coverage_id": "A0004438",
+      "coverage_type": "A-Tier (Select / Territory)",
+      "gainsight_coverage_name": "US - NORFOLK SOUTHERN CORPORATION",
+      "isc": {
+        "live_id": "0013h00000w1ghyAAA",
+        "live_name": "NORFOLK SOUTHERN CORPORATION-US",
+        "account_number": "DB003TV4-US",
+        "db2_id": "0010500000BTZqyAAH",
+        "db2_name": "NORFOLK SOUTHERN CORPORATION-US",
+        "db2_enterprise_id": "0010500000FrIs5AAF",
+        "db2_enterprise_name": "NORFOLK SOUTHERN CORPORATION-WW",
+        "db2_coverage_children": [
+          {
+            "id": "0010500000BTZqyAAH",
+            "name": "NORFOLK SOUTHERN CORPORATION-US",
+            "market": "4A"
+          }
+        ],
+        "enterprise_match_status": "matched"
+      },
+      "gainsight": {
+        "company_gsid": "1P02WPZ71GR8TFJ55WCM027O4H8V3J6CKBMC",
+        "company_name": "Norfolk Southern Corporation",
+        "relationships": 109,
+        "confidence": "high",
+        "match_basis": "isc_enterprise_name",
+        "largest_in_group": {
+          "name": "Norfolk Southern Corporation",
+          "gsid": "1P02WPZ71GR8TFJ55WCM027O4H8V3J6CKBMC",
+          "relationships": 109
+        },
+        "companies_in_group": [
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WCM027O4H8V3J6CKBMC",
+            "name": "Norfolk Southern Corporation",
+            "cov_id": "A0004438",
+            "cov_name": "US - NORFOLK SOUTHERN CORPORATION",
+            "status": "Active",
+            "relationships": 109
+          }
+        ]
+      },
+      "smartcare": {
+        "gbg_id": "44526",
+        "gbg_name": "NORFOLK SOUTHERN CORPORATION",
+        "source": "select-gbg",
+        "selection_status": "matched"
+      },
+      "review_flags": []
+    },
+    {
+      "account_name": "PUBLIX SUPERMARKETS",
+      "coverage_id": "A0009431",
+      "coverage_type": "A-Tier (Select / Territory)",
+      "gainsight_coverage_name": "US - PUBLIX SUPERMARKETS",
+      "isc": {
+        "live_id": "0013h00000w1f1mAAA",
+        "live_name": "PUBLIX SUPER MARKETS INC.-US",
+        "account_number": "DB004C72-US",
+        "db2_id": "0010500000BTRw5AAH",
+        "db2_name": "PUBLIX SUPER MARKETS INC.-US",
+        "db2_enterprise_id": "0010500000FrEklAAF",
+        "db2_enterprise_name": "PUBLIX SUPERMARKETS-WW",
+        "db2_coverage_children": [
+          {
+            "id": "0010500000BTRw5AAH",
+            "name": "PUBLIX SUPER MARKETS INC.-US",
+            "market": "4A"
+          }
+        ],
+        "enterprise_match_status": "matched"
+      },
+      "gainsight": {
+        "company_gsid": "1P02WPZ71GR8TFJ55WGKX9QX8A5DKOO2QCCX",
+        "company_name": "Publix Super Markets Inc.",
+        "relationships": 75,
+        "confidence": "high",
+        "match_basis": "isc_enterprise_name",
+        "largest_in_group": {
+          "name": "Publix Super Markets Inc.",
+          "gsid": "1P02WPZ71GR8TFJ55WGKX9QX8A5DKOO2QCCX",
+          "relationships": 75
+        },
+        "companies_in_group": [
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WGKX9QX8A5DKOO2QCCX",
+            "name": "Publix Super Markets Inc.",
+            "cov_id": "A0009431",
+            "cov_name": "US - PUBLIX SUPERMARKETS",
+            "status": "Active",
+            "relationships": 75
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WAXJIJ93ZOHRPNSK5S7",
+            "name": "PUBLIX SUPER MARKETS INC.",
+            "cov_id": "A0009431",
+            "cov_name": "US - PUBLIX SUPERMARKETS",
+            "status": "Active",
+            "relationships": 1
+          }
+        ]
+      },
+      "smartcare": {
+        "gbg_id": "34024",
+        "gbg_name": "PUBLIX SUPERMARKETS",
+        "source": "select-gbg",
+        "selection_status": "matched"
+      },
+      "review_flags": []
+    },
+    {
+      "account_name": "SALESFORCE.COM",
+      "coverage_id": "A0009423",
+      "coverage_type": "A-Tier (Select / Territory)",
+      "gainsight_coverage_name": "US - SALESFORCE.COM",
+      "isc": {
+        "live_id": "0013h00000w1d82AAA",
+        "live_name": "SALESFORCE. COM INC-US",
+        "account_number": "DB000GUU-US",
+        "db2_id": "0010500000BTUSqAAP",
+        "db2_name": "SALESFORCE. COM INC-US",
+        "db2_enterprise_id": "0010500000FrLTtAAN",
+        "db2_enterprise_name": "SALESFORCE. COM INC-WW",
+        "db2_coverage_children": [
+          {
+            "id": "0010500000BTUSqAAP",
+            "name": "SALESFORCE. COM INC-US",
+            "market": "4A"
+          },
+          {
+            "id": "0010500000IqmkAAAR",
+            "name": "SALESFORCE. COM INC-DK",
+            "market": "4A"
+          }
+        ],
+        "enterprise_match_status": "matched"
+      },
+      "gainsight": {
+        "company_gsid": "1P02WPZ71GR8TFJ55WYPC23QNU0XMEOU8QP8",
+        "company_name": "SALESFORCE. COM INC",
+        "relationships": 8,
+        "confidence": "high",
+        "match_basis": "isc_enterprise_name",
+        "largest_in_group": {
+          "name": "SALESFORCE. COM INC",
+          "gsid": "1P02WPZ71GR8TFJ55WYPC23QNU0XMEOU8QP8",
+          "relationships": 8
+        },
+        "companies_in_group": [
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WYPC23QNU0XMEOU8QP8",
+            "name": "SALESFORCE. COM INC",
+            "cov_id": "A0009423",
+            "cov_name": "US - SALESFORCE.COM",
+            "status": "Active",
+            "relationships": 8
+          }
+        ]
+      },
+      "smartcare": {
+        "gbg_id": "583",
+        "gbg_name": "SALESFORCE. COM INC",
+        "source": "select-gbg",
+        "selection_status": "matched"
+      },
+      "review_flags": []
+    },
+    {
+      "account_name": "SAP",
+      "coverage_id": "A0009424",
+      "coverage_type": "A-Tier (Select / Territory)",
+      "gainsight_coverage_name": "US - SAP",
+      "isc": {
+        "live_id": "0013h00000w1bAQAAY",
+        "live_name": "SAP-US",
+        "account_number": "DB0011ME-US",
+        "db2_id": "0010500000BTYdJAAX",
+        "db2_name": "SAP-US",
+        "db2_enterprise_id": "0010500000FrP8oAAF",
+        "db2_enterprise_name": "SAP GMBH-WW",
+        "db2_coverage_children": [
+          {
+            "id": "0010500000BTYdJAAX",
+            "name": "SAP-US",
+            "market": "4A"
+          },
+          {
+            "id": "0010500000IqhiOAAR",
+            "name": "SAP ASL-DE",
+            "market": "4A"
+          },
+          {
+            "id": "0010500000BTSfRAAX",
+            "name": "SAP ASL-US",
+            "market": "4A"
+          }
+        ],
+        "enterprise_match_status": "matched"
+      },
+      "gainsight": {
+        "company_gsid": "1P02WPZ71GR8TFJ55WJIKJPIKY5MQS2NT7C8",
+        "company_name": "SAP",
+        "relationships": 24,
+        "confidence": "high",
+        "match_basis": "isc_enterprise_name",
+        "largest_in_group": {
+          "name": "SAP",
+          "gsid": "1P02WPZ71GR8TFJ55WJIKJPIKY5MQS2NT7C8",
+          "relationships": 24
+        },
+        "companies_in_group": [
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WF1H7M400PP0MRZS9P1",
+            "name": "TAULIA LLC",
+            "cov_id": "A0009424",
+            "cov_name": "US - SAP",
+            "status": "Active",
+            "relationships": 0
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WTTPG6ZHJ5EUNQCMJQX",
+            "name": "SAP ASL",
+            "cov_id": "A0009424",
+            "cov_name": "US - SAP",
+            "status": "Active",
+            "relationships": 7
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WJIKJPIKY5MQS2NT7C8",
+            "name": "SAP",
+            "cov_id": "A0009424",
+            "cov_name": "US - SAP",
+            "status": "Active",
+            "relationships": 24
+          }
+        ]
+      },
+      "smartcare": {
+        "gbg_id": null,
+        "gbg_name": null,
+        "source": null,
+        "selection_status": "review"
+      },
+      "review_flags": [
+        "smartcare_gbg_unresolved:review"
+      ]
+    },
+    {
+      "account_name": "SERVICE-NOW.COM",
+      "coverage_id": "A0009425",
+      "coverage_type": "A-Tier (Select / Territory)",
+      "gainsight_coverage_name": "US - SERVICE-NOW.COM",
+      "isc": {
+        "live_id": "0013h00000w1fiwAAA",
+        "live_name": "SERVICE-NOW.COM-US",
+        "account_number": "DB500FBC-US",
+        "db2_id": "0010500000BTY26AAH",
+        "db2_name": "SERVICE-NOW.COM-US",
+        "db2_enterprise_id": "0010500000FrPOsAAN",
+        "db2_enterprise_name": "SERVICE-NOW.COM-WW",
+        "db2_coverage_children": [
+          {
+            "id": "0010500000BTY26AAH",
+            "name": "SERVICE-NOW.COM-US",
+            "market": "4A"
+          }
+        ],
+        "enterprise_match_status": "matched"
+      },
+      "gainsight": {
+        "company_gsid": "1P02WPZ71GR8TFJ55WZ5QCVN8OEIAHVJTN4N",
+        "company_name": "SERVICE-NOW.COM",
+        "relationships": 25,
+        "confidence": "high",
+        "match_basis": "isc_enterprise_name",
+        "largest_in_group": {
+          "name": "SERVICE-NOW.COM",
+          "gsid": "1P02WPZ71GR8TFJ55WZ5QCVN8OEIAHVJTN4N",
+          "relationships": 25
+        },
+        "companies_in_group": [
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WZ5QCVN8OEIAHVJTN4N",
+            "name": "SERVICE-NOW.COM",
+            "cov_id": "A0009425",
+            "cov_name": "US - SERVICE-NOW.COM",
+            "status": "Active",
+            "relationships": 25
+          }
+        ]
+      },
+      "smartcare": {
+        "gbg_id": "49871",
+        "gbg_name": "SERVICE-NOW.COM",
+        "source": "select-gbg",
+        "selection_status": "matched"
+      },
+      "review_flags": []
+    },
+    {
+      "account_name": "SS&C TECHNOLOGIES",
+      "coverage_id": "A0009531",
+      "coverage_type": "A-Tier (Select / Territory)",
+      "gainsight_coverage_name": "US - SS&C TECHNOLOGIES",
+      "isc": {
+        "live_id": "0013h00000w1eChAAI",
+        "live_name": "OMR SYSTEMS CORP-US",
+        "account_number": "DB000J01-US",
+        "db2_id": "0010500000BTRlBAAX",
+        "db2_name": "OMR SYSTEMS CORP-US",
+        "db2_enterprise_id": "0010500000FrMEQAA3",
+        "db2_enterprise_name": "SS&C TECHNOLOGIES INC-WW",
+        "db2_coverage_children": [
+          {
+            "id": "0010500000BTRlBAAX",
+            "name": "OMR SYSTEMS CORP-US",
+            "market": "4A"
+          },
+          {
+            "id": "0010500000BTWiSAAX",
+            "name": "OMR SYSTEMS CORP-US",
+            "market": "4A"
+          }
+        ],
+        "enterprise_match_status": "matched"
+      },
+      "gainsight": {
+        "company_gsid": "1P02WPZ71GR8TFJ55W728L0C49YOS3KPTM5C",
+        "company_name": "SS&c Technologies Holdings Inc.",
+        "relationships": 257,
+        "confidence": "high",
+        "match_basis": "isc_enterprise_name",
+        "largest_in_group": {
+          "name": "SS&c Technologies Holdings Inc.",
+          "gsid": "1P02WPZ71GR8TFJ55W728L0C49YOS3KPTM5C",
+          "relationships": 257
+        },
+        "companies_in_group": [
+          {
+            "gsid": "1P02WPZ71GR8TFJ55W728L0C49YOS3KPTM5C",
+            "name": "SS&c Technologies Holdings Inc.",
+            "cov_id": "A0009531",
+            "cov_name": "US - SS&C TECHNOLOGIES",
+            "status": "Active",
+            "relationships": 257
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55W7IZ5YS8CVLYP6U2T6F",
+            "name": "Advent Software Inc.",
+            "cov_id": "A0009531",
+            "cov_name": "US - SS&C TECHNOLOGIES",
+            "status": "Active",
+            "relationships": 1
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WCIJJ4768OFN4P93DWB",
+            "name": "OMR SYSTEMS CORP",
+            "cov_id": "A0009531",
+            "cov_name": "US - SS&C TECHNOLOGIES",
+            "status": "Active",
+            "relationships": 192
+          }
+        ]
+      },
+      "smartcare": {
+        "gbg_id": "11120",
+        "gbg_name": "SS&C TECHNOLOGIES INC",
+        "source": "select-gbg",
+        "selection_status": "matched"
+      },
+      "review_flags": []
+    },
+    {
+      "account_name": "STELLANTIS",
+      "coverage_id": "A0009092",
+      "coverage_type": "A-Tier (Select / Territory)",
+      "gainsight_coverage_name": "US - STELLANTIS",
+      "isc": {
+        "live_id": "0013h00000w1dn7AAA",
+        "live_name": "STELLANTIS-US",
+        "account_number": "DB00124U-US",
+        "db2_id": "0010500000BTSI4AAP",
+        "db2_name": "STELLANTIS-US",
+        "db2_enterprise_id": "0010500000FrI8mAAF",
+        "db2_enterprise_name": "STELLANTIS-CNH-IVECO-WW",
+        "db2_coverage_children": [
+          {
+            "id": "0010500000BTTcoAAH",
+            "name": "CHRYSLER-US",
+            "market": "4A"
+          },
+          {
+            "id": "0010500000BTVF3AAP",
+            "name": "CNH-US",
+            "market": "4A"
+          },
+          {
+            "id": "0010500000BTVqJAAX",
+            "name": "FCA SERVICES & OTHER-US",
+            "market": "4A"
+          },
+          {
+            "id": "0010500000BTSI4AAP",
+            "name": "STELLANTIS-US",
+            "market": "4A"
+          }
+        ],
+        "enterprise_match_status": "single_parent"
+      },
+      "gainsight": {
+        "company_gsid": "1P02WPZ71GR8TFJ55W9FZR3BXMD5M7FNJMO1",
+        "company_name": "CHRYSLER",
+        "relationships": 7,
+        "confidence": "high",
+        "match_basis": "isc_child_name",
+        "largest_in_group": {
+          "name": "CHRYSLER",
+          "gsid": "1P02WPZ71GR8TFJ55W9FZR3BXMD5M7FNJMO1",
+          "relationships": 7
+        },
+        "companies_in_group": [
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WP533APROYU6KK1IIWS",
+            "name": "Case Ih Agricultural Equipment Inc.",
+            "cov_id": "A0009092",
+            "cov_name": "US - STELLANTIS",
+            "status": "Active",
+            "relationships": 2
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55W86FA3J1604FBHLB5RA",
+            "name": "Sonsray Machinery LLC",
+            "cov_id": "A0009092",
+            "cov_name": "US - STELLANTIS",
+            "status": "Active",
+            "relationships": 1
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55W9FZR3BXMD5M7FNJMO1",
+            "name": "CHRYSLER",
+            "cov_id": "A0009092",
+            "cov_name": "US - STELLANTIS",
+            "status": "Active",
+            "relationships": 7
+          }
+        ]
+      },
+      "smartcare": {
+        "gbg_id": "194587",
+        "gbg_name": "STELLANTIS",
+        "source": "select-gbg",
+        "selection_status": "matched"
+      },
+      "review_flags": [
+        "isc_enterprise_single_parent"
+      ]
+    },
+    {
+      "account_name": "TJX COS",
+      "coverage_id": "A0009538",
+      "coverage_type": "A-Tier (Select / Territory)",
+      "gainsight_coverage_name": "US - TJX COS",
+      "isc": {
+        "live_id": "0013h00000w1cUyAAI",
+        "live_name": "TJX-US",
+        "account_number": "DB000K25-US",
+        "db2_id": "0010500000BTRwBAAX",
+        "db2_name": "TJX-US",
+        "db2_enterprise_id": "0010500000FrP8tAAF",
+        "db2_enterprise_name": "TJX COS INC-WW",
+        "db2_coverage_children": [
+          {
+            "id": "0010500000BTRwBAAX",
+            "name": "TJX-US",
+            "market": "4A"
+          }
+        ],
+        "enterprise_match_status": "matched"
+      },
+      "gainsight": {
+        "company_gsid": "1P02WPZ71GR8TFJ55WMY3U65NB0QG6OIPC31",
+        "company_name": "TJX Companies Inc. The",
+        "relationships": 225,
+        "confidence": "high",
+        "match_basis": "isc_enterprise_name",
+        "largest_in_group": {
+          "name": "TJX Companies Inc. The",
+          "gsid": "1P02WPZ71GR8TFJ55WMY3U65NB0QG6OIPC31",
+          "relationships": 225
+        },
+        "companies_in_group": [
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WMY3U65NB0QG6OIPC31",
+            "name": "TJX Companies Inc. The",
+            "cov_id": "A0009538",
+            "cov_name": "US - TJX COS",
+            "status": "Active",
+            "relationships": 225
+          }
+        ]
+      },
+      "smartcare": {
+        "gbg_id": "656",
+        "gbg_name": "TJX COS INC",
+        "source": "select-gbg",
+        "selection_status": "matched"
+      },
+      "review_flags": []
+    },
+    {
+      "account_name": "TOYOTA MOTOR",
+      "coverage_id": "A0001001",
+      "coverage_type": "A-Tier (Select / Territory)",
+      "gainsight_coverage_name": "US - TOYOTA MOTOR",
+      "isc": {
+        "live_id": "0013h00000w1g9ZAAQ",
+        "live_name": "TOYOTA MOTOR CORPORATION ENGINEERING-US",
+        "account_number": "DB5026Q4-US",
+        "db2_id": "0010500000BTZnBAAX",
+        "db2_name": "TOYOTA MOTOR CORPORATION ENGINEERING-US",
+        "db2_enterprise_id": "0010500000FrG6pAAF",
+        "db2_enterprise_name": "TOYOTA MOTOR CORPORATION-WW",
+        "db2_coverage_children": [
+          {
+            "id": "0010500000BTRS1AAP",
+            "name": "TOYOTA FINANCE-US",
+            "market": "4A"
+          },
+          {
+            "id": "0010500000BTZnBAAX",
+            "name": "TOYOTA MOTOR CORPORATION ENGINEERING-US",
+            "market": "4A"
+          },
+          {
+            "id": "0010500000BTTpmAAH",
+            "name": "TOYOTA MOTOR-US",
+            "market": "4A"
+          },
+          {
+            "id": "0010500000KNvmFAAT",
+            "name": "TOYOTA MOTOR-US",
+            "market": "4A"
+          },
+          {
+            "id": "0010500000W77jJAAR",
+            "name": "TOYOTA MOTOR CORPORATION HEAD OFFICE-US",
+            "market": "4A"
+          }
+        ],
+        "enterprise_match_status": "matched"
+      },
+      "gainsight": {
+        "company_gsid": "1P02WPZ71GR8TFJ55W8SSIOZG54AW5SZCQDV",
+        "company_name": "TOYOTA MOTOR",
+        "relationships": 45,
+        "confidence": "high",
+        "match_basis": "isc_enterprise_name",
+        "largest_in_group": {
+          "name": "Toyota Motor North America Inc.",
+          "gsid": "1P02WPZ71GR8TFJ55WPLCYNKRX7K16AP7L0Y",
+          "relationships": 47
+        },
+        "companies_in_group": [
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WK1KNJCNUOEX14E3T08",
+            "name": "Pengate Handling Systems Inc.",
+            "cov_id": "A0001001",
+            "cov_name": "US - TOYOTA MOTOR",
+            "status": "Active",
+            "relationships": 1
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WNCAJ4KAY28XZMLMGHA",
+            "name": "JTEKT",
+            "cov_id": "A0001001",
+            "cov_name": "US - TOYOTA MOTOR",
+            "status": "Active",
+            "relationships": 4
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WLA4718N17J8LFQ598E",
+            "name": "Toyota Material Handling of Tennessee Inc.",
+            "cov_id": "A0001001",
+            "cov_name": "US - TOYOTA MOTOR",
+            "status": "Active",
+            "relationships": 1
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WPHH79GH5OD587JTIX4",
+            "name": "Toyota De Puerto Rico Corp.",
+            "cov_id": "A0001001",
+            "cov_name": "US - TOYOTA MOTOR",
+            "status": "Active",
+            "relationships": 6
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WJGLEHARH8ARQ3GWOQP",
+            "name": "N.J. Malin & Associates LLC",
+            "cov_id": "A0001001",
+            "cov_name": "US - TOYOTA MOTOR",
+            "status": "Active",
+            "relationships": 1
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WPLCYNKRX7K16AP7L0Y",
+            "name": "Toyota Motor North America Inc.",
+            "cov_id": "A0001001",
+            "cov_name": "US - TOYOTA MOTOR",
+            "status": "Active",
+            "relationships": 47
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55W8WE2VSUZX2YG7F7S7P",
+            "name": "Cascade Corporation",
+            "cov_id": "A0001001",
+            "cov_name": "US - TOYOTA MOTOR",
+            "status": "Active",
+            "relationships": 1
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55W2S3R1N741JFZTC3X5A",
+            "name": "TOYODA IRON WORKS CO. LTD.",
+            "cov_id": "A0001001",
+            "cov_name": "US - TOYOTA MOTOR",
+            "status": "Active",
+            "relationships": 1
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55W6QXDZQUDODS2G9YRLY",
+            "name": "Automationdirect.com Inc.",
+            "cov_id": "A0001001",
+            "cov_name": "US - TOYOTA MOTOR",
+            "status": "Active",
+            "relationships": 1
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WE47D4L36QPPROY0XZ4",
+            "name": "The Raymond Corporation",
+            "cov_id": "A0001001",
+            "cov_name": "US - TOYOTA MOTOR",
+            "status": "Active",
+            "relationships": 9
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WFVC6D8COUHDXMQKGMO",
+            "name": "Industrial Tech Services Inc.",
+            "cov_id": "A0001001",
+            "cov_name": "US - TOYOTA MOTOR",
+            "status": "Active",
+            "relationships": 1
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WTQDEDHG5JSDIA35560",
+            "name": "Auto Parts Manufacturing Mississippi Inc.",
+            "cov_id": "A0001001",
+            "cov_name": "US - TOYOTA MOTOR",
+            "status": "Active",
+            "relationships": 1
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WL48VCY27RO21Y9EDSF",
+            "name": "Toyota Financial Services International Corporation",
+            "cov_id": "A0001001",
+            "cov_name": "US - TOYOTA MOTOR",
+            "status": "Active",
+            "relationships": 15
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WC40HFM09Q0QR8NDVSB",
+            "name": "TOYOTA GROUP COMPANY",
+            "cov_id": "A0001001",
+            "cov_name": "US - TOYOTA MOTOR",
+            "status": "Active",
+            "relationships": 10
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55W8SSIOZG54AW5SZCQDV",
+            "name": "TOYOTA MOTOR",
+            "cov_id": "A0001001",
+            "cov_name": "US - TOYOTA MOTOR",
+            "status": "Active",
+            "relationships": 45
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WC2OMNVTVDZ3554RCD4",
+            "name": "Toyota Tsusho America Inc.",
+            "cov_id": "A0001001",
+            "cov_name": "US - TOYOTA MOTOR",
+            "status": "Active",
+            "relationships": 2
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WB1CXFMUJ1IV9FERWY2",
+            "name": "CATALER CORPORATION",
+            "cov_id": "A0001001",
+            "cov_name": "US - TOYOTA MOTOR",
+            "status": "Active",
+            "relationships": 1
+          }
+        ]
+      },
+      "smartcare": {
+        "gbg_id": "32858",
+        "gbg_name": "TOYOTA MOTOR CORPORATION",
+        "source": "select-gbg",
+        "selection_status": "matched"
+      },
+      "review_flags": []
+    },
+    {
+      "account_name": "TRAVELPORT",
+      "coverage_id": "A0009093",
+      "coverage_type": "A-Tier (Select / Territory)",
+      "gainsight_coverage_name": "US - TRAVELPORT",
+      "isc": {
+        "live_id": "0013h00000w1fBeAAI",
+        "live_name": "TRAVELPORT-US",
+        "account_number": "DB22D423-US",
+        "db2_id": "0010500000BTXNQAA5",
+        "db2_name": "TRAVELPORT-US",
+        "db2_enterprise_id": "0010500000FrIJbAAN",
+        "db2_enterprise_name": "TRAVELPORT INC-WW",
+        "db2_coverage_children": [
+          {
+            "id": "0010500000BTXNQAA5",
+            "name": "TRAVELPORT-US",
+            "market": "4A"
+          }
+        ],
+        "enterprise_match_status": "matched"
+      },
+      "gainsight": {
+        "company_gsid": "1P02WPZ71GR8TFJ55WWTBHIF0NLXWYAY33WP",
+        "company_name": "TRAVELPORT",
+        "relationships": 50,
+        "confidence": "high",
+        "match_basis": "isc_enterprise_name",
+        "largest_in_group": {
+          "name": "TRAVELPORT",
+          "gsid": "1P02WPZ71GR8TFJ55WWTBHIF0NLXWYAY33WP",
+          "relationships": 50
+        },
+        "companies_in_group": [
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WWTBHIF0NLXWYAY33WP",
+            "name": "TRAVELPORT",
+            "cov_id": "A0009093",
+            "cov_name": "US - TRAVELPORT",
+            "status": "Active",
+            "relationships": 50
+          }
+        ]
+      },
+      "smartcare": {
+        "gbg_id": "22804",
+        "gbg_name": "TRAVELPORT INC",
+        "source": "select-gbg",
+        "selection_status": "matched"
+      },
+      "review_flags": []
+    },
+    {
+      "account_name": "UNITED AIRLINES",
+      "coverage_id": "A0004083",
+      "coverage_type": "A-Tier (Select / Territory)",
+      "gainsight_coverage_name": "US - UNITED AIRLINES",
+      "isc": {
+        "live_id": "0013h00000w1Re5AAE",
+        "live_name": "UNITED AIR LINES INC-US",
+        "account_number": "DB000RJC-US",
+        "db2_id": "0010500000BTVSCAA5",
+        "db2_name": "UNITED AIR LINES INC-US",
+        "db2_enterprise_id": "0010500000FrO0yAAF",
+        "db2_enterprise_name": "UNITED AIR LINES INC-WW",
+        "db2_coverage_children": [
+          {
+            "id": "0010500000BTVSCAA5",
+            "name": "UNITED AIR LINES INC-US",
+            "market": "4A"
+          }
+        ],
+        "enterprise_match_status": "matched"
+      },
+      "gainsight": {
+        "company_gsid": "1P02WPZ71GR8TFJ55WCQ0SYOZDJK9OYCCTBT",
+        "company_name": "UNITED AIR LINES INC",
+        "relationships": 44,
+        "confidence": "high",
+        "match_basis": "isc_enterprise_name",
+        "largest_in_group": {
+          "name": "UNITED AIR LINES INC",
+          "gsid": "1P02WPZ71GR8TFJ55WCQ0SYOZDJK9OYCCTBT",
+          "relationships": 44
+        },
+        "companies_in_group": [
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WCQ0SYOZDJK9OYCCTBT",
+            "name": "UNITED AIR LINES INC",
+            "cov_id": "A0004083",
+            "cov_name": "US - UNITED AIRLINES",
+            "status": "Active",
+            "relationships": 44
+          }
+        ]
+      },
+      "smartcare": {
+        "gbg_id": "43183",
+        "gbg_name": "UNITED AIR LINES INC",
+        "source": "select-gbg",
+        "selection_status": "matched"
+      },
+      "review_flags": []
+    },
+    {
+      "account_name": "VF CORP",
+      "coverage_id": "A0009537",
+      "coverage_type": "A-Tier (Select / Territory)",
+      "gainsight_coverage_name": "US - VF CORP",
+      "isc": {
+        "live_id": "0013h00000w1gZIAAY",
+        "live_name": "VF CORP-US",
+        "account_number": "DB000W2B-US",
+        "db2_id": "0010500000BTRovAAH",
+        "db2_name": "VF CORP-US",
+        "db2_enterprise_id": "0010500000FrNjzAAF",
+        "db2_enterprise_name": "VF CORPORATION-WW",
+        "db2_coverage_children": [
+          {
+            "id": "0010500000BTRovAAH",
+            "name": "VF CORP-US",
+            "market": "4A"
+          }
+        ],
+        "enterprise_match_status": "matched"
+      },
+      "gainsight": {
+        "company_gsid": "1P02WPZ71GR8TFJ55W98FGAH6VLNXMGNGAUY",
+        "company_name": "VF CORP",
+        "relationships": 1,
+        "confidence": "high",
+        "match_basis": "isc_enterprise_name",
+        "largest_in_group": {
+          "name": "Timberland LLC",
+          "gsid": "1P02WPZ71GR8TFJ55W94IM4N7OD0ZMLX3Q5E",
+          "relationships": 1
+        },
+        "companies_in_group": [
+          {
+            "gsid": "1P02WPZ71GR8TFJ55W94IM4N7OD0ZMLX3Q5E",
+            "name": "Timberland LLC",
+            "cov_id": "A0009537",
+            "cov_name": "US - VF CORP",
+            "status": "Active",
+            "relationships": 1
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55W98FGAH6VLNXMGNGAUY",
+            "name": "VF CORP",
+            "cov_id": "A0009537",
+            "cov_name": "US - VF CORP",
+            "status": "Active",
+            "relationships": 1
+          }
+        ]
+      },
+      "smartcare": {
+        "gbg_id": "11457",
+        "gbg_name": "VF CORPORATION",
+        "source": "select-gbg",
+        "selection_status": "matched"
+      },
+      "review_flags": []
+    },
+    {
+      "account_name": "WALGREENS BOOTS ALLIANCE",
+      "coverage_id": "A0005217",
+      "coverage_type": "A-Tier (Select / Territory)",
+      "gainsight_coverage_name": "US - WALGREENS BOOTS ALLIANCE",
+      "isc": {
+        "live_id": "0013h00000w1ejzAAA",
+        "live_name": "WALGREENS-US",
+        "account_number": "DB003V54-US",
+        "db2_id": "0010500000BTQemAAH",
+        "db2_name": "WALGREENS-US",
+        "db2_enterprise_id": "0010500000FrF7VAAV",
+        "db2_enterprise_name": "WALGREENS BOOTS ALLIANCE.-WW",
+        "db2_coverage_children": [
+          {
+            "id": "0010500000BTQemAAH",
+            "name": "WALGREENS-US",
+            "market": "4A"
+          },
+          {
+            "id": "0010500000IqnrEAAR",
+            "name": "WALGREENS-IN",
+            "market": "4A"
+          }
+        ],
+        "enterprise_match_status": "matched"
+      },
+      "gainsight": {
+        "company_gsid": "1P02WPZ71GR8TFJ55WJQCALI4Y8RU9KTTPI6",
+        "company_name": "Walgreen Co.",
+        "relationships": 51,
+        "confidence": "high",
+        "match_basis": "isc_us_name+plans",
+        "largest_in_group": {
+          "name": "Walgreen Co.",
+          "gsid": "1P02WPZ71GR8TFJ55WJQCALI4Y8RU9KTTPI6",
+          "relationships": 51
+        },
+        "previous_pick": {
+          "gsid": "1P02WPZ71GR8TFJ55WJMF6YYYKM4F2MAEHKJ",
+          "name": "WALGREENS",
+          "plans": 0
+        },
+        "companies_in_group": [
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WJMF6YYYKM4F2MAEHKJ",
+            "name": "WALGREENS",
+            "cov_id": "A0005217",
+            "cov_name": "US - WALGREENS BOOTS ALLIANCE",
+            "status": "Active",
+            "relationships": 18
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WJQCALI4Y8RU9KTTPI6",
+            "name": "Walgreen Co.",
+            "cov_id": "A0005217",
+            "cov_name": "US - WALGREENS BOOTS ALLIANCE",
+            "status": "Active",
+            "relationships": 51
+          }
+        ]
+      },
+      "smartcare": {
+        "gbg_id": "23148",
+        "gbg_name": "WALGREENS BOOTS ALLIANCE.",
+        "source": "select-gbg",
+        "selection_status": "matched"
+      },
+      "review_flags": []
+    },
+    {
+      "account_name": "WALT DISNEY",
+      "coverage_id": "A0009533",
+      "coverage_type": "A-Tier (Select / Territory)",
+      "gainsight_coverage_name": "US - WALT DISNEY",
+      "isc": {
+        "live_id": "0013h00000w1gZjAAI",
+        "live_name": "THE WALT DISNEY COMPANY-US",
+        "account_number": "DB000461-US",
+        "db2_id": "0010500000BTTZNAA5",
+        "db2_name": "THE WALT DISNEY COMPANY-US",
+        "db2_enterprise_id": "0010500000FrM3fAAF",
+        "db2_enterprise_name": "WALT DISNEY-WW",
+        "db2_coverage_children": [
+          {
+            "id": "0010500000BSdfBAAT",
+            "name": "YANKEES ENTERTAINMENT & SPORTS NETWORK-US",
+            "market": "4A"
+          },
+          {
+            "id": "0010500000PDBsHAAX",
+            "name": "TWENTY-FIRST CENTURY FOX INC-US",
+            "market": "4A"
+          },
+          {
+            "id": "0010500000BTTZNAA5",
+            "name": "THE WALT DISNEY COMPANY-US",
+            "market": "4A"
+          }
+        ],
+        "enterprise_match_status": "matched"
+      },
+      "gainsight": {
+        "company_gsid": "1P02WPZ71GR8TFJ55W3NCMWL9CRN79I5UMY6",
+        "company_name": "THE WALT DISNEY COMPANY",
+        "relationships": 39,
+        "confidence": "high",
+        "match_basis": "isc_enterprise_name",
+        "largest_in_group": {
+          "name": "THE WALT DISNEY COMPANY",
+          "gsid": "1P02WPZ71GR8TFJ55W3NCMWL9CRN79I5UMY6",
+          "relationships": 39
+        },
+        "companies_in_group": [
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WJWVNA449OLAV9WH675",
+            "name": "Walt Disney Imagineering Research & Development Inc.",
+            "cov_id": "A0009533",
+            "cov_name": "US - WALT DISNEY",
+            "status": "Active",
+            "relationships": 3
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WWQTOLNP30WCMAK74BS",
+            "name": "Fubotv Inc.",
+            "cov_id": "A0009533",
+            "cov_name": "US - WALT DISNEY",
+            "status": "Active",
+            "relationships": 4
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WIP8SXR2XB1936WE79U",
+            "name": "Disney Streaming Services LLC",
+            "cov_id": "A0009533",
+            "cov_name": "US - WALT DISNEY",
+            "status": "Active",
+            "relationships": 2
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WRHNTQ50IMRJGML5PTL",
+            "name": "NEW REGENCY TV PRODUCTIONS LIMITED",
+            "cov_id": "A0009533",
+            "cov_name": "US - WALT DISNEY",
+            "status": "Active",
+            "relationships": 2
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55W3NCMWL9CRN79I5UMY6",
+            "name": "THE WALT DISNEY COMPANY",
+            "cov_id": "A0009533",
+            "cov_name": "US - WALT DISNEY",
+            "status": "Active",
+            "relationships": 39
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55W3C0024W7VLP9QJOLLA",
+            "name": "ABC Cable Networks Group",
+            "cov_id": "A0009533",
+            "cov_name": "US - WALT DISNEY",
+            "status": "Active",
+            "relationships": 1
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WFM0IS3NM2I1UA22N1A",
+            "name": "Kfsn Television LLC",
+            "cov_id": "A0009533",
+            "cov_name": "US - WALT DISNEY",
+            "status": "Active",
+            "relationships": 1
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55W3K050IX17MDW2PC5Z1",
+            "name": "Lucasfilm Ltd. LLC",
+            "cov_id": "A0009533",
+            "cov_name": "US - WALT DISNEY",
+            "status": "Active",
+            "relationships": 1
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55W1VIWE078WZG372DPUS",
+            "name": "The Walt Disney Company",
+            "cov_id": "A0009533",
+            "cov_name": "US - WALT DISNEY",
+            "status": "Active",
+            "relationships": 17
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WPJIXADCRPO7RPX60FL",
+            "name": "DES PARTNER, LLC",
+            "cov_id": "A0009533",
+            "cov_name": "US - WALT DISNEY",
+            "status": "Active",
+            "relationships": 2
+          }
+        ]
+      },
+      "smartcare": {
+        "gbg_id": "145",
+        "gbg_name": "WALT DISNEY",
+        "source": "select-gbg",
+        "selection_status": "matched"
+      },
+      "review_flags": []
+    },
+    {
+      "account_name": "XCEL ENERGY",
+      "coverage_id": "A0003905",
+      "coverage_type": "A-Tier (Select / Territory)",
+      "gainsight_coverage_name": "US - XCEL ENERGY",
+      "isc": {
+        "live_id": "0013h00000w1cq4AAA",
+        "live_name": "XCEL ENERGY INC-US",
+        "account_number": "DB003T6Q-US",
+        "db2_id": "0010500000BTRGmAAP",
+        "db2_name": "XCEL ENERGY INC-US",
+        "db2_enterprise_id": "0010500000FrHJ3AAN",
+        "db2_enterprise_name": "XCEL ENERGY-WW",
+        "db2_coverage_children": [
+          {
+            "id": "0010500000IqnryAAB",
+            "name": "XCEL ENERGY INC-IN",
+            "market": "4A"
+          },
+          {
+            "id": "0010500000BTRGmAAP",
+            "name": "XCEL ENERGY INC-US",
+            "market": "4A"
+          }
+        ],
+        "enterprise_match_status": "matched"
+      },
+      "gainsight": {
+        "company_gsid": "1P02WPZ71GR8TFJ55WI7G8VRGBT718QWHGWE",
+        "company_name": "XCEL Energy Inc.",
+        "relationships": 72,
+        "confidence": "high",
+        "match_basis": "isc_enterprise_name",
+        "largest_in_group": {
+          "name": "XCEL Energy Inc.",
+          "gsid": "1P02WPZ71GR8TFJ55WI7G8VRGBT718QWHGWE",
+          "relationships": 72
+        },
+        "companies_in_group": [
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WI7G8VRGBT718QWHGWE",
+            "name": "XCEL Energy Inc.",
+            "cov_id": "A0003905",
+            "cov_name": "US - XCEL ENERGY",
+            "status": "Active",
+            "relationships": 72
+          }
+        ]
+      },
+      "smartcare": {
+        "gbg_id": "12663",
+        "gbg_name": "XCEL ENERGY",
+        "source": "select-gbg",
+        "selection_status": "matched"
+      },
+      "review_flags": []
+    },
+    {
+      "account_name": "VERIZON",
+      "coverage_id": "I0000031",
+      "coverage_type": "I-Tier (Major Enterprise)",
+      "gainsight_coverage_name": "VERIZON",
+      "isc": {
+        "live_id": "0013h00000w1gmCAAQ",
+        "live_name": "VERIZON-US",
+        "account_number": "DB0013GC-US",
+        "db2_id": "0010500000KNvlLAAT",
+        "db2_name": "VERIZON-US",
+        "db2_enterprise_id": "0010500000FrF3HAAV",
+        "db2_enterprise_name": "VERIZON-WW",
+        "db2_coverage_children": [
+          {
+            "id": "0010500000IqiOjAAJ",
+            "name": "VERIZON-PL",
+            "market": "4A"
+          },
+          {
+            "id": "0010500000KNvlLAAT",
+            "name": "VERIZON-US",
+            "market": "4A"
+          }
+        ],
+        "enterprise_match_status": "matched"
+      },
+      "gainsight": {
+        "company_gsid": "1P02WPZ71GR8TFJ55WN4FQSPY0Y1CGK3SUTS",
+        "company_name": "VERIZON",
+        "relationships": 194,
+        "confidence": "high",
+        "match_basis": "isc_enterprise_name",
+        "largest_in_group": {
+          "name": "VERIZON",
+          "gsid": "1P02WPZ71GR8TFJ55WN4FQSPY0Y1CGK3SUTS",
+          "relationships": 194
+        },
+        "companies_in_group": [
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WN4FQSPY0Y1CGK3SUTS",
+            "name": "VERIZON",
+            "cov_id": "I0000031",
+            "cov_name": "VERIZON",
+            "status": "Active",
+            "relationships": 194
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55W0YMFG89O5IMPK0ERDR",
+            "name": "Verizon Communications Inc.",
+            "cov_id": "I0000031",
+            "cov_name": "VERIZON",
+            "status": "Active",
+            "relationships": 42
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55W3F6U74DLVWSKC2HKTP",
+            "name": "Cellco Partnership",
+            "cov_id": "I0000031",
+            "cov_name": "VERIZON",
+            "status": "Active",
+            "relationships": 1
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WXDKW22AV17062ZUDZV",
+            "name": "Verizon Connect Inc.",
+            "cov_id": "I0000031",
+            "cov_name": "VERIZON",
+            "status": "Active",
+            "relationships": 3
+          }
+        ]
+      },
+      "smartcare": {
+        "gbg_id": "11569",
+        "gbg_name": "VERIZON",
+        "source": "select-gbg",
+        "selection_status": "matched"
+      },
+      "review_flags": []
+    },
+    {
+      "account_name": "WAL-MART",
+      "coverage_id": "I0000064",
+      "coverage_type": "I-Tier (Major Enterprise)",
+      "gainsight_coverage_name": "WAL-MART",
+      "isc": {
+        "live_id": "0013h00000w1dUYAAY",
+        "live_name": "WALMART-US",
+        "account_number": "DB000Z6W-US",
+        "db2_id": "0010500000KNvl0AAD",
+        "db2_name": "WALMART-US",
+        "db2_enterprise_id": "0010500000FrGG6AAN",
+        "db2_enterprise_name": "WALMART-WW",
+        "db2_coverage_children": [
+          {
+            "id": "0010500000KNvl0AAD",
+            "name": "WALMART-US",
+            "market": "4A"
+          },
+          {
+            "id": "0010500000BTYr9AAH",
+            "name": "WALMART-CR",
+            "market": "4A"
+          }
+        ],
+        "enterprise_match_status": "matched"
+      },
+      "gainsight": {
+        "company_gsid": "1P02WPZ71GR8TFJ55W15YEA5R1UOR2LYKS4F",
+        "company_name": "Walmart Inc.",
+        "relationships": 38,
+        "confidence": "high",
+        "match_basis": "isc_us_name+plans",
+        "largest_in_group": {
+          "name": "Walmart Inc.",
+          "gsid": "1P02WPZ71GR8TFJ55W15YEA5R1UOR2LYKS4F",
+          "relationships": 38
+        },
+        "previous_pick": {
+          "gsid": "1P02WPZ71GR8TFJ55WDTS7YNATJ4W6KDRLKP",
+          "name": "WALMART",
+          "plans": 0
+        },
+        "companies_in_group": [
+          {
+            "gsid": "1P02WPZ71GR8TFJ55WDTS7YNATJ4W6KDRLKP",
+            "name": "WALMART",
+            "cov_id": "I0000064",
+            "cov_name": "WAL-MART",
+            "status": "Active",
+            "relationships": 12
+          },
+          {
+            "gsid": "1P02WPZ71GR8TFJ55W15YEA5R1UOR2LYKS4F",
+            "name": "Walmart Inc.",
+            "cov_id": "T0000512",
+            "cov_name": null,
+            "status": "Active",
+            "relationships": 38,
+            "added_manually": true
+          }
+        ]
+      },
+      "smartcare": {
+        "gbg_id": "11510",
+        "gbg_name": "WALMART",
+        "source": "select-gbg",
+        "selection_status": "matched"
+      },
+      "review_flags": []
+    }
+  ]
+}

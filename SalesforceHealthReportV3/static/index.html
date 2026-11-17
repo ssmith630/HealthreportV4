@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Industry Market Account Health Report</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap');
+:root{
+  --bg:#f4f4f4; --field:#ffffff; --text:#161616; --text2:#525252; --border:#e0e0e0;
+  --blue:#0f62fe; --blue-hover:#0353e9; --red:#da1e28; --green:#24a148; --yellow:#f1c21b;
+  --font:'IBM Plex Sans',-apple-system,'Segoe UI',sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--font);background:var(--bg);color:var(--text);line-height:1.5;padding:2rem}
+header{margin-bottom:1.5rem;border-bottom:1px solid var(--border);padding-bottom:1.25rem}
+h1{font-size:2rem;font-weight:400;margin-bottom:.25rem}
+.subtitle{font-size:1rem;color:var(--text2);font-weight:300}
+/* Tabs */
+nav{display:flex;gap:0;border-bottom:1px solid var(--border);margin-bottom:1.5rem;flex-wrap:wrap}
+nav button{background:none;border:none;border-bottom:3px solid transparent;padding:.75rem 1.25rem;font-family:var(--font);font-size:.875rem;font-weight:500;color:var(--text2);cursor:pointer}
+nav button:hover{background:#e8e8e8;color:var(--text)}
+nav button.active{border-bottom-color:var(--blue);color:var(--text)}
+nav button:focus-visible,.btn:focus-visible,input:focus-visible{outline:2px solid var(--blue);outline-offset:-2px}
+.tab{display:none;max-width:1100px}
+.tab.active{display:block}
+/* Panels, cards */
+.panel{background:var(--field);border:1px solid var(--border);padding:1.5rem;margin-bottom:1rem}
+.panel h2{font-size:1.25rem;font-weight:400;margin-bottom:1rem;border-bottom:1px solid var(--border);padding-bottom:.75rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;margin-bottom:1rem}
+.card{background:var(--field);border:1px solid var(--border);padding:1.5rem;min-height:150px;display:flex;flex-direction:column;justify-content:space-between}
+.kpi-label{font-size:.875rem;color:var(--text2);font-weight:500;text-transform:uppercase;letter-spacing:.5px;margin-bottom:.5rem}
+.kpi-value{font-size:1.75rem;font-weight:300;line-height:1.2;margin-bottom:.75rem}
+.kpi-value.green{color:var(--green)} .kpi-value.red{color:var(--red)}
+.hint{font-size:.875rem;color:var(--text2)}
+p{margin-bottom:.75rem}
+/* Buttons */
+.btn{display:inline-block;padding:.75rem 1.25rem;border:1px solid var(--blue);background:var(--blue);color:#fff;font-family:var(--font);font-size:.875rem;font-weight:500;cursor:pointer}
+.btn:hover{background:var(--blue-hover)}
+.btn.secondary{background:var(--field);color:var(--blue)}
+.btn.secondary:hover{background:#e8f0ff}
+.btn:disabled{background:#c6c6c6;border-color:#c6c6c6;color:#8d8d8d;cursor:not-allowed}
+.btn.large{padding:1rem 2rem;font-size:1rem}
+/* Badges */
+.badge{display:inline-block;padding:.125rem .5rem;font-size:.75rem;font-weight:600;text-transform:uppercase;border-radius:2px}
+.badge.green{background:#e5f6e8;color:#0e622b;border:1px solid #c2ebd0}
+.badge.yellow{background:#fdf5d1;color:#7d6300;border:1px solid #fae8a4}
+.badge.red{background:#fbeae5;color:#a2191f;border:1px solid #f7c9be}
+/* Tables */
+.table-wrap{overflow:auto;max-height:480px;border:1px solid var(--border)}
+table{width:100%;border-collapse:collapse;font-size:.875rem;text-align:left}
+th{font-weight:600;padding:.75rem 1rem;border-bottom:2px solid var(--border);background:#f4f4f4;color:var(--text2);position:sticky;top:0}
+td{padding:.6rem 1rem;border-bottom:1px solid var(--border)}
+tbody tr:hover{background:#f7f9fc}
+/* Form */
+.row{display:flex;gap:1rem;align-items:center;flex-wrap:wrap;margin-bottom:1rem}
+input[type=text],select{padding:.5rem 1rem;border:1px solid var(--border);font-family:var(--font);font-size:.875rem;min-width:240px}
+input[type=checkbox]{width:1rem;height:1rem;accent-color:var(--blue)}
+label{font-size:.875rem}
+/* Progress */
+.bar{height:8px;background:var(--border);margin:1rem 0 .5rem}
+.bar>div{height:100%;width:0;background:var(--blue);transition:width .3s}
+.msg{font-size:.875rem;color:var(--text2);min-height:1.4em}
+.err{color:var(--red);font-weight:500}
+.steps{counter-reset:s;list-style:none}
+.steps li{counter-increment:s;padding:.5rem 0 .5rem 2.25rem;position:relative}
+.steps li::before{content:counter(s);position:absolute;left:0;top:.45rem;width:1.5rem;height:1.5rem;border-radius:50%;background:var(--text);color:#fff;font-size:.75rem;font-weight:600;text-align:center;line-height:1.5rem}
+details{margin-bottom:.5rem} summary{cursor:pointer;font-weight:500;padding:.5rem 0}
+code{background:#f4f4f4;padding:.1rem .35rem;font-size:.85em}
+</style>
+</head>
+<body>
+<header>
+  <h1>Industry Market Account Health Report</h1>
+  <p class="subtitle">Open opportunities, Gainsight success plans, support tickets, ELA details, renewal forecast, the deployment forecast and renewal at risk in one Excel file and one web dashboard.</p>
+</header>
+
+<nav role="tablist" aria-label="Report steps">
+  <button role="tab" data-tab="connect" class="active">1. Connect</button>
+  <button role="tab" data-tab="accounts">2. Accounts</button>
+  <button role="tab" data-tab="generate">3. Create report</button>
+  <button role="tab" data-tab="reports">Past reports</button>
+  <button role="tab" data-tab="help">Help</button>
+</nav>
+
+<!-- CONNECT -->
+<section id="tab-connect" class="tab active" role="tabpanel">
+  <div class="grid">
+    <div class="card">
+      <div><div class="kpi-label">IBM Sales Cloud (ISC)</div>
+        <div id="isc-state" class="kpi-value">Checking…</div></div>
+      <div><p class="hint" id="isc-detail">Opens a browser window. Sign in with IBM SSO once; the window can stay open.</p>
+        <button class="btn" id="btn-isc">Sign in to ISC</button></div>
+    </div>
+    <div class="card">
+      <div><div class="kpi-label">Gainsight</div>
+        <div id="gs-state" class="kpi-value">Checking…</div></div>
+      <div><p class="hint">Connects automatically using your ISC sign-in. Needs ISC first.</p>
+        <button class="btn" id="btn-gs" disabled>Connect Gainsight</button></div>
+    </div>
+  </div>
+  <div class="panel">
+    <h2>Report links</h2>
+    <p class="hint">The app reads your ISC report, so the link must be a report you can open in ISC. Copy the address from your browser and paste it here.</p>
+    <div class="row"><label style="min-width:11rem">Open opportunities report</label>
+      <input type="text" id="opp-url" style="min-width:min(420px,100%)" aria-label="Open opportunities report link"></div>
+    <div class="row"><label style="min-width:11rem">Deployments report</label>
+      <input type="text" id="deploy-url" style="min-width:min(420px,100%)" aria-label="Deployments report link"></div>
+    <div class="row"><label style="min-width:11rem">Deployment forecast dashboard</label>
+      <input type="text" id="dash-url" style="min-width:min(420px,100%)" aria-label="Deployment forecast dashboard link"></div>
+    <button class="btn secondary" id="btn-save">Save links</button>
+    <span class="msg" id="save-msg"></span>
+  </div>
+  <div class="panel"><p class="msg" id="connect-msg"></p>
+    <p class="hint">Not signed in yet? You can still try the app with sample data on the Create report tab.</p>
+    <button class="btn secondary" data-goto="accounts">Next: choose accounts</button></div>
+</section>
+
+<!-- ACCOUNTS -->
+<section id="tab-accounts" class="tab" role="tabpanel">
+  <div class="panel">
+    <h2>Accounts to include</h2>
+    <div class="row">
+      <input type="text" id="acct-filter" placeholder="Search accounts" aria-label="Search accounts">
+      <label><input type="checkbox" id="acct-all"> Select all</label>
+      <button class="btn secondary" id="acct-clear" type="button">Clear selection</button>
+      <span class="hint" id="acct-count"></span>
+    </div>
+    <div class="table-wrap"><table>
+      <thead><tr><th style="width:2.5rem"></th><th>Account</th><th>Match</th></tr></thead>
+      <tbody id="acct-body"></tbody></table></div>
+    <p class="hint" style="margin-top:.75rem"><span class="badge yellow">Review</span> means the automatic account match should be confirmed. These accounts are listed on the Notes sheet.</p>
+    <button class="btn secondary" data-goto="generate">Next: create report</button>
+  </div>
+</section>
+
+<!-- GENERATE -->
+<section id="tab-generate" class="tab" role="tabpanel">
+  <div class="panel">
+    <h2>Create the report</h2>
+    <div class="row">
+      <label>Fiscal year <input type="number" id="year" min="2000" max="2100" step="1" placeholder="Current fiscal year" aria-label="Fiscal year. Leave blank for the current fiscal year, or type a year"></label>
+      <span class="hint" id="windows"></span>
+    </div>
+    <div class="row" role="group" aria-label="Sections to include">
+      <strong>Include:</strong>
+      <label><input type="checkbox" id="show-opps" checked> Opportunities</label>
+      <label><input type="checkbox" id="show-deploy" checked> Deployment (current quarter, with forecast and renewal at risk)</label>
+      <label><input type="checkbox" id="show-gainsight" checked> Gainsight (success plans, tickets, ELA details, renewal forecast)</label>
+    </div>
+    <div class="row">
+      <label><input type="checkbox" id="tech-only" checked> IBM Technology opportunities only</label>
+      <label><input type="checkbox" id="all-quarters"> All quarters (ignore the quarter windows)</label>
+      <label><input type="checkbox" id="deploy-all-dates"> Include deployments outside the current quarter</label>
+      <label><input type="checkbox" id="demo"> Use sample data (no sign-in needed)</label>
+    </div>
+    <div class="row">
+      <label><input type="checkbox" id="stale-60"> Success plans need an update after 60 days</label>
+      <label><input type="checkbox" id="stale-90"> Success plans need an update after 90 days</label>
+    </div>
+    <p class="hint">A success plan that has not been modified for 30 days is flagged as needing an update. Tick 60 or 90 to use a longer cut-off. If both are ticked, 90 days is used.</p>
+    <button class="btn large" id="btn-run" disabled>Create report</button>
+    <p class="hint" id="run-hint">No accounts selected. Go to the <a href="#" data-goto="accounts">Accounts tab</a> and tick the accounts to include.</p>
+    <div class="bar"><div id="bar"></div></div>
+    <p class="msg" id="run-msg"></p>
+    <p id="run-done" style="display:none">
+      <a class="btn" id="html-link" href="#" target="_blank" rel="noopener">Open dashboard</a>
+      <a class="btn secondary" id="dl-link" href="#">Download Excel</a>
+      <a class="btn secondary" id="dl-html-link" href="#">Download HTML</a></p>
+  </div>
+</section>
+
+<!-- REPORTS -->
+<section id="tab-reports" class="tab" role="tabpanel">
+  <div class="panel"><h2>Past reports</h2>
+    <div class="table-wrap"><table>
+      <thead><tr><th>File</th><th>Created</th><th>Size</th><th></th></tr></thead>
+      <tbody id="rep-body"><tr><td colspan="4" class="hint">No reports yet.</td></tr></tbody></table></div>
+  </div>
+</section>
+
+<!-- HELP -->
+<section id="tab-help" class="tab" role="tabpanel">
+  <div class="panel"><h2>How it works</h2>
+    <ol class="steps">
+      <li><strong>Connect.</strong> Click <em>Sign in to ISC</em> and complete IBM sign-in in the window that opens. Then click <em>Connect Gainsight</em>.</li>
+      <li><strong>Accounts.</strong> No accounts are selected at first. Tick the accounts you want, or use <em>Select all</em>.</li>
+      <li><strong>Create report.</strong> Click <em>Create report</em>. The dashboard opens and the Excel file downloads when it is ready.</li>
+    </ol>
+  </div>
+  <div class="panel"><h2>What is in the Excel file</h2>
+    <ul style="margin-left:1.25rem">
+      <li><strong>Open Opps by Quarter</strong> (current and next quarter only): Opportunity Name, Owner, Parent Account Number, Next Steps, Stage, Created Date, Close Date, Amount, Expected Revenue, Forecast Pipeline, Record Type, Last Modified Date, Renewed ACV Total.</li>
+      <li><strong>Success Plans</strong>: Gainsight Plan Name (a link to the Success Plan tab of the company's Customer 360 page in Gainsight, where you can edit the plan), Plan Status and Plan Owners, plus the account's ISC Renewal Health. Overdue plans are red and sorted first. Plans not modified for 30 days or more (60 or 90 if you tick that option) are marked Needs update. Last Updated, Percent Complete and Progression show how each plan is moving. Progression compares the plan status with the previous report, so the first report has nothing to compare.</li>
+      <li><strong>Support Tickets</strong>: Status, Ticket ID and link, Date Created, Last Date Updated, Summary, plus Severity, State, Brand and Product. Gainsight tickets that are still open, whatever their age. State is one of Open, IBM is working or Awaiting customer feedback. Closed tickets are not shown. The Ticket Summary sheet and the Support cases dashboard section count them by severity and state and by client, brand and product. No extra setup.</li>
+      <li><strong>ELA Details</strong>: one row per account, contract section and platform, with Entitled and Deployed net revenue, Undeployed Value, Declared vs Expected Progress and Rate Pace Target. Read from the Gainsight Client ELA Details dashboard. No extra setup. ELA details do not change the health score.</li>
+      <li><strong>Renewal Forecast</strong>: one row per account, product and license type (SaaS, Subscription or Perpetual), with Next Renewal Date, ACV, Health Score, Segment, Product Stage, Adoption Intent and whether an adoption plan or get well plan is active. Read from the Gainsight Renewal Dashboard. No extra setup. The Health Score is blank when Gainsight has none. Renewal forecast rows do not change the account health score.</li>
+      <li><strong>Deployments</strong> (current quarter only, unless you tick "Include deployments outside the current quarter"): Deployment Name, Product, Forecast Net License Revenue, Stage, State of Engagement, Target Decision Date, Date Deployed to Production, Owner, and a Salesforce Link to each deployment record. Read from the Deployments report link on the Connect tab.</li>
+      <li><strong>CQ Forecast</strong>: per account and a total, the current-quarter and fiscal-year Budget, Deployed, Call, Call to go, Upside, Stretch and Pipeline figures from the Seller and Manager Deployment Forecast and Renewals dashboard. Blank means the dashboard has no row for that account. Set with the dashboard link on the Connect tab.</li>
+      <li><strong>Renewal At Risk</strong>: per account and a total, the next-quarter renewal amount and the amount on Red renewal lines, from the Renewal At Risk page of the same dashboard. A second sheet, <strong>Renewal At Risk by Quarter</strong>, has the By Account table (NQ to NQ+3 renewal and Red amounts) and the Next 4 Quarters split by At Risk Indicator, which is the dashboard's total for its filters. The app first filters the dashboard to US Industry Market, which keeps the result well under the dashboard limit of 10,000 lines. The Notes sheet says which source was used and when the limit is reached.</li>
+      <li><strong>Notes</strong>: anything that could not be read, accounts marked Review, and how many opportunity rows were left out and why.</li>
+    </ul>
+  </div>
+  <div class="panel"><h2>Troubleshooting</h2>
+    <details><summary>The sign-in window does not open</summary><p>Install Google Chrome or Microsoft Edge, then try again. Firefox is not supported, because the app needs the Chrome DevTools Protocol. You can still open the finished Excel and HTML files in any browser, including Firefox. Close other Chrome windows that use the app profile.</p></details>
+    <details><summary>Opportunities are empty or a column is blank</summary><p>Open the opportunities report link in ISC and confirm you can see rows. The report must include every column you want, such as Parent Account Number, Created Date, Expected Revenue, Forecast Pipeline, Opportunity Record Type and Renewed ACV Total. The Notes sheet names any column that was missing.</p></details>
+    <details><summary>Opportunities are missing</summary><p>Check the Notes sheet first. It lists rows left out because they were closed, omitted, a different record type, or outside the quarters. Clear <em>IBM Technology opportunities only</em> and tick <em>All quarters</em> to see everything the report returns. ISC returns at most 2,000 rows per report run, so the app re-runs the report for your selected accounts in small batches over all close dates. The report's stage filter is still applied, so its stages must include the ones you need. The Notes sheet says if a run was still cut off or could not be filtered.</p></details>
+    <details><summary>Deployments are empty</summary><p>A default report link is pre-filled; every selected account gets its deployments. If an account is still empty, the Deployments report may name it differently: add its report name and account number to deployment_account_aliases.json. To use another report, paste a link to an ISC report built on the Deployment object. Only deployments whose target decision date or production date falls in the current quarter are listed, unless you tick "Include deployments outside the current quarter". The current-quarter forecast tiles always stay on the current quarter. The report needs an Account Name column plus the Deployment Name (as a hyperlinked column, so each deployment gets a Salesforce link), Forecast Net License Revenue Used, Stage, State of Engagement, Target Decision Date, Date Deployed to Production and Owner. Save links, then create the report again.</p></details>
+    <details><summary>Support tickets are empty</summary><p>Tickets come from the Gainsight Support Tickets report for each account. Only tickets that are still open (Open, IBM is working or awaiting customer feedback) are listed, whatever their age, so an account with none shows none. If every account is empty, click Connect to Gainsight again.</p></details>
+    <details><summary>The deployment forecast or renewal at risk is empty</summary><p>Both come from the dashboard link on the Connect tab, which is opened in the signed-in browser window. An account that the dashboard does not list shows blanks and a line on the Notes sheet. The dashboard names accounts by country (for example "ACCENTURE-US"), and the app matches them to your account by name, so an account named differently there is not found. Renewal at risk reads Red lines only and stops at the dashboard limit of 10,000 lines. The dashboard is filtered to US Industry Market first, so an account in another market is not listed.</p></details>
+    <details><summary>Renewal forecast is empty</summary><p>Renewal forecast rows come from the Gainsight Renewal Dashboard, matched by each account's Gainsight company ids (the main company and the others under the same coverage ID). An account with no renewal forecast shows no rows. If every account is empty, click Connect to Gainsight again and check the Notes sheet.</p></details>
+    <details><summary>ELA details are empty</summary><p>ELA details come from the Gainsight Client ELA Details dashboard, matched by each account's Gainsight company ids (the main company and the others under the same coverage ID). An account with no ELA contract shows no rows. If every account is empty, click Connect to Gainsight again and check the Notes sheet.</p></details>
+    <details><summary>Gainsight will not connect</summary><p>In the browser window, open any account and click its <em>Software Products</em> tab, then click Connect Gainsight again.</p></details>
+    <details><summary>A sheet is empty or the Notes sheet lists errors</summary><p>Your session may have expired (about 8 hours). Sign in again on the Connect tab and re-create the report.</p></details>
+  </div>
+</section>
+
+<script>
+const $ = s => document.querySelector(s);
+let ACCOUNTS = [];
+
+// ---- tabs ----
+function show(name){
+  document.querySelectorAll('.tab').forEach(t => t.classList.toggle('active', t.id === 'tab-' + name));
+  document.querySelectorAll('nav button').forEach(b => b.classList.toggle('active', b.dataset.tab === name));
+  if (name === 'reports') loadReports();
+  if (name === 'connect') refreshStatus();
+}
+document.querySelectorAll('nav button').forEach(b => b.onclick = () => show(b.dataset.tab));
+document.querySelectorAll('[data-goto]').forEach(b => b.onclick = () => show(b.dataset.goto));
+
+// ---- connect ----
+function setState(el, ok){
+  el.textContent = ok ? 'Connected' : 'Not connected';
+  el.className = 'kpi-value ' + (ok ? 'green' : 'red');
+}
+async function refreshStatus(){
+  try {
+    const s = await (await fetch('/api/status')).json();
+    setState($('#isc-state'), s.isc); setState($('#gs-state'), s.gainsight);
+    $('#isc-detail').textContent = s.isc_detail || '';
+    $('#btn-gs').disabled = !s.isc;
+    $('#btn-isc').textContent = s.isc ? 'Re-open ISC window' : 'Sign in to ISC';
+  } catch (e) { $('#connect-msg').textContent = 'Cannot reach the app.'; }
+}
+$('#btn-isc').onclick = async () => {
+  $('#connect-msg').textContent = 'Opening browser…';
+  const r = await fetch('/api/connect/isc', {method: 'POST'}); const j = await r.json();
+  $('#connect-msg').textContent = j.message || j.error;
+  $('#connect-msg').className = 'msg' + (j.error ? ' err' : '');
+  const t = setInterval(async () => { await refreshStatus(); if ($('#isc-state').textContent === 'Connected') clearInterval(t); }, 4000);
+};
+async function loadSettings(){
+  const s = await (await fetch('/api/settings')).json();
+  $('#opp-url').value = s.opp_report_url || '';
+  $('#deploy-url').value = s.deploy_report_url || '';
+  $('#dash-url').value = s.dashboard_url || '';
+}
+$('#btn-save').onclick = async () => {
+  const r = await fetch('/api/settings', {method: 'POST', headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({opp_report_url: $('#opp-url').value, deploy_report_url: $('#deploy-url').value,
+                          dashboard_url: $('#dash-url').value})});
+  const j = await r.json();
+  $('#save-msg').textContent = r.ok ? ' Saved.' : ' ' + j.error;
+  $('#save-msg').className = 'msg' + (r.ok ? '' : ' err');
+  if (r.ok) { $('#opp-url').value = j.opp_report_url; $('#deploy-url').value = j.deploy_report_url || ''; $('#dash-url').value = j.dashboard_url || ''; }
+};
+$('#btn-gs').onclick = async () => {
+  $('#btn-gs').disabled = true; $('#connect-msg').className = 'msg';
+  $('#connect-msg').textContent = 'Connecting to Gainsight (up to 45 seconds)…';
+  const r = await fetch('/api/connect/gainsight', {method: 'POST'}); const j = await r.json();
+  $('#connect-msg').textContent = j.ok ? 'Gainsight connected.' : j.error;
+  $('#connect-msg').className = 'msg' + (j.ok ? '' : ' err');
+  refreshStatus();
+};
+
+// ---- accounts ----
+const SEL = new Set();  // selected account ids; starts empty, survives filtering
+let RUNNING = false;
+function selectedIds(){ return [...SEL]; }
+function updateRunState(){
+  const none = SEL.size === 0;
+  $('#btn-run').disabled = none || RUNNING;
+  $('#run-hint').style.display = none ? 'block' : 'none';
+}
+function updateCount(){
+  const n = SEL.size;
+  $('#acct-count').textContent = n + ' of ' + ACCOUNTS.length + ' selected';
+  $('#acct-all').checked = ACCOUNTS.length > 0 && n === ACCOUNTS.length;
+  updateRunState();
+}
+function renderAccounts(){
+  const f = $('#acct-filter').value.toLowerCase();
+  $('#acct-body').innerHTML = ACCOUNTS.filter(a => a.name.toLowerCase().includes(f)).map(a =>
+    `<tr><td><input type="checkbox" class="acct-cb" value="${a.isc_id}" aria-label="${a.name}" ${SEL.has(a.isc_id) ? 'checked' : ''}></td>
+     <td>${a.name}</td><td>${a.needs_review ? '<span class="badge yellow">Review</span>' : '<span class="badge green">OK</span>'}</td></tr>`).join('');
+  document.querySelectorAll('.acct-cb').forEach(c => c.onchange = () => {
+    c.checked ? SEL.add(c.value) : SEL.delete(c.value); updateCount();
+  });
+  updateCount();
+}
+$('#acct-filter').oninput = renderAccounts;
+$('#acct-all').onchange = e => {
+  // applies to the accounts currently shown, so "select all" respects the filter
+  document.querySelectorAll('.acct-cb').forEach(c => { c.checked = e.target.checked; e.target.checked ? SEL.add(c.value) : SEL.delete(c.value); });
+  updateCount();
+};
+
+$('#acct-clear').onclick = () => { SEL.clear(); renderAccounts(); };
+
+async function loadAccounts(){
+  const j = await (await fetch('/api/accounts')).json();
+  if (j.error) { $('#acct-body').innerHTML = `<tr><td colspan="3" class="err">${j.error}</td></tr>`; return; }
+  ACCOUNTS = j.accounts;
+  QUARTERS = j.quarters;   // [CQ, +1Q] labels relative to today
+  DEFAULT_YEAR = j.default_year;
+  updateWindows(); renderAccounts();
+}
+let QUARTERS = [], DEFAULT_YEAR = new Date().getFullYear();
+function updateWindows(){
+  const [cur, next] = QUARTERS;
+  const raw = $('#year').value.trim();
+  const y = raw ? +raw : DEFAULT_YEAR;
+  const ok = Number.isInteger(y) && y >= 2000 && y <= 2100;
+  const t = ok
+    ? `Opportunities cover the current quarter (${cur}) and next quarter (${next}). Renewals use fiscal year ${y}${raw ? '' : ' (current)'}.`
+    : 'Type a four-digit year, or leave blank for the current fiscal year';
+  $('#windows').textContent = t;
+}
+$('#year').oninput = updateWindows;
+
+// Section checkboxes: default on, remembered between runs in this browser.
+['show-opps', 'show-deploy', 'show-gainsight', 'deploy-all-dates', 'stale-60', 'stale-90'].forEach(id => {
+  const saved = localStorage.getItem('hr-' + id);
+  if (saved !== null) $('#' + id).checked = saved === '1';
+  $('#' + id).onchange = () => localStorage.setItem('hr-' + id, $('#' + id).checked ? '1' : '0');
+});
+
+// ---- generate ----
+$('#btn-run').onclick = async () => {
+  const ids = selectedIds();
+  if (!ids.length) { $('#run-msg').textContent = 'Select at least one account.'; $('#run-msg').className = 'msg err'; return; }
+  RUNNING = true; updateRunState(); $('#run-done').style.display = 'none';
+  $('#run-msg').className = 'msg'; $('#bar').style.width = '2%'; $('#run-msg').textContent = 'Starting…';
+  try {
+    const res = await fetch('/api/generate', {method: 'POST', headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({accounts: ids, year: $('#year').value,
+                            demo: $('#demo').checked, tech_only: $('#tech-only').checked,
+                            all_quarters: $('#all-quarters').checked,
+                            show_opps: $('#show-opps').checked, show_deploy: $('#show-deploy').checked,
+                            show_gainsight: $('#show-gainsight').checked,
+                            deploy_all_dates: $('#deploy-all-dates').checked,
+                            stale_days: $('#stale-90').checked ? 90 : $('#stale-60').checked ? 60 : 30})});
+    if (!res.ok || !res.body) {
+      const j = await res.json().catch(() => ({})); $('#run-msg').textContent = j.error || 'Failed to start.';
+      $('#run-msg').className = 'msg err'; return;
+    }
+    const reader = res.body.getReader(), dec = new TextDecoder(); let buf = '';
+    while (true) {
+      const {value, done} = await reader.read(); if (done) break;
+      buf += dec.decode(value, {stream: true});
+      let i; while ((i = buf.indexOf('\n\n')) >= 0) {
+        const line = buf.slice(0, i).replace(/^data: /, ''); buf = buf.slice(i + 2);
+        const ev = JSON.parse(line);
+        $('#bar').style.width = ev.percent + '%';
+        if (ev.type === 'progress') $('#run-msg').textContent = ev.message;
+        if (ev.type === 'error') { $('#run-msg').textContent = ev.message; $('#run-msg').className = 'msg err'; }
+        if (ev.type === 'done') {
+          const f = JSON.parse(ev.message);
+          $('#run-msg').textContent = 'Report ready. Check the Notes section for anything that could not be read.';
+          $('#html-link').href = '/reports/' + encodeURIComponent(f.html);
+          $('#dl-link').href = '/api/download/' + encodeURIComponent(f.xlsx);
+          $('#dl-html-link').href = '/api/download/' + encodeURIComponent(f.html);
+          $('#run-done').style.display = 'block';
+          window.open($('#html-link').href, '_blank');
+          window.location = $('#dl-link').href;
+        }
+      }
+    }
+  } catch (e) {
+    $('#run-msg').textContent = 'The connection to the app was lost: ' + e.message;
+    $('#run-msg').className = 'msg err';
+  } finally {
+    RUNNING = false; updateRunState();  // always allow another report
+  }
+};
+
+// ---- reports ----
+async function loadReports(){
+  const j = await (await fetch('/api/reports')).json();
+  $('#rep-body').innerHTML = j.reports.length ? j.reports.map(r =>
+    `<tr><td>${r.name}</td><td>${new Date(r.modified * 1000).toLocaleString()}</td><td>${(r.size / 1024).toFixed(0)} KB</td>
+     <td>${r.name.endsWith('.html')
+        ? `<a href="/reports/${encodeURIComponent(r.name)}" target="_blank" rel="noopener">Open</a> &middot; <a href="/api/download/${encodeURIComponent(r.name)}">Download</a>`
+        : `<a href="/api/download/${encodeURIComponent(r.name)}">Download</a>`}</td></tr>`).join('')
+    : '<tr><td colspan="4" class="hint">No reports yet.</td></tr>';
+}
+
+loadAccounts(); loadSettings(); refreshStatus();
+</script>
+</body>
+</html>

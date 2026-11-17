@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Health report launcher</title>
+<style>
+  body { font-family: "IBM Plex Sans", -apple-system, "Segoe UI", system-ui, sans-serif; font-size: 16px; line-height: 1.5;
+         color: #161616; background: #f4f4f4; margin: 0; }
+  main { max-width: 640px; margin: 0 auto; padding: 48px 20px; }
+  h1 { font-size: 28px; font-weight: 400; margin: 0 0 8px; }
+  p { margin: 0 0 16px; }
+  .panel { background: #ffffff; border: 1px solid #c6c6c6; padding: 24px; margin-top: 24px; }
+  .state { font-weight: 600; margin: 0 0 4px; }
+  .muted { color: #525252; font-size: 14px; }
+  button, a.btn { display: inline-block; font: inherit; color: #ffffff; background: #0f62fe; border: 0; padding: 12px 24px;
+                  cursor: pointer; text-decoration: none; min-height: 48px; box-sizing: border-box; }
+  button:hover, a.btn:hover { background: #0353e9; }
+  button:focus-visible, a.btn:focus-visible, summary:focus-visible { outline: 2px solid #0f62fe; outline-offset: 2px; }
+  button[disabled] { background: #8d8d8d; cursor: default; }
+  .warn { border-left: 4px solid #f1c21b; padding-left: 12px; }
+  .ok { border-left: 4px solid #198038; padding-left: 12px; }
+  details { margin-top: 24px; }
+  summary { cursor: pointer; font-weight: 600; }
+  code { background: #e8e8e8; padding: 1px 4px; font-family: "IBM Plex Mono", Consolas, monospace; font-size: 14px; }
+  [hidden] { display: none !important; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Health report launcher</h1>
+  <p>Start the Salesforce Health Report app on this computer. The app opens in your browser.</p>
+
+  <div class="panel" role="region" aria-label="App status">
+    <p class="state" id="state" aria-live="polite">Checking whether the app is running...</p>
+    <p class="muted" id="detail"></p>
+    <p>
+      <button type="button" id="start" hidden>Start the app</button>
+      <a class="btn" id="open" href="http://127.0.0.1:8765/" hidden>Open the app</a>
+    </p>
+  </div>
+
+  <details id="help">
+    <summary>Nothing happens when I click Start the app</summary>
+    <p>The button uses the link <code>healthreport://start</code>. Windows must be told once what that link does.</p>
+    <ol>
+      <li>Close this page. In the app folder, open the <code>launcher</code> folder and double-click <code>register_link.cmd</code>. It needs no administrator rights.</li>
+      <li>Open this page again and click <strong>Start the app</strong>.</li>
+      <li>Your browser asks whether to open the link. Choose to allow it. This question appears because the browser, not this page, controls what a link can start.</li>
+    </ol>
+    <p>A command window opens and keeps the app running. Close that window to stop the app. The app then opens in a new browser tab.</p>
+  </details>
+</main>
+<script>
+(function () {
+  var APP = "http://127.0.0.1:8765/";
+  var state = document.getElementById("state");
+  var detail = document.getElementById("detail");
+  var startBtn = document.getElementById("start");
+  var openLink = document.getElementById("open");
+  var help = document.getElementById("help");
+  var timer = null;
+  var waited = 0;
+  var LIMIT = 180; // seconds. The first run installs packages and takes about a minute.
+
+  // A no-cors request cannot read the answer. It only succeeds when something is listening on the port.
+  function probe() {
+    return fetch(APP + "api/status", { mode: "no-cors", cache: "no-store" }).then(
+      function () { return true; },
+      function () { return false; });
+  }
+
+  function show(text, note, kind) {
+    state.textContent = text;
+    detail.textContent = note || "";
+    state.className = "state " + (kind || "");
+  }
+
+  // After Start the app, the link handler opens the app in the browser itself, so this page only redirects
+  // when the app was already running as the page loaded.
+  function running(openHere) {
+    clearInterval(timer);
+    startBtn.hidden = true;
+    openLink.hidden = false;
+    if (openHere) {
+      show("The app is running.", "Opening it now. If nothing changes, use Open the app.", "ok");
+      setTimeout(function () { window.location.href = APP; }, 800);
+    } else {
+      show("The app is running.", "It opens in your browser. If it does not, use Open the app.", "ok");
+    }
+  }
+
+  function notRunning() {
+    show("The app is not running.", "Click Start the app. A command window opens and runs it.", "");
+    startBtn.hidden = false;
+    startBtn.disabled = false;
+    openLink.hidden = true;
+  }
+
+  function waitForApp() {
+    waited = 0;
+    startBtn.disabled = true;
+    timer = setInterval(function () {
+      waited += 2;
+      probe().then(function (up) {
+        if (up) { running(false); return; }
+        if (waited >= LIMIT) {
+          clearInterval(timer);
+          show("The app did not start.", "Look at the command window for a message. See the help below.", "warn");
+          startBtn.disabled = false;
+          help.open = true;
+        } else if (waited === 20) {
+          detail.textContent = "Still waiting. If no command window opened, see the help below.";
+          help.open = true;
+        }
+      });
+    }, 2000);
+  }
+
+  startBtn.addEventListener("click", function () {
+    show("Starting the app...", "Allow the browser to open the link. The first start takes about a minute.", "");
+    window.location.href = "healthreport://start";
+    waitForApp();
+  });
+
+  probe().then(function (up) { if (up) { running(true); } else { notRunning(); } });
+})();
+</script>
+</body>
+</html>
