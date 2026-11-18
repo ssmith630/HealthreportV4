@@ -4,6 +4,7 @@ from __future__ import annotations
 import json
 import os
 import queue
+import re
 import threading
 import webbrowser
 from pathlib import Path
@@ -30,6 +31,28 @@ app = Flask(__name__, static_folder="static", static_url_path="/static")
 _isc = Isc()
 _gs = Gainsight()
 _lock = threading.Lock()   # one report at a time (single shared browser)
+
+
+def parse_fiscal_year(value) -> int | None:
+    """Return a blank year as None; otherwise require an integer from 2000 through 2100."""
+    if value is None:
+        return None
+    if isinstance(value, bool):
+        raise ValueError("Fiscal year must be a whole number from 2000 through 2100, or blank.")
+    if isinstance(value, int):
+        year = value
+    elif isinstance(value, str):
+        raw = value.strip()
+        if not raw:
+            return None
+        if not re.fullmatch(r"[+-]?[0-9]+", raw):
+            raise ValueError("Fiscal year must be a whole number from 2000 through 2100, or blank.")
+        year = int(raw)
+    else:
+        raise ValueError("Fiscal year must be a whole number from 2000 through 2100, or blank.")
+    if not 2000 <= year <= 2100:
+        raise ValueError("Fiscal year must be a whole number from 2000 through 2100, or blank.")
+    return year
 
 
 @app.get("/")
@@ -98,11 +121,14 @@ def api_connect_gainsight():
 @app.post("/api/generate")
 def api_generate():
     body = request.get_json(silent=True) or {}
+    try:
+        year = parse_fiscal_year(body.get("year"))
+    except ValueError as e:
+        return jsonify(error=str(e)), 400
     selected = set(body.get("accounts") or [])
     if not selected:  # nothing is pre-selected; an empty list never means "all"
         return jsonify(error="Select at least one account."), 400
     accounts = [a for a in load_accounts() if a.isc_id in selected]
-    year = int(body["year"]) if body.get("year") else None
     demo = bool(body.get("demo"))
     tech_only = body.get("tech_only", True)
     all_quarters = bool(body.get("all_quarters"))

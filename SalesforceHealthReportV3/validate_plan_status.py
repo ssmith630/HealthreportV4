@@ -16,6 +16,7 @@ from pathlib import Path
 
 import openpyxl
 
+import app as health_app
 import gainsight
 import pipeline
 import plan_status as ps
@@ -94,6 +95,38 @@ check("unread plan entry is unchanged", snap3["plans"]["p1"], snap2["plans"]["p1
 nogs = {"status": "Active", "account": "A"}
 ps.apply_progression([nogs], snap, TODAY)
 check("plan without an id: no crash, empty progression", nogs["progression"], "")
+
+# Successfully read companies replace their plan inventory, including an empty inventory. Companies that were
+# not read keep their prior entries, and a plan that reappears after removal starts a new progression.
+company_snapshot = ps.apply_progression([
+    dict(plan("read-plan", "Active", 5), company_gsid="read-company"),
+    dict(plan("unread-plan", "Defining", 5), company_gsid="unread-company"),
+], None, TODAY)
+check("snapshot records plan company", company_snapshot["plans"]["read-plan"]["company_gsid"], "read-company")
+empty_read = ps.apply_progression([], company_snapshot, TODAY + timedelta(days=1),
+                                  successfully_read_companies={"read-company"})
+check("successful empty read removes old plan", sorted(empty_read["plans"]), ["unread-plan"])
+check("unread company keeps its entry", empty_read["plans"]["unread-plan"],
+      company_snapshot["plans"]["unread-plan"])
+reopened = dict(plan("read-plan", "Active", 1), company_gsid="read-company")
+reopened_snapshot = ps.apply_progression([reopened], empty_read, TODAY + timedelta(days=2),
+                                         successfully_read_companies={"read-company"})
+check("reopened plan is new", reopened["progression"], f"New since {(TODAY + timedelta(days=2)).isoformat()}")
+failed_read = ps.apply_progression([], company_snapshot, TODAY + timedelta(days=1))
+check("unsuccessfully read company keeps its entry", sorted(failed_read["plans"]),
+      ["read-plan", "unread-plan"])
+
+# ---- fiscal-year API validation ----
+client = health_app.app.test_client()
+for value in (None, "", "   ", "2000", "2100", 2000, 2100):
+    response = client.post("/api/generate", json={"year": value})
+    check(f"accepted fiscal year {value!r} reaches account validation",
+          (response.status_code, response.get_json()["error"]), (400, "Select at least one account."))
+for value in ("abc", "2025.5", "2e3", 1999, 2101, True, 2025.0):
+    response = client.post("/api/generate", json={"year": value})
+    check(f"invalid fiscal year {value!r} returns JSON 400",
+          (response.status_code, response.is_json, "Fiscal year" in response.get_json()["error"]),
+          (400, True, True))
 
 # ---- snapshot file ----
 with tempfile.TemporaryDirectory() as tmp:

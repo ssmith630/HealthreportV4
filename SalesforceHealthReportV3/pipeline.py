@@ -64,6 +64,7 @@ def run_report(accounts: list[Account], year: int | None, isc: Isc, gs: Gainsigh
     stale_days (30, 60 or 90) is how long a success plan can go without a change before it needs an update.
     """
     stale_days = plan_status.stale_cutoff(stale_days)
+    plans_read: set[str] = set()
     qwindows = current_next_windows()            # current / next quarter, relative to today
     fetch_windows = qwindows                     # opportunities cover only the current and next quarter
     stamp = datetime.now().strftime("%Y%m%d_%H%M%S")
@@ -200,8 +201,12 @@ def run_report(accounts: list[Account], year: int | None, isc: Isc, gs: Gainsigh
                     label = f"Gainsight company {gsid}" if primary else f"Gainsight company {a.company_name(gsid)} ({gsid})"
                     try:
                         got = gs.success_plans(gsid)
+                        plans_read.add(gsid)
                         for p in got:
-                            data["plans"].append(_from_company(dict(p, account=a.name, account_url=a.isc_url, plan_url=success_plan_url(gsid)), "name", None if primary else a.company_name(gsid)))
+                            data["plans"].append(_from_company(dict(p, account=a.name, account_url=a.isc_url,
+                                                                    plan_url=success_plan_url(gsid),
+                                                                    company_gsid=gsid),
+                                                                "name", None if primary else a.company_name(gsid)))
                         if not got and primary:
                             n_all, n_closed = gs.last_plans
                             data["notes"].append({"area": "Success plans", "account": a.name, "note": (
@@ -264,15 +269,16 @@ def run_report(accounts: list[Account], year: int | None, isc: Isc, gs: Gainsigh
             except (IscError, BrowserError) as e:
                 data["notes"].append({"area": "Renewal health", "account": "", "note": str(e)})
         data["notes"] += _review_notes(accounts)
-        if data["plans"]:  # progression needs the previous run's statuses; the first run has none
+        if plans_read:  # successful empty reads must also remove plans that were closed
             snap_path = REPORTS_DIR / plan_status.SNAPSHOT.name
-            snap = plan_status.apply_progression(data["plans"], plan_status.read_snapshot(snap_path))
+            snap = plan_status.apply_progression(data["plans"], plan_status.read_snapshot(snap_path),
+                                                 successfully_read_companies=plans_read)
             try:
                 plan_status.write_snapshot(snap, snap_path)
             except OSError as e:
                 data["notes"].append({"area": "Success plans", "account": "",
                                       "note": f"The plan status snapshot could not be saved, so the next run has nothing to compare with: {e}"})
-            if all(p.get("progression") == plan_status.NO_BASELINE for p in data["plans"]):
+            if data["plans"] and all(p.get("progression") == plan_status.NO_BASELINE for p in data["plans"]):
                 data["notes"].append({"area": "Success plans", "account": "", "note": (
                     "Progression: this is the first run with a plan status snapshot, so there is no earlier run to compare. "
                     "Changes show from the next run.")})
