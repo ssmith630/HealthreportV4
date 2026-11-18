@@ -280,7 +280,9 @@ let RUNNING = false;
 function selectedIds(){ return [...SEL]; }
 function updateRunState(){
   const none = SEL.size === 0;
-  $('#btn-run').disabled = none || RUNNING;
+  const raw = $('#year').value.trim();
+  const yearValid = !raw || (/^[+-]?[0-9]+$/.test(raw) && Number.isInteger(+raw) && +raw >= 2000 && +raw <= 2100);
+  $('#btn-run').disabled = none || RUNNING || !yearValid;
   $('#run-hint').style.display = none ? 'block' : 'none';
 }
 function updateCount(){
@@ -312,20 +314,19 @@ async function loadAccounts(){
   const j = await (await fetch('/api/accounts')).json();
   if (j.error) { $('#acct-body').innerHTML = `<tr><td colspan="3" class="err">${j.error}</td></tr>`; return; }
   ACCOUNTS = j.accounts;
-  QUARTERS = j.quarters;   // [CQ, +1Q] labels relative to today
   DEFAULT_YEAR = j.default_year;
   updateWindows(); renderAccounts();
 }
-let QUARTERS = [], DEFAULT_YEAR = new Date().getFullYear();
+let DEFAULT_YEAR = new Date().getFullYear();
 function updateWindows(){
-  const [cur, next] = QUARTERS;
   const raw = $('#year').value.trim();
   const y = raw ? +raw : DEFAULT_YEAR;
   const ok = Number.isInteger(y) && y >= 2000 && y <= 2100;
   const t = ok
-    ? `Opportunities cover the current quarter (${cur}) and next quarter (${next}). Renewals use fiscal year ${y}${raw ? '' : ' (current)'}.`
+    ? 'Opportunities cover the current quarter and next quarter. Renewals for current fiscal year.'
     : 'Type a four-digit year, or leave blank for the current fiscal year';
   $('#windows').textContent = t;
+  updateRunState();
 }
 $('#year').oninput = updateWindows;
 

@@ -76,15 +76,25 @@ def read_snapshot(path: Path | None = None) -> dict | None:
     return snap if isinstance(snap, dict) and isinstance(snap.get("plans"), dict) else None
 
 
-def apply_progression(plans: list[dict], previous: dict | None, today: date | None = None) -> dict:
+def apply_progression(plans: list[dict], previous: dict | None, today: date | None = None,
+                      successfully_read_companies: set[str] | None = None) -> dict:
     """Set ``previous_status``, ``status_since`` and ``progression`` on each plan. Returns the snapshot to save.
 
     Plans from accounts that were not read this time keep their saved entry, so a run on a few accounts does not
-    erase the history of the others.
+    erase the history of the others. Entries for plans that disappeared from a successfully read company are removed.
     """
     today = today or date.today()
     old = (previous or {}).get("plans") or {}
     new = {k: v for k, v in old.items() if isinstance(v, dict)}
+    successfully_read_companies = successfully_read_companies or set()
+    current_company_plans = {
+        (p.get("company_gsid"), p.get("gsid")) for p in plans if p.get("company_gsid") and p.get("gsid")
+    }
+    new = {
+        k: v for k, v in new.items()
+        if v.get("company_gsid") not in successfully_read_companies
+        or (v.get("company_gsid"), k) in current_company_plans
+    }
     for p in plans:
         gsid = p.get("gsid")
         status = p.get("status") or ""
@@ -102,6 +112,9 @@ def apply_progression(plans: list[dict], previous: dict | None, today: date | No
         else:
             entry = {"status": status, "since": today.isoformat(), "from": was.get("status") or ""}
             p["progression"] = f"{entry['from'] or 'Unknown'} to {status} on {entry['since']}"
+        company_gsid = p.get("company_gsid") or (was or {}).get("company_gsid")
+        if company_gsid:
+            entry["company_gsid"] = company_gsid
         p["previous_status"], p["status_since"] = entry["from"], entry["since"]
         new[gsid] = entry
     return {"generated": datetime.now().isoformat(timespec="seconds"), "plans": new}
