@@ -257,7 +257,7 @@ def build_html(data: dict, windows: list[Window], path: Path) -> Path:
 
     ticket_rows = [(t.get("account"),
         f"<tr><td>{_e(t.get('status'))}</td><td>{_e(t.get('severity'))}</td><td>{_e(t.get('state'))}</td>"
-        f"<td>{_e(t.get('brand'))}</td><td>{_e(t.get('product'))}</td>"
+        f"<td>{_e(t.get('product'))}</td>"
         f"<td>{_link(t.get('ticket_url'), t.get('ticket_id'))}</td>"
         f"<td class=\"dt\">{_e(t.get('created'))}</td><td class=\"dt\">{_e(t.get('last_updated'))}</td>"
         f"<td>{_e(t.get('summary'))}</td></tr>")
@@ -403,9 +403,9 @@ def build_html(data: dict, windows: list[Window], path: Path) -> Path:
                 f'{bars or "<p class=empty>No cases.</p>"}</div>')
 
     ticket_section = f"""<section class="panel s-tix" id="sec-tickets"><h2>Support cases</h2>
-<p class="hint">Tickets that are still open (Open, IBM is working or awaiting customer feedback), whatever their age. Closed tickets are not shown. Severity, brand, product and state come from the Gainsight ticket report; blank values show as Unspecified. See Notes if they are missing.</p>
+<p class="hint">Tickets that are still open (Open, IBM is working or awaiting customer feedback), whatever their age. Closed tickets are not shown. Severity, product and state come from the Gainsight ticket report; blank values show as Unspecified. See Notes if they are missing.</p>
 <div class="tk-kpis">{ticket_kpi("Open cases", ts["total"])}{ticket_kpi("Severity 1", ts["sev1"])}{ticket_kpi("Severity 2", ts["sev2"])}{"".join(ticket_kpi(s, n) for s, n in ts["states"].items())}</div>
-<div class="tk-grid">{breakdown("Cases by client", "by_client")}{breakdown("Cases by brand", "by_brand")}{breakdown("Cases by product", "by_product")}</div>
+<div class="tk-grid">{breakdown("Cases by client", "by_client")}{breakdown("Cases by product", "by_product")}</div>
 </section>""" if show_gainsight else ""
 
     concentration = data.get("renewal_concentration", [])
@@ -484,7 +484,7 @@ def build_html(data: dict, windows: list[Window], path: Path) -> Path:
                                 "Percent Complete", "Progression", "Renewal Health"],
                                p, "No success plans were found. See Notes below."))
             parts.append(block("s-tix", "Support tickets",
-                               ["Status", "Severity", "State", "Brand", "Product", "Ticket ID", "Date Created",
+                               ["Status", "Severity", "State", "Product", "Ticket ID", "Date Created",
                                 "Last Date Updated", "Summary"],
                                t, "No support tickets were found. See Notes below."))
             parts.append(block("s-ela", "ELA details",

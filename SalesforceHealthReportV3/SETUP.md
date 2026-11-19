@@ -137,7 +137,7 @@ Copy command: Windows `copy .env.example .env`, Mac `cp .env.example .env`.
 1. **Connect tab.** Click *Sign in to ISC* and finish IBM sign-in in the window that opens. Then click *Connect Gainsight*.
 2. **Accounts tab.** Tick the accounts you want, or click *Select all*.
 3. **Create report tab.** Choose the sections, then click *Create report*. The dashboard opens and the Excel file downloads. Tick *Use sample data* first if you want to see the layout without signing in.
-4. **What you get.** Opportunities for the current and next quarter, current-quarter deployments (all dates if you tick the option) with dollar amounts and a link to each record in Salesforce, and Gainsight support tickets that are not closed (shown as Open, IBM is working or Awaiting customer feedback, any age), success plans with overdue and needs-update flags and the change in status since the last report, broken down by severity, state, client, brand and product. Success plans, tickets, ELA rows and renewal forecast rows come from the account's main Gainsight company and from every other Gainsight company under the same coverage ID. Rows from another company start with its name in square brackets. Companies marked `non_us` in the account file (four Toyota companies today) are skipped and listed on the Notes sheet. MARRIOTT VACATION CLUB is a separate account that shares MARRIOTT's coverage ID.
+4. **What you get.** Opportunities for the current and next quarter, current-quarter deployments (all dates if you tick the option) with dollar amounts and a link to each record in Salesforce, and Gainsight support tickets that are not closed (shown as Open, IBM is working or Awaiting customer feedback, any age), success plans with overdue and needs-update flags and the change in status since the last report, broken down by severity, state, client and product. Success plans, tickets, ELA rows and renewal forecast rows come from the account's main Gainsight company and from every other Gainsight company under the same coverage ID. Rows from another company start with its name in square brackets. Companies marked `non_us` in the account file (four Toyota companies today) are skipped and listed on the Notes sheet. MARRIOTT VACATION CLUB is a separate account that shares MARRIOTT's coverage ID.
 
 Reports are saved in the `reports` folder and listed on the *Past reports* tab. Your sign-in is remembered in `.browser_profile`; never share that folder.
 
@@ -155,7 +155,7 @@ Reports are saved in the `reports` folder and listed on the *Past reports* tab. 
 | Windows SmartScreen blocks the app | Windows | *More info*, then *Run anyway*. |
 | Pip cannot download packages | Both | Check your internet or VPN/proxy. Delete `.venv` and launch again. |
 | A sheet is empty, or Notes lists errors | Both | Your session may have expired (about 8 hours). Sign in again on the Connect tab. |
-| Ticket Severity, Brand or Product columns are blank | Both | The Gainsight report may name the columns differently. The Notes sheet lists the real column names. |
+| Ticket Severity or Product columns are blank | Both | The Gainsight report may name the columns differently. The Notes sheet lists the real column names. |
 
 ## Updating or moving the app
 

@@ -64,7 +64,6 @@ def demo_data(accounts, windows: list[Window], deploy_all_dates: bool = False) -
                 "last_updated": (today - timedelta(days=1 + k * 4 + i % 3)).isoformat(),
                 "summary": "Sample ticket: upgrade question" if k == 0 else "Sample ticket: license entitlement",
                 "severity": "Severity 1" if (i + k) % 7 == 0 else "Severity 2",
-                "brand": ["Data & AI", "Automation", "Hybrid Cloud", "Security"][(i + k) % 4],
                 "product": ["watsonx.ai", "Cloud Pak for Data", "Maximo", "Instana", "Guardium", "Db2"][(i + 2 * k) % 6],
                 "state": ["Open", "IBM is working", "Awaiting customer feedback"][(i + k) % 3],
             })

@@ -132,10 +132,9 @@ def _cell(row: dict, field: str) -> dict:
 _COL = re.compile(r"^generic_support_data__gc_(.+)__gc$")
 # Candidate report-column names for the ticket categories (case and punctuation ignored). Checked against the
 # live tenant: ``attribute_1`` holds the product name (for example "Order Management On Cloud"); the other
-# ``attribute_*`` columns are an id, a flag and an empty column, and no column holds a brand.
+# ``attribute_*`` columns are an id, a flag and an empty column.
 _CATEGORY_FIELDS = {
     "severity": ("severity", "ticket_severity", "case_severity", "priority", "ticket_priority"),
-    "brand": ("brand", "ibm_brand", "product_brand", "ticket_brand"),
     "product": ("product", "product_name", "ticket_product", "product_family", "offering", "attribute_1"),
     "state": ("state", "ticket_state", "case_state", "sub_status", "substatus", "ticket_sub_status",
               "ticket_substatus", "status_detail", "case_status", "current_status"),
@@ -200,7 +199,6 @@ def _ticket(row: dict) -> dict:
         "last_updated": str(_cell(row, "last_date_updated").get("k") or ""),
         "summary": str(_cell(row, "summary").get("v") or ""),
         "severity": severity_label(_category(row, "severity")),
-        "brand": _category(row, "brand"),
         "product": _category(row, "product"),
         "state": state_label(_category(row, "state") or str(_cell(row, "status").get("v") or "")),
     }

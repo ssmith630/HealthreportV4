@@ -132,6 +132,13 @@ class _StubGs(gainsight.Gainsight):
         return []  # no renewal rows; keeps this validator offline
 
 
+class _UnfilteredGs(_StubGs):
+    """Returns its rows whatever GSIDs are asked for, like a dashboard that returns rows for other companies."""
+
+    def ela_details(self, gsids, max_pages=40):
+        return list(self.rows)
+
+
 class _StubIsc:
     def forget_reports(self):
         pass
@@ -166,6 +173,17 @@ def run_live_path(accounts) -> None:
         _, html = run(_StubGs(fail=True))
         page = html.read_text(encoding="utf-8")
         check("pipeline: an ELA failure becomes a note, not an exception", "ELA test failure" in page and "ELA details" in page)
+
+        _, html = run(_UnfilteredGs([other]))
+        page = html.read_text(encoding="utf-8")
+        check("pipeline: rows that match no account give a note with the GSIDs in the rows and the GSIDs queried",
+              "returned 1 rows, but none matched" in page and "1P02NOTSELECTED" in page and f"Company GSIDs queried: {acct.name}: " in page
+              and acct.gsid in page)
+
+        _, html = run(_StubGs([]))
+        page = html.read_text(encoding="utf-8")
+        check("pipeline: no ELA rows at all gives the no-rows note with the GSIDs queried",
+              "returned no rows for these accounts" in page and "Company GSIDs queried:" in page and "but none matched" not in page)
     finally:
         pipeline.REPORTS_DIR, pipeline.deployments.write_snapshot, settings.load = saved
 
@@ -187,7 +205,7 @@ class _MultiGs(_StubGs):
 
     def support_tickets(self, gsid):
         # TKT-SHARED is returned by two companies and must show once. TKT-<gsid> is unique to the company.
-        base = {"status": "Open", "severity": "Sev 3", "state": "IBM is working", "brand": "B", "product": "P",
+        base = {"status": "Open", "severity": "Sev 3", "state": "IBM is working", "product": "P",
                 "ticket_url": "", "created": "2026-01-01", "summary": "Ticket"}
         return [dict(base, ticket_id="TKT-SHARED", last_updated="2026-02-01"),
                 dict(base, ticket_id=f"TKT-{gsid}", last_updated="2026-03-01")]

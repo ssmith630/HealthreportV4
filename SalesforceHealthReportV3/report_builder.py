@@ -31,7 +31,7 @@ OPP_MONEY = {"Amount", "Expected Revenue", "Renewed ACV Total"}
 PLAN_HEADERS = ["Account", "Plan Name", "Plan Status", "Plan Owners", "Due Date", "Days Overdue", "Overdue?",
                 "Renewal Health", "Last Updated", "Days Since Update", "Needs Update?", "Percent Complete",
                 "Open Tasks", "Previous Status", "Progression"]
-TICKET_HEADERS = ["Account", "Status", "Severity", "State", "Brand", "Product", "Ticket ID", "Ticket URL",
+TICKET_HEADERS = ["Account", "Status", "Severity", "State", "Product", "Ticket ID", "Ticket URL",
                   "Date Created", "Last Date Updated", "Summary"]
 ELA_HEADERS = ["Account", "Contract Name", "UCI", "Contract Section", "Platform", "Contract End Date",
                "Entitled (Net Revenue)", "Deployed (Net Revenue)", "Undeployed Value",
@@ -60,7 +60,7 @@ TICKET_STATES = ("Open", "IBM is working", "Awaiting customer feedback")
 
 
 def ticket_summary(tickets: list[dict], top: int = 10) -> dict:
-    """Counts behind the ticket dashboard: KPI tiles plus the client, brand and product breakdowns."""
+    """Counts behind the ticket dashboard: KPI tiles plus the client and product breakdowns."""
     def count(key: str, shown: str = "") -> list[tuple[str, int]]:
         c: dict[str, int] = {}
         for t in tickets:
@@ -68,7 +68,7 @@ def ticket_summary(tickets: list[dict], top: int = 10) -> dict:
             c[v] = c.get(v, 0) + 1
         return sorted(c.items(), key=lambda kv: (-kv[1], kv[0]))
 
-    by_client, by_brand, by_product = count("account", "account_display"), count("brand"), count("product")
+    by_client, by_product = count("account", "account_display"), count("product")
     return {
         "total": len(tickets),
         "sev1": sum(1 for t in tickets if t.get("severity") == "Severity 1"),
@@ -76,7 +76,7 @@ def ticket_summary(tickets: list[dict], top: int = 10) -> dict:
         "states": {s: sum(1 for t in tickets if t.get("state") == s) for s in TICKET_STATES},
         "clients": len(by_client),
         "top": top,
-        "by_client": by_client, "by_brand": by_brand, "by_product": by_product,
+        "by_client": by_client, "by_product": by_product,
     }
 
 
@@ -318,29 +318,28 @@ def build_report(data: dict, windows: list[Window], path: Path) -> Path:
     _finish(ws, len(PLAN_HEADERS))
 
     # Support tickets ------------------------------------------------------
-    ws = _sheet(wb, "Support Tickets", TICKET_HEADERS, [28, 16, 12, 18, 18, 24, 14, 52, 14, 16, 70])
+    ws = _sheet(wb, "Support Tickets", TICKET_HEADERS, [28, 16, 12, 18, 24, 14, 52, 14, 16, 70])
     for t in tickets:
-        ws.append([t.get("account_display") or t.get("account"), t.get("status"), t.get("severity"), t.get("state"), t.get("brand"),
+        ws.append([t.get("account_display") or t.get("account"), t.get("status"), t.get("severity"), t.get("state"),
                    t.get("product"), t.get("ticket_id"), t.get("ticket_url"),
                    _d(t.get("created")), _d(t.get("last_updated")), t.get("summary")])
         url = t.get("ticket_url") or ""
         if url.startswith("https://"):
-            cell = ws.cell(ws.max_row, 8)
+            cell = ws.cell(ws.max_row, 7)
             cell.hyperlink = url
             cell.font = Font(color="0F62FE", underline="single")
     for row in ws.iter_rows(min_row=2):
-        row[8].number_format = row[9].number_format = "yyyy-mm-dd"
-        row[10].alignment = Alignment(wrap_text=True, vertical="top")
+        row[7].number_format = row[8].number_format = "yyyy-mm-dd"
+        row[9].alignment = Alignment(wrap_text=True, vertical="top")
     _finish(ws, len(TICKET_HEADERS))
 
-    # Ticket summary: KPI counts and the cases by client, brand and product -----------------
+    # Ticket summary: KPI counts and the cases by client and product -----------------
     ts = ticket_summary(tickets)
     ws = _sheet(wb, "Ticket Summary", ["Measure", "Cases"], [34, 12])
     for label, n in [("Open cases", ts["total"]), ("Severity 1", ts["sev1"]), ("Severity 2", ts["sev2"]),
                      *ts["states"].items()]:
         ws.append([label, n])
-    for title, key in (("Cases by client", "by_client"), ("Cases by brand", "by_brand"),
-                       ("Cases by product", "by_product")):
+    for title, key in (("Cases by client", "by_client"), ("Cases by product", "by_product")):
         ws.append([])
         ws.append([f"{title} (top {ts['top']} of {len(ts[key])})", "Cases"])
         for c in ws[ws.max_row]:

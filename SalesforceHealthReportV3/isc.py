@@ -73,6 +73,22 @@ def _record_url(cell: dict | None) -> str:
 _GENERIC_WORDS = {"THE", "COMPANY", "GROUP", "CORP", "CORPORATION", "INC", "LTD", "HOLDINGS", "INTERNATIONAL", "CO"}
 
 
+def _diagnostic_words(a) -> list[str]:
+    """Words to look for in dashboard account names when an account has no row.
+
+    Taken from the display name, the coverage name and the aliases, split on anything that is not a
+    letter or digit, so 'CENCORA/AMERISOURCEBERGEN' gives two words, not one. Words with digits
+    (account numbers) and generic words are left out.
+    """
+    words: list[str] = []
+    for src in (getattr(a, "isc_name", ""), a.name, *getattr(a, "aliases", [])):
+        for w in re.split(r"[^A-Za-z0-9]+", str(src or "")):
+            if len(w) >= 4 and not any(c.isdigit() for c in w) and w.upper() not in _GENERIC_WORDS \
+                    and w.upper() not in {x.upper() for x in words}:
+                words.append(w)
+    return words or re.split(r"[^A-Za-z0-9]+", a.name)[:1]
+
+
 def _norm(s: str) -> str:
     return re.sub(r"[^a-z0-9]", "", (s or "").lower())
 
@@ -446,7 +462,7 @@ class Isc:
                   if returned else " The dashboard returned no account names.")
         for a in sorted(accounts, key=lambda x: x.name.lower()):
             if a.name not in out:
-                words = [w for w in a.name.split() if len(w) >= 4 and w.upper() not in _GENERIC_WORDS] or a.name.split()[:1]
+                words = _diagnostic_words(a)
                 near = [n for n in returned if any(_norm(w) in _norm(n) for w in words)]
                 notes.append({"area": "CQ forecast", "account": a.name, "account_display": getattr(a, "isc_name", "") or a.name,
                               "note": "No row for this account in the Deployment Forecast dashboard "

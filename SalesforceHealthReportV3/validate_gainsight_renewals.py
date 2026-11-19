@@ -63,8 +63,8 @@ def run_parse() -> None:
         "generic_support_data__gc_severity__gc": {"v": "2"},
         "generic_support_data__gc_attribute_1__gc": {"v": "Order Management On Cloud"},
         "generic_support_data__gc_attribute_6__gc": {"fv": ""}})
-    check("ticket: attribute_1 is the product, and no column gives a brand",
-          tk["product"] == "Order Management On Cloud" and tk["brand"] == "" and tk["severity"] == "Severity 2", str(tk))
+    check("ticket: attribute_1 is the product, and the ticket has no brand",
+          tk["product"] == "Order Management On Cloud" and "brand" not in tk and tk["severity"] == "Severity 2", str(tk))
     ts = report_builder.ticket_summary([
         {"account": "WALT DISNEY", "account_display": "The Walt Disney Company-US"},
         {"account": "OTHER", "account_display": ""}, {"account": "WALT DISNEY", "account_display": "The Walt Disney Company-US"}])

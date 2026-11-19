@@ -226,7 +226,7 @@ def run_report(accounts: list[Account], year: int | None, isc: Isc, gs: Gainsigh
                                 f"{label} lists {n_all} ticket rows, but none is still open (Open, IBM is working or awaiting customer feedback)."
                                 if n_all else f"The Gainsight support-ticket report returned no rows for {label.lower()}.")})
                         if got and gs.last_ticket_columns:
-                            missing = [k for k in ("severity", "brand", "product", "state")
+                            missing = [k for k in ("severity", "product", "state")
                                        if not any(t.get(k) for t in got)]
                             if missing:
                                 data["notes"].append({"area": "Support tickets", "account": a.name, "note": (
@@ -240,13 +240,21 @@ def run_report(accounts: list[Account], year: int | None, isc: Isc, gs: Gainsigh
             progress(91, "Reading ELA details")
             by_gsid = {g: a for a in accounts for g in a.all_gsids}
             try:
-                for r in gs.ela_details(list(by_gsid)):
+                fetched = gs.ela_details(list(by_gsid))
+                for r in fetched:
                     a = by_gsid.get(r.get("gsid"))
                     if a:
                         data["ela"].append(dict(r, account=a.name, account_url=a.isc_url))
                 if by_gsid and not data["ela"]:
+                    asked = "; ".join(f"{a.name}: {', '.join(a.all_gsids)}" for a in accounts if a.all_gsids)
+                    if fetched:
+                        seen = ", ".join(sorted({r.get("gsid") or "(blank)" for r in fetched})[:5])
+                        what = (f"The Gainsight Client ELA Details dashboard returned {len(fetched)} rows, but none matched "
+                                f"an account's company GSID (GSIDs in the rows: {seen}). ")
+                    else:
+                        what = "The Gainsight Client ELA Details dashboard returned no rows for these accounts. "
                     data["notes"].append({"area": "ELA details", "account": "",
-                                          "note": "The Gainsight Client ELA Details dashboard returned no rows for these accounts."})
+                                          "note": what + f"Company GSIDs queried: {asked}."})
             except GainsightError as e:
                 data["notes"].append({"area": "ELA details", "account": "", "note": str(e)})
             progress(93, "Reading renewal forecast")
