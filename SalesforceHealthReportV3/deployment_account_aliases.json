@@ -37,6 +37,7 @@
     {"account_name": "DXC",                  "report_name": "DXC TECHNOLOGY-US"},
     {"account_name": "MARRIOTT",             "report_name": "MARRIOTT INTERNATIONAL INC-US"},
     {"account_name": "MARRIOTT VACATION CLUB",   "report_name": "MARRIOTT VACATION CLUB-US"},
+    {"account_name": "CENCORA/AMERISOURCEBERGEN", "report_name": "CENCORA, INC-US", "account_number": "DB00005Q-US", "isc_name": "CENCORA, INC-US"},
     {"account_name": "WALT DISNEY",          "report_name": "THE WALT DISNEY COMPANY-US", "isc_name": "The Walt Disney Company-US"}
   ],
   "pending_not_in_account_list": [

@@ -323,7 +323,7 @@ function updateWindows(){
   const y = raw ? +raw : DEFAULT_YEAR;
   const ok = Number.isInteger(y) && y >= 2000 && y <= 2100;
   const t = ok
-    ? 'Opportunities cover the current quarter and next quarter. Renewals for current fiscal year.'
+    ? 'Opportunities cover the current quarter and next quarter. Renewals use the current fiscal year.'
     : 'Type a four-digit year, or leave blank for the current fiscal year';
   $('#windows').textContent = t;
   updateRunState();
